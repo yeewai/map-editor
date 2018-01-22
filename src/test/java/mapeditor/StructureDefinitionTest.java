@@ -76,6 +76,7 @@ public class StructureDefinitionTest {
         sd1.setWidth(1);
         sd1.setLength(2);
         sd1.setKind("Some kind");
+        sd1.setImageUrl("Some image");
 
         when(structureDefinitionRepository.findOne(sd1.getId()))
             .thenReturn(sd1);
@@ -105,7 +106,7 @@ public class StructureDefinitionTest {
 
     @Test
     public void should_create_a_structure_definition() throws Exception {
-        String json = "{\"name\": \"New??????\", \"description\": \"Suuuuuup\", \"width\": 1, \"length\": 2, \"kind\": \">?????\"}";
+        String json = "{\"name\": \"New??????\", \"description\": \"Suuuuuup\", \"width\": 1, \"length\": 2, \"kind\": \">?????\", \"imageUrl\": \"http://somewebsite.com/image.svg\"}";
         when(structureDefinitionRepository.save(Mockito.any(StructureDefinition.class)))
             .thenReturn(new StructureDefinition());
         this.mockMvc
@@ -117,7 +118,7 @@ public class StructureDefinitionTest {
 
     @Test
     public void should_not_create_a_structure_definition_if_id_already_exists() throws Exception {
-        String json = "{\"id\": \"c\", \"name\": \"New??????\", \"description\": \"Suuuuuup\", \"width\": 1, \"length\": 2, \"kind\": \">?????\"}";
+        String json = "{\"id\": \"c\", \"name\": \"New??????\", \"description\": \"Suuuuuup\", \"width\": 1, \"length\": 2, \"kind\": \">?????\", \"imageUrl\": \"http://somewebsite.com/image.svg\"}";
         when(structureDefinitionRepository.exists("c")).thenReturn(true);
 
         Throwable thrown = catchThrowable(() -> {
@@ -142,7 +143,7 @@ public class StructureDefinitionTest {
 
     @Test
     public void should_update_a_structure_definition() throws Exception {
-        String json = "{\"id\": \"someid\", \"name\": \"New??????\", \"description\": \"Suuuuuup\", \"width\": 1, \"length\": 2, \"kind\": \">?????\"}";
+        String json = "{\"id\": \"someid\", \"name\": \"New??????\", \"description\": \"Suuuuuup\", \"width\": 1, \"length\": 2, \"kind\": \">?????\", \"imageUrl\": \"http://somewebsite.com/image.svg\"}";
 
         when(structureDefinitionRepository.exists(Mockito.any(String.class))).thenReturn(true);
         when(structureDefinitionRepository.save(Mockito.any(StructureDefinition.class)))
@@ -157,7 +158,7 @@ public class StructureDefinitionTest {
 
     @Test
     public void should_not_update_a_structure_definition_if_id_does_not_exist() throws Exception {
-        String json = "{\"id\": \"someid\", \"name\": \"New??????\", \"description\": \"Suuuuuup\", \"width\": 1, \"length\": 2, \"kind\": \">?????\"}";
+        String json = "{\"id\": \"someid\", \"name\": \"New??????\", \"description\": \"Suuuuuup\", \"width\": 1, \"length\": 2, \"kind\": \">?????\", \"imageUrl\": \"http://somewebsite.com/image.svg\"}";
 
         when(structureDefinitionRepository.exists("someid")).thenReturn(false);
 

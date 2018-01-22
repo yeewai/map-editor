@@ -5,6 +5,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 import org.hibernate.validator.constraints.NotEmpty;
 import org.hibernate.validator.constraints.NotBlank;
 import javax.validation.constraints.Min;
+import mapeditor.validation.ImageUrl;
 
 import lombok.Setter;
 import lombok.Getter;
@@ -29,4 +30,7 @@ public class StructureDefinition {
 
     @NotBlank(message = "Kind can't empty!")
     private String kind;
+
+    @ImageUrl(message = "Image URL has to be a valid svg, png, or gif!")
+    private String imageUrl;
 }
