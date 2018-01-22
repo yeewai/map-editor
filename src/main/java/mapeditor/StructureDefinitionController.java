@@ -23,27 +23,25 @@ import org.springframework.util.Assert;
 @RestController
 @RequestMapping("/structureDefinitions")
 public class StructureDefinitionController {
-
     @Autowired
-    private StructureDefinitionRepository structureDefinitionRepository;
+    private StructureDefinitionService sdService;
 
     @GetMapping
     public List<StructureDefinition> index() {
-        return structureDefinitionRepository.findAll();
+        return sdService.findAll();
     }
 
     //[TODO] I should make a route to get just the definitions pertinent to a world
 
     @GetMapping("{id}")
     public StructureDefinition show(@PathVariable( "id" ) String id) {
-        return structureDefinitionRepository.findById(id);
+        return sdService.findById(id);
     }
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
     public StructureDefinition create(@RequestBody @Valid StructureDefinition structureDefinition) {
-        Assert.isTrue(structureDefinition.getId() == null || !structureDefinitionRepository.exists(structureDefinition.getId()), "ID already exists!");
-        return structureDefinitionRepository.save(structureDefinition);
+        return sdService.create(structureDefinition);
     }
 
     @PutMapping("{id}")
@@ -52,9 +50,7 @@ public class StructureDefinitionController {
         @PathVariable( "id" ) String id,
         @RequestBody @Valid StructureDefinition structureDefinition
     ) {
-        Assert.isTrue(structureDefinitionRepository.exists(id), "ID does not exist!");
-        structureDefinition.setId(id);
-        return structureDefinitionRepository.save(structureDefinition);
+        return sdService.update(id, structureDefinition);
     }
 
 }

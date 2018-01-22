@@ -77,7 +77,7 @@ public class StructureDefinitionTest {
         sd1.setLength(2);
         sd1.setKind("Some kind");
 
-        when(structureDefinitionRepository.findById(sd1.getId()))
+        when(structureDefinitionRepository.findOne(sd1.getId()))
             .thenReturn(sd1);
         MvcResult result = this.mockMvc
             .perform(get("/structureDefinitions/"+sd1.getId()))
@@ -120,7 +120,7 @@ public class StructureDefinitionTest {
         String json = "{\"id\": \"c\", \"name\": \"New??????\", \"description\": \"Suuuuuup\", \"width\": 1, \"length\": 2, \"kind\": \">?????\"}";
         when(structureDefinitionRepository.exists("c")).thenReturn(true);
 
-        Throwable thrown = catchThrowable(() -> { 
+        Throwable thrown = catchThrowable(() -> {
             this.mockMvc
                 .perform(post("/structureDefinitions").contentType(MediaType.APPLICATION_JSON).content(json));
         });
