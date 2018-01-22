@@ -5,6 +5,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mockito;
 import org.springframework.util.Assert;
+import static org.assertj.core.api.Assertions.*;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
@@ -104,7 +105,7 @@ public class StructureDefinitionTest {
 
     @Test
     public void should_create_a_structure_definition() throws Exception {
-        String json = "{\"id\": \"c\", \"name\": \"New??????\", \"description\": \"Suuuuuup\", \"width\": 1, \"length\": 2, \"kind\": \">?????\"}";
+        String json = "{\"name\": \"New??????\", \"description\": \"Suuuuuup\", \"width\": 1, \"length\": 2, \"kind\": \">?????\"}";
         when(structureDefinitionRepository.save(Mockito.any(StructureDefinition.class)))
             .thenReturn(new StructureDefinition());
         this.mockMvc
@@ -118,13 +119,12 @@ public class StructureDefinitionTest {
     public void should_not_create_a_structure_definition_if_id_already_exists() throws Exception {
         String json = "{\"id\": \"c\", \"name\": \"New??????\", \"description\": \"Suuuuuup\", \"width\": 1, \"length\": 2, \"kind\": \">?????\"}";
         when(structureDefinitionRepository.exists("c")).thenReturn(true);
-        try {
+
+        Throwable thrown = catchThrowable(() -> { 
             this.mockMvc
                 .perform(post("/structureDefinitions").contentType(MediaType.APPLICATION_JSON).content(json));
-            Assert.isTrue(false, "Expected an Illegal Argument Exception to be thrown");
-        } catch (NestedServletException e) {
-            Assert.hasText(e.getMessage(), "ID already exists!");
-        }
+        });
+        assertThat(thrown).hasMessageContaining("ID already exists!");
     }
 
     /****************************************

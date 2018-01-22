@@ -1,5 +1,7 @@
 package mapeditor;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 import java.util.concurrent.atomic.AtomicLong;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -22,17 +24,15 @@ import org.springframework.util.Assert;
 @RequestMapping("/structureDefinitions")
 public class StructureDefinitionController {
 
+    @Autowired
     private StructureDefinitionRepository structureDefinitionRepository;
-
-    public StructureDefinitionController(StructureDefinitionRepository structureDefinitionRepository) {
-        Assert.notNull(structureDefinitionRepository, "Repository must not be null!");
-        this.structureDefinitionRepository = structureDefinitionRepository;
-    }
 
     @GetMapping
     public List<StructureDefinition> index() {
         return structureDefinitionRepository.findAll();
     }
+
+    //[TODO] I should make a route to get just the definitions pertinent to a world
 
     @GetMapping("{id}")
     public StructureDefinition show(@PathVariable( "id" ) String id) {
@@ -42,7 +42,7 @@ public class StructureDefinitionController {
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
     public StructureDefinition create(@RequestBody @Valid StructureDefinition structureDefinition) {
-        Assert.isTrue(!structureDefinitionRepository.exists(structureDefinition.getId()), "ID already exists!");
+        Assert.isTrue(structureDefinition.getId() == null || !structureDefinitionRepository.exists(structureDefinition.getId()), "ID already exists!");
         return structureDefinitionRepository.save(structureDefinition);
     }
 
