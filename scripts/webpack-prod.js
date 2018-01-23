@@ -149,7 +149,7 @@ module.exports = {
               // TODO: consider separate config for production,
               // e.g. to enable no-console and no-debugger only in production.
               baseConfig: {
-                extends: [require.resolve('eslint-config-react-app')],
+                extends: [require.resolve('eslint-config-typescript')],
               },
               ignore: false,
               useEslintrc: false,
@@ -176,18 +176,24 @@ module.exports = {
             },
           },
           // Process JS with Babel.
-          {
-            test: /\.(js|jsx)$/,
-            include: paths.appSrc,
-            loader: require.resolve('babel-loader'),
-            options: {
-              // @remove-on-eject-begin
-              babelrc: false,
-              presets: [require.resolve('babel-preset-react-app')],
-              // @remove-on-eject-end
-              compact: true,
-            },
-          },
+          // {
+          //   test: /\.(js|jsx)$/,
+          //   include: paths.appSrc,
+          //   loader: require.resolve('babel-loader'),
+          //   options: {
+          //     // @remove-on-eject-begin
+          //     babelrc: false,
+          //     presets: [require.resolve('babel-preset-react-app')],
+          //     // @remove-on-eject-end
+          //     compact: true,
+          //   },
+          // },
+
+          // All files with a '.ts' or '.tsx' extension will be handled by 'awesome-typescript-loader'.
+            { test: /\.tsx?$/, loader: "awesome-typescript-loader" },
+
+            // All output '.js' files will have any sourcemaps re-processed by 'source-map-loader'.
+            { enforce: "pre", test: /\.js$/, loader: "source-map-loader" },
 
           // *** REPLACING CSS LOAD CONFIG WITH THE DEV VERSION, WHICH DOESN'T CREATE A SEPARATE FILE - RS
 
