@@ -1,3 +1,10 @@
+@import './App.scss';
+
+@import './vendor/loading-indicator.scss';
+// @import '../../node_modules/bootstrap/dist/css/bootstrap.css';
+
+@import './components/structureDefinitions.scss';
+
 body {
   margin: 0;
   padding: 0;
