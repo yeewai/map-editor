@@ -24,7 +24,9 @@ export const fetchStructureDefinitions: ActionCreator<ThunkAction<any, StateTree
         dispatch(requestStructureDefinitions());
         return api.getStructureDefinitions().then (
             resp => dispatch(receiveStructureDefinitions(resp)),
-            (jqXHR, textStatus, errorThrown) => dispatch(setError(jqXHR, textStatus, errorThrown))
+            (jqXHR, textStatus, errorThrown) =>{
+                 dispatch(setError(jqXHR, textStatus, errorThrown))
+             }
         );
     };
 };

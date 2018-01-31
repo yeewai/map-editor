@@ -8,7 +8,7 @@ export const defaultState: Types.State = {
     items: []
 }
 
-const usersReducer = (state = defaultState, action: Action ): Types.State => {
+const structureDefinitionReducer = (state = defaultState, action: Action ): Types.State => {
     switch(action.type) {
         case 'structureDefinition/REQUEST':
             return { ...state, isFetching: true, error: undefined };
@@ -21,11 +21,11 @@ const usersReducer = (state = defaultState, action: Action ): Types.State => {
                 items: action.payload,
             };
         case 'structureDefinition/SET_ERROR':
-            return { ...state, error: 'Error loading users.' };
+            return { ...state, error: 'Error loading structureDefinition.' };
         default:
             return state;
     }
 }
 
 
-export default usersReducer;
+export default structureDefinitionReducer;
