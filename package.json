@@ -42,7 +42,8 @@
         "start-ts": "npm run watch-css & react-scripts-ts start",
         "build-ts": "npm run watch-css & react-scripts-ts build",
         "test": "NODE_PATH=src/ react-scripts-ts test --env=jsdom",
-        "eject": "react-scripts-ts eject"
+        "coverage": "npm run test -- --coverage --mapCoverage",
+        "eject": "#react-scripts-ts eject"
     },
     "devDependencies": {
         "@types/enzyme": "^3.1.8",
@@ -77,7 +78,6 @@
         "webpack-dev-server": "^2.11.1"
     },
     "jest": {
-        "mapCoverage": true,
         "collectCoverageFrom": [
             "src/**/*.{ts,tsx}",
             "!<rootDir>/node_modules/",

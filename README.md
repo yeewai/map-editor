@@ -27,6 +27,12 @@ npm run start
 
 ## Running the tests
 
+``npm run test`` will watch for code changes
+
+### Coverage
+
+``npm run coverage`` does not watch, but generates a coverage report
+
 
 ## Deployment
 
