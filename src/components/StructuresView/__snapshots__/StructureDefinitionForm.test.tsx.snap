@@ -1,0 +1,2825 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Structure Definition Form matches snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Unknown
+    form="a"
+    formErrors={Object {}}
+    formfields={Object {}}
+    handleFormSubmit={[Function]}
+    handleSubmit={[Function]}
+    initialValues={
+        Object {
+            "description": "string",
+            "id": "id1",
+            "imageUrl": "string",
+            "kind": "someKind",
+            "length": 2,
+            "name": "name1",
+            "width": 1,
+          }
+    }
+    isValid={true}
+    kinds={
+        Array [
+            "a",
+            "b",
+          ]
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <form
+        onSubmit={undefined}
+>
+        <FormGroup
+                row={true}
+                tag="div"
+        >
+                <Label
+                        for="name"
+                        sm={2}
+                        tag="label"
+                        widths={
+                                Array [
+                                        "xs",
+                                        "sm",
+                                        "md",
+                                        "lg",
+                                        "xl",
+                                      ]
+                        }
+                >
+                         
+                        Name
+                </Label>
+                <Col
+                        sm={10}
+                        tag="div"
+                        widths={
+                                Array [
+                                        "xs",
+                                        "sm",
+                                        "md",
+                                        "lg",
+                                        "xl",
+                                      ]
+                        }
+                >
+                        <Field
+                                className="form-control"
+                                component="input"
+                                name="name"
+                                type="text"
+                                validate={
+                                        Array [
+                                                [Function],
+                                              ]
+                                }
+                        />
+                </Col>
+        </FormGroup>
+        <FormGroup
+                row={true}
+                tag="div"
+        >
+                <Label
+                        for="imageUrl"
+                        sm={2}
+                        tag="label"
+                        widths={
+                                Array [
+                                        "xs",
+                                        "sm",
+                                        "md",
+                                        "lg",
+                                        "xl",
+                                      ]
+                        }
+                >
+                         
+                        Image URL
+                </Label>
+                <Col
+                        sm={10}
+                        tag="div"
+                        widths={
+                                Array [
+                                        "xs",
+                                        "sm",
+                                        "md",
+                                        "lg",
+                                        "xl",
+                                      ]
+                        }
+                >
+                        <Field
+                                className="form-control"
+                                component="input"
+                                name="imageUrl"
+                                type="text"
+                                validate={
+                                        Array [
+                                                [Function],
+                                                [Function],
+                                              ]
+                                }
+                        />
+                </Col>
+        </FormGroup>
+        <FormGroup
+                row={true}
+                tag="div"
+        >
+                <Label
+                        for="width"
+                        sm={2}
+                        tag="label"
+                        widths={
+                                Array [
+                                        "xs",
+                                        "sm",
+                                        "md",
+                                        "lg",
+                                        "xl",
+                                      ]
+                        }
+                >
+                         
+                        Width
+                </Label>
+                <Col
+                        sm={2}
+                        tag="div"
+                        widths={
+                                Array [
+                                        "xs",
+                                        "sm",
+                                        "md",
+                                        "lg",
+                                        "xl",
+                                      ]
+                        }
+                >
+                        <Field
+                                className="form-control"
+                                component="input"
+                                name="width"
+                                type="number"
+                                validate={
+                                        Array [
+                                                [Function],
+                                              ]
+                                }
+                        />
+                </Col>
+        </FormGroup>
+        <FormGroup
+                row={true}
+                tag="div"
+        >
+                <Label
+                        for="length"
+                        sm={2}
+                        tag="label"
+                        widths={
+                                Array [
+                                        "xs",
+                                        "sm",
+                                        "md",
+                                        "lg",
+                                        "xl",
+                                      ]
+                        }
+                >
+                         
+                        Length
+                </Label>
+                <Col
+                        sm={2}
+                        tag="div"
+                        widths={
+                                Array [
+                                        "xs",
+                                        "sm",
+                                        "md",
+                                        "lg",
+                                        "xl",
+                                      ]
+                        }
+                >
+                        <Field
+                                className="form-control"
+                                component="input"
+                                name="length"
+                                type="number"
+                                validate={
+                                        Array [
+                                                [Function],
+                                              ]
+                                }
+                        />
+                </Col>
+        </FormGroup>
+        <FormGroup
+                row={true}
+                tag="div"
+        >
+                <Label
+                        for="kind"
+                        sm={2}
+                        tag="label"
+                        widths={
+                                Array [
+                                        "xs",
+                                        "sm",
+                                        "md",
+                                        "lg",
+                                        "xl",
+                                      ]
+                        }
+                >
+                         
+                        Type
+                </Label>
+                <Col
+                        sm={10}
+                        tag="div"
+                        widths={
+                                Array [
+                                        "xs",
+                                        "sm",
+                                        "md",
+                                        "lg",
+                                        "xl",
+                                      ]
+                        }
+                >
+                        <Field
+                                className="form-control"
+                                component={[Function]}
+                                name="kind"
+                                type="text"
+                                validate={
+                                        Array [
+                                                [Function],
+                                              ]
+                                }
+                        />
+                </Col>
+        </FormGroup>
+        <FormGroup
+                row={true}
+                tag="div"
+        >
+                <Col
+                        sm={
+                                Object {
+                                        "offset": 2,
+                                        "size": 2,
+                                      }
+                        }
+                        tag="div"
+                        widths={
+                                Array [
+                                        "xs",
+                                        "sm",
+                                        "md",
+                                        "lg",
+                                        "xl",
+                                      ]
+                        }
+                >
+                        <button
+                                className="btn btn-primary"
+                                disabled={false}
+                                type="submit"
+                        >
+                                Submit
+                        </button>
+                </Col>
+                <Col
+                        sm={8}
+                        tag="div"
+                        widths={
+                                Array [
+                                        "xs",
+                                        "sm",
+                                        "md",
+                                        "lg",
+                                        "xl",
+                                      ]
+                        }
+                />
+        </FormGroup>
+</form>,
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          Array [
+            <FormGroup
+              row={true}
+              tag="div"
+>
+              <Label
+                            for="name"
+                            sm={2}
+                            tag="label"
+                            widths={
+                                          Array [
+                                                        "xs",
+                                                        "sm",
+                                                        "md",
+                                                        "lg",
+                                                        "xl",
+                                                      ]
+                            }
+              >
+                             
+                            Name
+              </Label>
+              <Col
+                            sm={10}
+                            tag="div"
+                            widths={
+                                          Array [
+                                                        "xs",
+                                                        "sm",
+                                                        "md",
+                                                        "lg",
+                                                        "xl",
+                                                      ]
+                            }
+              >
+                            <Field
+                                          className="form-control"
+                                          component="input"
+                                          name="name"
+                                          type="text"
+                                          validate={
+                                                        Array [
+                                                                      [Function],
+                                                                    ]
+                                          }
+                            />
+              </Col>
+</FormGroup>,
+            <FormGroup
+              row={true}
+              tag="div"
+>
+              <Label
+                            for="imageUrl"
+                            sm={2}
+                            tag="label"
+                            widths={
+                                          Array [
+                                                        "xs",
+                                                        "sm",
+                                                        "md",
+                                                        "lg",
+                                                        "xl",
+                                                      ]
+                            }
+              >
+                             
+                            Image URL
+              </Label>
+              <Col
+                            sm={10}
+                            tag="div"
+                            widths={
+                                          Array [
+                                                        "xs",
+                                                        "sm",
+                                                        "md",
+                                                        "lg",
+                                                        "xl",
+                                                      ]
+                            }
+              >
+                            <Field
+                                          className="form-control"
+                                          component="input"
+                                          name="imageUrl"
+                                          type="text"
+                                          validate={
+                                                        Array [
+                                                                      [Function],
+                                                                      [Function],
+                                                                    ]
+                                          }
+                            />
+              </Col>
+</FormGroup>,
+            <FormGroup
+              row={true}
+              tag="div"
+>
+              <Label
+                            for="width"
+                            sm={2}
+                            tag="label"
+                            widths={
+                                          Array [
+                                                        "xs",
+                                                        "sm",
+                                                        "md",
+                                                        "lg",
+                                                        "xl",
+                                                      ]
+                            }
+              >
+                             
+                            Width
+              </Label>
+              <Col
+                            sm={2}
+                            tag="div"
+                            widths={
+                                          Array [
+                                                        "xs",
+                                                        "sm",
+                                                        "md",
+                                                        "lg",
+                                                        "xl",
+                                                      ]
+                            }
+              >
+                            <Field
+                                          className="form-control"
+                                          component="input"
+                                          name="width"
+                                          type="number"
+                                          validate={
+                                                        Array [
+                                                                      [Function],
+                                                                    ]
+                                          }
+                            />
+              </Col>
+</FormGroup>,
+            <FormGroup
+              row={true}
+              tag="div"
+>
+              <Label
+                            for="length"
+                            sm={2}
+                            tag="label"
+                            widths={
+                                          Array [
+                                                        "xs",
+                                                        "sm",
+                                                        "md",
+                                                        "lg",
+                                                        "xl",
+                                                      ]
+                            }
+              >
+                             
+                            Length
+              </Label>
+              <Col
+                            sm={2}
+                            tag="div"
+                            widths={
+                                          Array [
+                                                        "xs",
+                                                        "sm",
+                                                        "md",
+                                                        "lg",
+                                                        "xl",
+                                                      ]
+                            }
+              >
+                            <Field
+                                          className="form-control"
+                                          component="input"
+                                          name="length"
+                                          type="number"
+                                          validate={
+                                                        Array [
+                                                                      [Function],
+                                                                    ]
+                                          }
+                            />
+              </Col>
+</FormGroup>,
+            <FormGroup
+              row={true}
+              tag="div"
+>
+              <Label
+                            for="kind"
+                            sm={2}
+                            tag="label"
+                            widths={
+                                          Array [
+                                                        "xs",
+                                                        "sm",
+                                                        "md",
+                                                        "lg",
+                                                        "xl",
+                                                      ]
+                            }
+              >
+                             
+                            Type
+              </Label>
+              <Col
+                            sm={10}
+                            tag="div"
+                            widths={
+                                          Array [
+                                                        "xs",
+                                                        "sm",
+                                                        "md",
+                                                        "lg",
+                                                        "xl",
+                                                      ]
+                            }
+              >
+                            <Field
+                                          className="form-control"
+                                          component={[Function]}
+                                          name="kind"
+                                          type="text"
+                                          validate={
+                                                        Array [
+                                                                      [Function],
+                                                                    ]
+                                          }
+                            />
+              </Col>
+</FormGroup>,
+          ],
+          <FormGroup
+            row={true}
+            tag="div"
+>
+            <Col
+                        sm={
+                                    Object {
+                                                "offset": 2,
+                                                "size": 2,
+                                              }
+                        }
+                        tag="div"
+                        widths={
+                                    Array [
+                                                "xs",
+                                                "sm",
+                                                "md",
+                                                "lg",
+                                                "xl",
+                                              ]
+                        }
+            >
+                        <button
+                                    className="btn btn-primary"
+                                    disabled={false}
+                                    type="submit"
+                        >
+                                    Submit
+                        </button>
+            </Col>
+            <Col
+                        sm={8}
+                        tag="div"
+                        widths={
+                                    Array [
+                                                "xs",
+                                                "sm",
+                                                "md",
+                                                "lg",
+                                                "xl",
+                                              ]
+                        }
+            />
+</FormGroup>,
+        ],
+        "onSubmit": undefined,
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": "name",
+          "nodeType": "function",
+          "props": Object {
+            "children": Array [
+              <Label
+                for="name"
+                sm={2}
+                tag="label"
+                widths={
+                                Array [
+                                                "xs",
+                                                "sm",
+                                                "md",
+                                                "lg",
+                                                "xl",
+                                              ]
+                }
+>
+                 
+                Name
+</Label>,
+              <Col
+                sm={10}
+                tag="div"
+                widths={
+                                Array [
+                                                "xs",
+                                                "sm",
+                                                "md",
+                                                "lg",
+                                                "xl",
+                                              ]
+                }
+>
+                <Field
+                                className="form-control"
+                                component="input"
+                                name="name"
+                                type="text"
+                                validate={
+                                                Array [
+                                                                [Function],
+                                                              ]
+                                }
+                />
+</Col>,
+            ],
+            "row": true,
+            "tag": "div",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": Array [
+                  " ",
+                  "Name",
+                ],
+                "for": "name",
+                "sm": 2,
+                "tag": "label",
+                "widths": Array [
+                  "xs",
+                  "sm",
+                  "md",
+                  "lg",
+                  "xl",
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                " ",
+                "Name",
+              ],
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": Array [
+                  <Field
+                    className="form-control"
+                    component="input"
+                    name="name"
+                    type="text"
+                    validate={
+                                        Array [
+                                                            [Function],
+                                                          ]
+                    }
+/>,
+                  null,
+                ],
+                "sm": 10,
+                "tag": "div",
+                "widths": Array [
+                  "xs",
+                  "sm",
+                  "md",
+                  "lg",
+                  "xl",
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "className": "form-control",
+                    "component": "input",
+                    "name": "name",
+                    "type": "text",
+                    "validate": Array [
+                      [Function],
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                null,
+              ],
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "imageUrl",
+          "nodeType": "function",
+          "props": Object {
+            "children": Array [
+              <Label
+                for="imageUrl"
+                sm={2}
+                tag="label"
+                widths={
+                                Array [
+                                                "xs",
+                                                "sm",
+                                                "md",
+                                                "lg",
+                                                "xl",
+                                              ]
+                }
+>
+                 
+                Image URL
+</Label>,
+              <Col
+                sm={10}
+                tag="div"
+                widths={
+                                Array [
+                                                "xs",
+                                                "sm",
+                                                "md",
+                                                "lg",
+                                                "xl",
+                                              ]
+                }
+>
+                <Field
+                                className="form-control"
+                                component="input"
+                                name="imageUrl"
+                                type="text"
+                                validate={
+                                                Array [
+                                                                [Function],
+                                                                [Function],
+                                                              ]
+                                }
+                />
+</Col>,
+            ],
+            "row": true,
+            "tag": "div",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": Array [
+                  " ",
+                  "Image URL",
+                ],
+                "for": "imageUrl",
+                "sm": 2,
+                "tag": "label",
+                "widths": Array [
+                  "xs",
+                  "sm",
+                  "md",
+                  "lg",
+                  "xl",
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                " ",
+                "Image URL",
+              ],
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": Array [
+                  <Field
+                    className="form-control"
+                    component="input"
+                    name="imageUrl"
+                    type="text"
+                    validate={
+                                        Array [
+                                                            [Function],
+                                                            [Function],
+                                                          ]
+                    }
+/>,
+                  null,
+                ],
+                "sm": 10,
+                "tag": "div",
+                "widths": Array [
+                  "xs",
+                  "sm",
+                  "md",
+                  "lg",
+                  "xl",
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "className": "form-control",
+                    "component": "input",
+                    "name": "imageUrl",
+                    "type": "text",
+                    "validate": Array [
+                      [Function],
+                      [Function],
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                null,
+              ],
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "width",
+          "nodeType": "function",
+          "props": Object {
+            "children": Array [
+              <Label
+                for="width"
+                sm={2}
+                tag="label"
+                widths={
+                                Array [
+                                                "xs",
+                                                "sm",
+                                                "md",
+                                                "lg",
+                                                "xl",
+                                              ]
+                }
+>
+                 
+                Width
+</Label>,
+              <Col
+                sm={2}
+                tag="div"
+                widths={
+                                Array [
+                                                "xs",
+                                                "sm",
+                                                "md",
+                                                "lg",
+                                                "xl",
+                                              ]
+                }
+>
+                <Field
+                                className="form-control"
+                                component="input"
+                                name="width"
+                                type="number"
+                                validate={
+                                                Array [
+                                                                [Function],
+                                                              ]
+                                }
+                />
+</Col>,
+            ],
+            "row": true,
+            "tag": "div",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": Array [
+                  " ",
+                  "Width",
+                ],
+                "for": "width",
+                "sm": 2,
+                "tag": "label",
+                "widths": Array [
+                  "xs",
+                  "sm",
+                  "md",
+                  "lg",
+                  "xl",
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                " ",
+                "Width",
+              ],
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": Array [
+                  <Field
+                    className="form-control"
+                    component="input"
+                    name="width"
+                    type="number"
+                    validate={
+                                        Array [
+                                                            [Function],
+                                                          ]
+                    }
+/>,
+                  null,
+                ],
+                "sm": 2,
+                "tag": "div",
+                "widths": Array [
+                  "xs",
+                  "sm",
+                  "md",
+                  "lg",
+                  "xl",
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "className": "form-control",
+                    "component": "input",
+                    "name": "width",
+                    "type": "number",
+                    "validate": Array [
+                      [Function],
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                null,
+              ],
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "length",
+          "nodeType": "function",
+          "props": Object {
+            "children": Array [
+              <Label
+                for="length"
+                sm={2}
+                tag="label"
+                widths={
+                                Array [
+                                                "xs",
+                                                "sm",
+                                                "md",
+                                                "lg",
+                                                "xl",
+                                              ]
+                }
+>
+                 
+                Length
+</Label>,
+              <Col
+                sm={2}
+                tag="div"
+                widths={
+                                Array [
+                                                "xs",
+                                                "sm",
+                                                "md",
+                                                "lg",
+                                                "xl",
+                                              ]
+                }
+>
+                <Field
+                                className="form-control"
+                                component="input"
+                                name="length"
+                                type="number"
+                                validate={
+                                                Array [
+                                                                [Function],
+                                                              ]
+                                }
+                />
+</Col>,
+            ],
+            "row": true,
+            "tag": "div",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": Array [
+                  " ",
+                  "Length",
+                ],
+                "for": "length",
+                "sm": 2,
+                "tag": "label",
+                "widths": Array [
+                  "xs",
+                  "sm",
+                  "md",
+                  "lg",
+                  "xl",
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                " ",
+                "Length",
+              ],
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": Array [
+                  <Field
+                    className="form-control"
+                    component="input"
+                    name="length"
+                    type="number"
+                    validate={
+                                        Array [
+                                                            [Function],
+                                                          ]
+                    }
+/>,
+                  null,
+                ],
+                "sm": 2,
+                "tag": "div",
+                "widths": Array [
+                  "xs",
+                  "sm",
+                  "md",
+                  "lg",
+                  "xl",
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "className": "form-control",
+                    "component": "input",
+                    "name": "length",
+                    "type": "number",
+                    "validate": Array [
+                      [Function],
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                null,
+              ],
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "kind",
+          "nodeType": "function",
+          "props": Object {
+            "children": Array [
+              <Label
+                for="kind"
+                sm={2}
+                tag="label"
+                widths={
+                                Array [
+                                                "xs",
+                                                "sm",
+                                                "md",
+                                                "lg",
+                                                "xl",
+                                              ]
+                }
+>
+                 
+                Type
+</Label>,
+              <Col
+                sm={10}
+                tag="div"
+                widths={
+                                Array [
+                                                "xs",
+                                                "sm",
+                                                "md",
+                                                "lg",
+                                                "xl",
+                                              ]
+                }
+>
+                <Field
+                                className="form-control"
+                                component={[Function]}
+                                name="kind"
+                                type="text"
+                                validate={
+                                                Array [
+                                                                [Function],
+                                                              ]
+                                }
+                />
+</Col>,
+            ],
+            "row": true,
+            "tag": "div",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": Array [
+                  " ",
+                  "Type",
+                ],
+                "for": "kind",
+                "sm": 2,
+                "tag": "label",
+                "widths": Array [
+                  "xs",
+                  "sm",
+                  "md",
+                  "lg",
+                  "xl",
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                " ",
+                "Type",
+              ],
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": Array [
+                  <Field
+                    className="form-control"
+                    component={[Function]}
+                    name="kind"
+                    type="text"
+                    validate={
+                                        Array [
+                                                            [Function],
+                                                          ]
+                    }
+/>,
+                  null,
+                ],
+                "sm": 10,
+                "tag": "div",
+                "widths": Array [
+                  "xs",
+                  "sm",
+                  "md",
+                  "lg",
+                  "xl",
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "className": "form-control",
+                    "component": [Function],
+                    "name": "kind",
+                    "type": "text",
+                    "validate": Array [
+                      [Function],
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                null,
+              ],
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": Array [
+              <Col
+                sm={
+                                Object {
+                                                "offset": 2,
+                                                "size": 2,
+                                              }
+                }
+                tag="div"
+                widths={
+                                Array [
+                                                "xs",
+                                                "sm",
+                                                "md",
+                                                "lg",
+                                                "xl",
+                                              ]
+                }
+>
+                <button
+                                className="btn btn-primary"
+                                disabled={false}
+                                type="submit"
+                >
+                                Submit
+                </button>
+</Col>,
+              <Col
+                sm={8}
+                tag="div"
+                widths={
+                                Array [
+                                                "xs",
+                                                "sm",
+                                                "md",
+                                                "lg",
+                                                "xl",
+                                              ]
+                }
+/>,
+            ],
+            "row": true,
+            "tag": "div",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": <button
+                  className="btn btn-primary"
+                  disabled={false}
+                  type="submit"
+>
+                  Submit
+</button>,
+                "sm": Object {
+                  "offset": 2,
+                  "size": 2,
+                },
+                "tag": "div",
+                "widths": Array [
+                  "xs",
+                  "sm",
+                  "md",
+                  "lg",
+                  "xl",
+                ],
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Submit",
+                  "className": "btn btn-primary",
+                  "disabled": false,
+                  "type": "submit",
+                },
+                "ref": null,
+                "rendered": "Submit",
+                "type": "button",
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": null,
+                "sm": 8,
+                "tag": "div",
+                "widths": Array [
+                  "xs",
+                  "sm",
+                  "md",
+                  "lg",
+                  "xl",
+                ],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+      ],
+      "type": "form",
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <form
+          onSubmit={undefined}
+>
+          <FormGroup
+                    row={true}
+                    tag="div"
+          >
+                    <Label
+                              for="name"
+                              sm={2}
+                              tag="label"
+                              widths={
+                                        Array [
+                                                  "xs",
+                                                  "sm",
+                                                  "md",
+                                                  "lg",
+                                                  "xl",
+                                                ]
+                              }
+                    >
+                               
+                              Name
+                    </Label>
+                    <Col
+                              sm={10}
+                              tag="div"
+                              widths={
+                                        Array [
+                                                  "xs",
+                                                  "sm",
+                                                  "md",
+                                                  "lg",
+                                                  "xl",
+                                                ]
+                              }
+                    >
+                              <Field
+                                        className="form-control"
+                                        component="input"
+                                        name="name"
+                                        type="text"
+                                        validate={
+                                                  Array [
+                                                            [Function],
+                                                          ]
+                                        }
+                              />
+                    </Col>
+          </FormGroup>
+          <FormGroup
+                    row={true}
+                    tag="div"
+          >
+                    <Label
+                              for="imageUrl"
+                              sm={2}
+                              tag="label"
+                              widths={
+                                        Array [
+                                                  "xs",
+                                                  "sm",
+                                                  "md",
+                                                  "lg",
+                                                  "xl",
+                                                ]
+                              }
+                    >
+                               
+                              Image URL
+                    </Label>
+                    <Col
+                              sm={10}
+                              tag="div"
+                              widths={
+                                        Array [
+                                                  "xs",
+                                                  "sm",
+                                                  "md",
+                                                  "lg",
+                                                  "xl",
+                                                ]
+                              }
+                    >
+                              <Field
+                                        className="form-control"
+                                        component="input"
+                                        name="imageUrl"
+                                        type="text"
+                                        validate={
+                                                  Array [
+                                                            [Function],
+                                                            [Function],
+                                                          ]
+                                        }
+                              />
+                    </Col>
+          </FormGroup>
+          <FormGroup
+                    row={true}
+                    tag="div"
+          >
+                    <Label
+                              for="width"
+                              sm={2}
+                              tag="label"
+                              widths={
+                                        Array [
+                                                  "xs",
+                                                  "sm",
+                                                  "md",
+                                                  "lg",
+                                                  "xl",
+                                                ]
+                              }
+                    >
+                               
+                              Width
+                    </Label>
+                    <Col
+                              sm={2}
+                              tag="div"
+                              widths={
+                                        Array [
+                                                  "xs",
+                                                  "sm",
+                                                  "md",
+                                                  "lg",
+                                                  "xl",
+                                                ]
+                              }
+                    >
+                              <Field
+                                        className="form-control"
+                                        component="input"
+                                        name="width"
+                                        type="number"
+                                        validate={
+                                                  Array [
+                                                            [Function],
+                                                          ]
+                                        }
+                              />
+                    </Col>
+          </FormGroup>
+          <FormGroup
+                    row={true}
+                    tag="div"
+          >
+                    <Label
+                              for="length"
+                              sm={2}
+                              tag="label"
+                              widths={
+                                        Array [
+                                                  "xs",
+                                                  "sm",
+                                                  "md",
+                                                  "lg",
+                                                  "xl",
+                                                ]
+                              }
+                    >
+                               
+                              Length
+                    </Label>
+                    <Col
+                              sm={2}
+                              tag="div"
+                              widths={
+                                        Array [
+                                                  "xs",
+                                                  "sm",
+                                                  "md",
+                                                  "lg",
+                                                  "xl",
+                                                ]
+                              }
+                    >
+                              <Field
+                                        className="form-control"
+                                        component="input"
+                                        name="length"
+                                        type="number"
+                                        validate={
+                                                  Array [
+                                                            [Function],
+                                                          ]
+                                        }
+                              />
+                    </Col>
+          </FormGroup>
+          <FormGroup
+                    row={true}
+                    tag="div"
+          >
+                    <Label
+                              for="kind"
+                              sm={2}
+                              tag="label"
+                              widths={
+                                        Array [
+                                                  "xs",
+                                                  "sm",
+                                                  "md",
+                                                  "lg",
+                                                  "xl",
+                                                ]
+                              }
+                    >
+                               
+                              Type
+                    </Label>
+                    <Col
+                              sm={10}
+                              tag="div"
+                              widths={
+                                        Array [
+                                                  "xs",
+                                                  "sm",
+                                                  "md",
+                                                  "lg",
+                                                  "xl",
+                                                ]
+                              }
+                    >
+                              <Field
+                                        className="form-control"
+                                        component={[Function]}
+                                        name="kind"
+                                        type="text"
+                                        validate={
+                                                  Array [
+                                                            [Function],
+                                                          ]
+                                        }
+                              />
+                    </Col>
+          </FormGroup>
+          <FormGroup
+                    row={true}
+                    tag="div"
+          >
+                    <Col
+                              sm={
+                                        Object {
+                                                  "offset": 2,
+                                                  "size": 2,
+                                                }
+                              }
+                              tag="div"
+                              widths={
+                                        Array [
+                                                  "xs",
+                                                  "sm",
+                                                  "md",
+                                                  "lg",
+                                                  "xl",
+                                                ]
+                              }
+                    >
+                              <button
+                                        className="btn btn-primary"
+                                        disabled={false}
+                                        type="submit"
+                              >
+                                        Submit
+                              </button>
+                    </Col>
+                    <Col
+                              sm={8}
+                              tag="div"
+                              widths={
+                                        Array [
+                                                  "xs",
+                                                  "sm",
+                                                  "md",
+                                                  "lg",
+                                                  "xl",
+                                                ]
+                              }
+                    />
+          </FormGroup>
+</form>,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            Array [
+              <FormGroup
+                row={true}
+                tag="div"
+>
+                <Label
+                                for="name"
+                                sm={2}
+                                tag="label"
+                                widths={
+                                                Array [
+                                                                "xs",
+                                                                "sm",
+                                                                "md",
+                                                                "lg",
+                                                                "xl",
+                                                              ]
+                                }
+                >
+                                 
+                                Name
+                </Label>
+                <Col
+                                sm={10}
+                                tag="div"
+                                widths={
+                                                Array [
+                                                                "xs",
+                                                                "sm",
+                                                                "md",
+                                                                "lg",
+                                                                "xl",
+                                                              ]
+                                }
+                >
+                                <Field
+                                                className="form-control"
+                                                component="input"
+                                                name="name"
+                                                type="text"
+                                                validate={
+                                                                Array [
+                                                                                [Function],
+                                                                              ]
+                                                }
+                                />
+                </Col>
+</FormGroup>,
+              <FormGroup
+                row={true}
+                tag="div"
+>
+                <Label
+                                for="imageUrl"
+                                sm={2}
+                                tag="label"
+                                widths={
+                                                Array [
+                                                                "xs",
+                                                                "sm",
+                                                                "md",
+                                                                "lg",
+                                                                "xl",
+                                                              ]
+                                }
+                >
+                                 
+                                Image URL
+                </Label>
+                <Col
+                                sm={10}
+                                tag="div"
+                                widths={
+                                                Array [
+                                                                "xs",
+                                                                "sm",
+                                                                "md",
+                                                                "lg",
+                                                                "xl",
+                                                              ]
+                                }
+                >
+                                <Field
+                                                className="form-control"
+                                                component="input"
+                                                name="imageUrl"
+                                                type="text"
+                                                validate={
+                                                                Array [
+                                                                                [Function],
+                                                                                [Function],
+                                                                              ]
+                                                }
+                                />
+                </Col>
+</FormGroup>,
+              <FormGroup
+                row={true}
+                tag="div"
+>
+                <Label
+                                for="width"
+                                sm={2}
+                                tag="label"
+                                widths={
+                                                Array [
+                                                                "xs",
+                                                                "sm",
+                                                                "md",
+                                                                "lg",
+                                                                "xl",
+                                                              ]
+                                }
+                >
+                                 
+                                Width
+                </Label>
+                <Col
+                                sm={2}
+                                tag="div"
+                                widths={
+                                                Array [
+                                                                "xs",
+                                                                "sm",
+                                                                "md",
+                                                                "lg",
+                                                                "xl",
+                                                              ]
+                                }
+                >
+                                <Field
+                                                className="form-control"
+                                                component="input"
+                                                name="width"
+                                                type="number"
+                                                validate={
+                                                                Array [
+                                                                                [Function],
+                                                                              ]
+                                                }
+                                />
+                </Col>
+</FormGroup>,
+              <FormGroup
+                row={true}
+                tag="div"
+>
+                <Label
+                                for="length"
+                                sm={2}
+                                tag="label"
+                                widths={
+                                                Array [
+                                                                "xs",
+                                                                "sm",
+                                                                "md",
+                                                                "lg",
+                                                                "xl",
+                                                              ]
+                                }
+                >
+                                 
+                                Length
+                </Label>
+                <Col
+                                sm={2}
+                                tag="div"
+                                widths={
+                                                Array [
+                                                                "xs",
+                                                                "sm",
+                                                                "md",
+                                                                "lg",
+                                                                "xl",
+                                                              ]
+                                }
+                >
+                                <Field
+                                                className="form-control"
+                                                component="input"
+                                                name="length"
+                                                type="number"
+                                                validate={
+                                                                Array [
+                                                                                [Function],
+                                                                              ]
+                                                }
+                                />
+                </Col>
+</FormGroup>,
+              <FormGroup
+                row={true}
+                tag="div"
+>
+                <Label
+                                for="kind"
+                                sm={2}
+                                tag="label"
+                                widths={
+                                                Array [
+                                                                "xs",
+                                                                "sm",
+                                                                "md",
+                                                                "lg",
+                                                                "xl",
+                                                              ]
+                                }
+                >
+                                 
+                                Type
+                </Label>
+                <Col
+                                sm={10}
+                                tag="div"
+                                widths={
+                                                Array [
+                                                                "xs",
+                                                                "sm",
+                                                                "md",
+                                                                "lg",
+                                                                "xl",
+                                                              ]
+                                }
+                >
+                                <Field
+                                                className="form-control"
+                                                component={[Function]}
+                                                name="kind"
+                                                type="text"
+                                                validate={
+                                                                Array [
+                                                                                [Function],
+                                                                              ]
+                                                }
+                                />
+                </Col>
+</FormGroup>,
+            ],
+            <FormGroup
+              row={true}
+              tag="div"
+>
+              <Col
+                            sm={
+                                          Object {
+                                                        "offset": 2,
+                                                        "size": 2,
+                                                      }
+                            }
+                            tag="div"
+                            widths={
+                                          Array [
+                                                        "xs",
+                                                        "sm",
+                                                        "md",
+                                                        "lg",
+                                                        "xl",
+                                                      ]
+                            }
+              >
+                            <button
+                                          className="btn btn-primary"
+                                          disabled={false}
+                                          type="submit"
+                            >
+                                          Submit
+                            </button>
+              </Col>
+              <Col
+                            sm={8}
+                            tag="div"
+                            widths={
+                                          Array [
+                                                        "xs",
+                                                        "sm",
+                                                        "md",
+                                                        "lg",
+                                                        "xl",
+                                                      ]
+                            }
+              />
+</FormGroup>,
+          ],
+          "onSubmit": undefined,
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "name",
+            "nodeType": "function",
+            "props": Object {
+              "children": Array [
+                <Label
+                  for="name"
+                  sm={2}
+                  tag="label"
+                  widths={
+                                    Array [
+                                                      "xs",
+                                                      "sm",
+                                                      "md",
+                                                      "lg",
+                                                      "xl",
+                                                    ]
+                  }
+>
+                   
+                  Name
+</Label>,
+                <Col
+                  sm={10}
+                  tag="div"
+                  widths={
+                                    Array [
+                                                      "xs",
+                                                      "sm",
+                                                      "md",
+                                                      "lg",
+                                                      "xl",
+                                                    ]
+                  }
+>
+                  <Field
+                                    className="form-control"
+                                    component="input"
+                                    name="name"
+                                    type="text"
+                                    validate={
+                                                      Array [
+                                                                        [Function],
+                                                                      ]
+                                    }
+                  />
+</Col>,
+              ],
+              "row": true,
+              "tag": "div",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": Array [
+                    " ",
+                    "Name",
+                  ],
+                  "for": "name",
+                  "sm": 2,
+                  "tag": "label",
+                  "widths": Array [
+                    "xs",
+                    "sm",
+                    "md",
+                    "lg",
+                    "xl",
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  " ",
+                  "Name",
+                ],
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": Array [
+                    <Field
+                      className="form-control"
+                      component="input"
+                      name="name"
+                      type="text"
+                      validate={
+                                            Array [
+                                                                  [Function],
+                                                                ]
+                      }
+/>,
+                    null,
+                  ],
+                  "sm": 10,
+                  "tag": "div",
+                  "widths": Array [
+                    "xs",
+                    "sm",
+                    "md",
+                    "lg",
+                    "xl",
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "className": "form-control",
+                      "component": "input",
+                      "name": "name",
+                      "type": "text",
+                      "validate": Array [
+                        [Function],
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  null,
+                ],
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "imageUrl",
+            "nodeType": "function",
+            "props": Object {
+              "children": Array [
+                <Label
+                  for="imageUrl"
+                  sm={2}
+                  tag="label"
+                  widths={
+                                    Array [
+                                                      "xs",
+                                                      "sm",
+                                                      "md",
+                                                      "lg",
+                                                      "xl",
+                                                    ]
+                  }
+>
+                   
+                  Image URL
+</Label>,
+                <Col
+                  sm={10}
+                  tag="div"
+                  widths={
+                                    Array [
+                                                      "xs",
+                                                      "sm",
+                                                      "md",
+                                                      "lg",
+                                                      "xl",
+                                                    ]
+                  }
+>
+                  <Field
+                                    className="form-control"
+                                    component="input"
+                                    name="imageUrl"
+                                    type="text"
+                                    validate={
+                                                      Array [
+                                                                        [Function],
+                                                                        [Function],
+                                                                      ]
+                                    }
+                  />
+</Col>,
+              ],
+              "row": true,
+              "tag": "div",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": Array [
+                    " ",
+                    "Image URL",
+                  ],
+                  "for": "imageUrl",
+                  "sm": 2,
+                  "tag": "label",
+                  "widths": Array [
+                    "xs",
+                    "sm",
+                    "md",
+                    "lg",
+                    "xl",
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  " ",
+                  "Image URL",
+                ],
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": Array [
+                    <Field
+                      className="form-control"
+                      component="input"
+                      name="imageUrl"
+                      type="text"
+                      validate={
+                                            Array [
+                                                                  [Function],
+                                                                  [Function],
+                                                                ]
+                      }
+/>,
+                    null,
+                  ],
+                  "sm": 10,
+                  "tag": "div",
+                  "widths": Array [
+                    "xs",
+                    "sm",
+                    "md",
+                    "lg",
+                    "xl",
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "className": "form-control",
+                      "component": "input",
+                      "name": "imageUrl",
+                      "type": "text",
+                      "validate": Array [
+                        [Function],
+                        [Function],
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  null,
+                ],
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "width",
+            "nodeType": "function",
+            "props": Object {
+              "children": Array [
+                <Label
+                  for="width"
+                  sm={2}
+                  tag="label"
+                  widths={
+                                    Array [
+                                                      "xs",
+                                                      "sm",
+                                                      "md",
+                                                      "lg",
+                                                      "xl",
+                                                    ]
+                  }
+>
+                   
+                  Width
+</Label>,
+                <Col
+                  sm={2}
+                  tag="div"
+                  widths={
+                                    Array [
+                                                      "xs",
+                                                      "sm",
+                                                      "md",
+                                                      "lg",
+                                                      "xl",
+                                                    ]
+                  }
+>
+                  <Field
+                                    className="form-control"
+                                    component="input"
+                                    name="width"
+                                    type="number"
+                                    validate={
+                                                      Array [
+                                                                        [Function],
+                                                                      ]
+                                    }
+                  />
+</Col>,
+              ],
+              "row": true,
+              "tag": "div",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": Array [
+                    " ",
+                    "Width",
+                  ],
+                  "for": "width",
+                  "sm": 2,
+                  "tag": "label",
+                  "widths": Array [
+                    "xs",
+                    "sm",
+                    "md",
+                    "lg",
+                    "xl",
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  " ",
+                  "Width",
+                ],
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": Array [
+                    <Field
+                      className="form-control"
+                      component="input"
+                      name="width"
+                      type="number"
+                      validate={
+                                            Array [
+                                                                  [Function],
+                                                                ]
+                      }
+/>,
+                    null,
+                  ],
+                  "sm": 2,
+                  "tag": "div",
+                  "widths": Array [
+                    "xs",
+                    "sm",
+                    "md",
+                    "lg",
+                    "xl",
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "className": "form-control",
+                      "component": "input",
+                      "name": "width",
+                      "type": "number",
+                      "validate": Array [
+                        [Function],
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  null,
+                ],
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "length",
+            "nodeType": "function",
+            "props": Object {
+              "children": Array [
+                <Label
+                  for="length"
+                  sm={2}
+                  tag="label"
+                  widths={
+                                    Array [
+                                                      "xs",
+                                                      "sm",
+                                                      "md",
+                                                      "lg",
+                                                      "xl",
+                                                    ]
+                  }
+>
+                   
+                  Length
+</Label>,
+                <Col
+                  sm={2}
+                  tag="div"
+                  widths={
+                                    Array [
+                                                      "xs",
+                                                      "sm",
+                                                      "md",
+                                                      "lg",
+                                                      "xl",
+                                                    ]
+                  }
+>
+                  <Field
+                                    className="form-control"
+                                    component="input"
+                                    name="length"
+                                    type="number"
+                                    validate={
+                                                      Array [
+                                                                        [Function],
+                                                                      ]
+                                    }
+                  />
+</Col>,
+              ],
+              "row": true,
+              "tag": "div",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": Array [
+                    " ",
+                    "Length",
+                  ],
+                  "for": "length",
+                  "sm": 2,
+                  "tag": "label",
+                  "widths": Array [
+                    "xs",
+                    "sm",
+                    "md",
+                    "lg",
+                    "xl",
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  " ",
+                  "Length",
+                ],
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": Array [
+                    <Field
+                      className="form-control"
+                      component="input"
+                      name="length"
+                      type="number"
+                      validate={
+                                            Array [
+                                                                  [Function],
+                                                                ]
+                      }
+/>,
+                    null,
+                  ],
+                  "sm": 2,
+                  "tag": "div",
+                  "widths": Array [
+                    "xs",
+                    "sm",
+                    "md",
+                    "lg",
+                    "xl",
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "className": "form-control",
+                      "component": "input",
+                      "name": "length",
+                      "type": "number",
+                      "validate": Array [
+                        [Function],
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  null,
+                ],
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "kind",
+            "nodeType": "function",
+            "props": Object {
+              "children": Array [
+                <Label
+                  for="kind"
+                  sm={2}
+                  tag="label"
+                  widths={
+                                    Array [
+                                                      "xs",
+                                                      "sm",
+                                                      "md",
+                                                      "lg",
+                                                      "xl",
+                                                    ]
+                  }
+>
+                   
+                  Type
+</Label>,
+                <Col
+                  sm={10}
+                  tag="div"
+                  widths={
+                                    Array [
+                                                      "xs",
+                                                      "sm",
+                                                      "md",
+                                                      "lg",
+                                                      "xl",
+                                                    ]
+                  }
+>
+                  <Field
+                                    className="form-control"
+                                    component={[Function]}
+                                    name="kind"
+                                    type="text"
+                                    validate={
+                                                      Array [
+                                                                        [Function],
+                                                                      ]
+                                    }
+                  />
+</Col>,
+              ],
+              "row": true,
+              "tag": "div",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": Array [
+                    " ",
+                    "Type",
+                  ],
+                  "for": "kind",
+                  "sm": 2,
+                  "tag": "label",
+                  "widths": Array [
+                    "xs",
+                    "sm",
+                    "md",
+                    "lg",
+                    "xl",
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  " ",
+                  "Type",
+                ],
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": Array [
+                    <Field
+                      className="form-control"
+                      component={[Function]}
+                      name="kind"
+                      type="text"
+                      validate={
+                                            Array [
+                                                                  [Function],
+                                                                ]
+                      }
+/>,
+                    null,
+                  ],
+                  "sm": 10,
+                  "tag": "div",
+                  "widths": Array [
+                    "xs",
+                    "sm",
+                    "md",
+                    "lg",
+                    "xl",
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "className": "form-control",
+                      "component": [Function],
+                      "name": "kind",
+                      "type": "text",
+                      "validate": Array [
+                        [Function],
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  null,
+                ],
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": Array [
+                <Col
+                  sm={
+                                    Object {
+                                                      "offset": 2,
+                                                      "size": 2,
+                                                    }
+                  }
+                  tag="div"
+                  widths={
+                                    Array [
+                                                      "xs",
+                                                      "sm",
+                                                      "md",
+                                                      "lg",
+                                                      "xl",
+                                                    ]
+                  }
+>
+                  <button
+                                    className="btn btn-primary"
+                                    disabled={false}
+                                    type="submit"
+                  >
+                                    Submit
+                  </button>
+</Col>,
+                <Col
+                  sm={8}
+                  tag="div"
+                  widths={
+                                    Array [
+                                                      "xs",
+                                                      "sm",
+                                                      "md",
+                                                      "lg",
+                                                      "xl",
+                                                    ]
+                  }
+/>,
+              ],
+              "row": true,
+              "tag": "div",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": <button
+                    className="btn btn-primary"
+                    disabled={false}
+                    type="submit"
+>
+                    Submit
+</button>,
+                  "sm": Object {
+                    "offset": 2,
+                    "size": 2,
+                  },
+                  "tag": "div",
+                  "widths": Array [
+                    "xs",
+                    "sm",
+                    "md",
+                    "lg",
+                    "xl",
+                  ],
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Submit",
+                    "className": "btn btn-primary",
+                    "disabled": false,
+                    "type": "submit",
+                  },
+                  "ref": null,
+                  "rendered": "Submit",
+                  "type": "button",
+                },
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": null,
+                  "sm": 8,
+                  "tag": "div",
+                  "widths": Array [
+                    "xs",
+                    "sm",
+                    "md",
+                    "lg",
+                    "xl",
+                  ],
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+        ],
+        "type": "form",
+      },
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

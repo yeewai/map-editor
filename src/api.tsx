@@ -16,3 +16,13 @@ export function getStructureDefinitions () {
     const config = { ...defaultConfig, url: `${url}/structureDefinitions`, type: "GET" };
     return $.ajax(config);
 }
+
+export function updateStructureDefinition (id, body) {
+    const config = {
+        ...defaultConfig,
+        type: "PUT",
+        url: `${url}/structureDefinitions/${id}`,
+        data: JSON.stringify( body )
+    };
+    return $.ajax(config);
+}

@@ -29,7 +29,7 @@ ShallowWrapper {
             ],
             "someOtherKind": Array [
               Object {
-                "description": "string",
+                "description": undefined,
                 "id": "id3",
                 "imageUrl": "string",
                 "kind": "someOtherKind",
@@ -97,17 +97,33 @@ ShallowWrapper {
                                                                          x 
                                                                         2
                                                             </CardSubtitle>
-                                                            <CardText
-                                                                        tag="p"
-                                                            >
-                                                                        string
-                                                            </CardText>
-                                                            <Button
-                                                                        color="secondary"
-                                                                        tag="button"
+                                                            <div
+                                                                        className="card-text"
+                                                                        dangerouslySetInnerHTML={
+                                                                                    Object {
+                                                                                                "__html": "string",
+                                                                                              }
+                                                                        }
+                                                            />
+                                                            <Connect(OpenModalButton)
+                                                                        modalProps={
+                                                                                    Object {
+                                                                                                "ariaLabel": "Sup",
+                                                                                                "sd": Object {
+                                                                                                  "description": "string",
+                                                                                                  "id": "id1",
+                                                                                                  "imageUrl": "string",
+                                                                                                  "kind": "someKind",
+                                                                                                  "length": 2,
+                                                                                                  "name": "name1",
+                                                                                                  "width": 1,
+                                                                                                },
+                                                                                              }
+                                                                        }
+                                                                        modalType="EDIT_STRUCTURE_DEFINITION"
                                                             >
                                                                         Edit
-                                                            </Button>
+                                                            </Connect(OpenModalButton)>
                                                 </CardBody>
                                     </Card>
                         </li>
@@ -139,17 +155,33 @@ ShallowWrapper {
                                                                          x 
                                                                         5
                                                             </CardSubtitle>
-                                                            <CardText
-                                                                        tag="p"
-                                                            >
-                                                                        string
-                                                            </CardText>
-                                                            <Button
-                                                                        color="secondary"
-                                                                        tag="button"
+                                                            <div
+                                                                        className="card-text"
+                                                                        dangerouslySetInnerHTML={
+                                                                                    Object {
+                                                                                                "__html": "string",
+                                                                                              }
+                                                                        }
+                                                            />
+                                                            <Connect(OpenModalButton)
+                                                                        modalProps={
+                                                                                    Object {
+                                                                                                "ariaLabel": "Sup",
+                                                                                                "sd": Object {
+                                                                                                  "description": "string",
+                                                                                                  "id": "id2",
+                                                                                                  "imageUrl": "string",
+                                                                                                  "kind": "someKind",
+                                                                                                  "length": 5,
+                                                                                                  "name": "name2",
+                                                                                                  "width": 2,
+                                                                                                },
+                                                                                              }
+                                                                        }
+                                                                        modalType="EDIT_STRUCTURE_DEFINITION"
                                                             >
                                                                         Edit
-                                                            </Button>
+                                                            </Connect(OpenModalButton)>
                                                 </CardBody>
                                     </Card>
                         </li>
@@ -190,17 +222,33 @@ ShallowWrapper {
                                                                          x 
                                                                         4
                                                             </CardSubtitle>
-                                                            <CardText
-                                                                        tag="p"
-                                                            >
-                                                                        string
-                                                            </CardText>
-                                                            <Button
-                                                                        color="secondary"
-                                                                        tag="button"
+                                                            <div
+                                                                        className="card-text"
+                                                                        dangerouslySetInnerHTML={
+                                                                                    Object {
+                                                                                                "__html": "",
+                                                                                              }
+                                                                        }
+                                                            />
+                                                            <Connect(OpenModalButton)
+                                                                        modalProps={
+                                                                                    Object {
+                                                                                                "ariaLabel": "Sup",
+                                                                                                "sd": Object {
+                                                                                                  "description": undefined,
+                                                                                                  "id": "id3",
+                                                                                                  "imageUrl": "string",
+                                                                                                  "kind": "someOtherKind",
+                                                                                                  "length": 4,
+                                                                                                  "name": "name3",
+                                                                                                  "width": 3,
+                                                                                                },
+                                                                                              }
+                                                                        }
+                                                                        modalType="EDIT_STRUCTURE_DEFINITION"
                                                             >
                                                                         Edit
-                                                            </Button>
+                                                            </Connect(OpenModalButton)>
                                                 </CardBody>
                                     </Card>
                         </li>
@@ -274,17 +322,33 @@ ShallowWrapper {
                                                                        x 
                                                                       2
                                                         </CardSubtitle>
-                                                        <CardText
-                                                                      tag="p"
-                                                        >
-                                                                      string
-                                                        </CardText>
-                                                        <Button
-                                                                      color="secondary"
-                                                                      tag="button"
+                                                        <div
+                                                                      className="card-text"
+                                                                      dangerouslySetInnerHTML={
+                                                                                    Object {
+                                                                                                  "__html": "string",
+                                                                                                }
+                                                                      }
+                                                        />
+                                                        <Connect(OpenModalButton)
+                                                                      modalProps={
+                                                                                    Object {
+                                                                                                  "ariaLabel": "Sup",
+                                                                                                  "sd": Object {
+                                                                                                    "description": "string",
+                                                                                                    "id": "id1",
+                                                                                                    "imageUrl": "string",
+                                                                                                    "kind": "someKind",
+                                                                                                    "length": 2,
+                                                                                                    "name": "name1",
+                                                                                                    "width": 1,
+                                                                                                  },
+                                                                                                }
+                                                                      }
+                                                                      modalType="EDIT_STRUCTURE_DEFINITION"
                                                         >
                                                                       Edit
-                                                        </Button>
+                                                        </Connect(OpenModalButton)>
                                           </CardBody>
                             </Card>
               </li>
@@ -316,17 +380,33 @@ ShallowWrapper {
                                                                        x 
                                                                       5
                                                         </CardSubtitle>
-                                                        <CardText
-                                                                      tag="p"
-                                                        >
-                                                                      string
-                                                        </CardText>
-                                                        <Button
-                                                                      color="secondary"
-                                                                      tag="button"
+                                                        <div
+                                                                      className="card-text"
+                                                                      dangerouslySetInnerHTML={
+                                                                                    Object {
+                                                                                                  "__html": "string",
+                                                                                                }
+                                                                      }
+                                                        />
+                                                        <Connect(OpenModalButton)
+                                                                      modalProps={
+                                                                                    Object {
+                                                                                                  "ariaLabel": "Sup",
+                                                                                                  "sd": Object {
+                                                                                                    "description": "string",
+                                                                                                    "id": "id2",
+                                                                                                    "imageUrl": "string",
+                                                                                                    "kind": "someKind",
+                                                                                                    "length": 5,
+                                                                                                    "name": "name2",
+                                                                                                    "width": 2,
+                                                                                                  },
+                                                                                                }
+                                                                      }
+                                                                      modalType="EDIT_STRUCTURE_DEFINITION"
                                                         >
                                                                       Edit
-                                                        </Button>
+                                                        </Connect(OpenModalButton)>
                                           </CardBody>
                             </Card>
               </li>
@@ -381,17 +461,33 @@ ShallowWrapper {
                                                                          x 
                                                                         2
                                                       </CardSubtitle>
-                                                      <CardText
-                                                                        tag="p"
-                                                      >
-                                                                        string
-                                                      </CardText>
-                                                      <Button
-                                                                        color="secondary"
-                                                                        tag="button"
+                                                      <div
+                                                                        className="card-text"
+                                                                        dangerouslySetInnerHTML={
+                                                                                          Object {
+                                                                                                            "__html": "string",
+                                                                                                          }
+                                                                        }
+                                                      />
+                                                      <Connect(OpenModalButton)
+                                                                        modalProps={
+                                                                                          Object {
+                                                                                                            "ariaLabel": "Sup",
+                                                                                                            "sd": Object {
+                                                                                                              "description": "string",
+                                                                                                              "id": "id1",
+                                                                                                              "imageUrl": "string",
+                                                                                                              "kind": "someKind",
+                                                                                                              "length": 2,
+                                                                                                              "name": "name1",
+                                                                                                              "width": 1,
+                                                                                                            },
+                                                                                                          }
+                                                                        }
+                                                                        modalType="EDIT_STRUCTURE_DEFINITION"
                                                       >
                                                                         Edit
-                                                      </Button>
+                                                      </Connect(OpenModalButton)>
                                     </CardBody>
                   </Card>
 </li>,
@@ -423,17 +519,33 @@ ShallowWrapper {
                                                                          x 
                                                                         5
                                                       </CardSubtitle>
-                                                      <CardText
-                                                                        tag="p"
-                                                      >
-                                                                        string
-                                                      </CardText>
-                                                      <Button
-                                                                        color="secondary"
-                                                                        tag="button"
+                                                      <div
+                                                                        className="card-text"
+                                                                        dangerouslySetInnerHTML={
+                                                                                          Object {
+                                                                                                            "__html": "string",
+                                                                                                          }
+                                                                        }
+                                                      />
+                                                      <Connect(OpenModalButton)
+                                                                        modalProps={
+                                                                                          Object {
+                                                                                                            "ariaLabel": "Sup",
+                                                                                                            "sd": Object {
+                                                                                                              "description": "string",
+                                                                                                              "id": "id2",
+                                                                                                              "imageUrl": "string",
+                                                                                                              "kind": "someKind",
+                                                                                                              "length": 5,
+                                                                                                              "name": "name2",
+                                                                                                              "width": 2,
+                                                                                                            },
+                                                                                                          }
+                                                                        }
+                                                                        modalType="EDIT_STRUCTURE_DEFINITION"
                                                       >
                                                                         Edit
-                                                      </Button>
+                                                      </Connect(OpenModalButton)>
                                     </CardBody>
                   </Card>
 </li>,
@@ -471,17 +583,33 @@ ShallowWrapper {
                                                              x 
                                                             2
                                         </CardSubtitle>
-                                        <CardText
-                                                            tag="p"
-                                        >
-                                                            string
-                                        </CardText>
-                                        <Button
-                                                            color="secondary"
-                                                            tag="button"
+                                        <div
+                                                            className="card-text"
+                                                            dangerouslySetInnerHTML={
+                                                                                Object {
+                                                                                                    "__html": "string",
+                                                                                                  }
+                                                            }
+                                        />
+                                        <Connect(OpenModalButton)
+                                                            modalProps={
+                                                                                Object {
+                                                                                                    "ariaLabel": "Sup",
+                                                                                                    "sd": Object {
+                                                                                                      "description": "string",
+                                                                                                      "id": "id1",
+                                                                                                      "imageUrl": "string",
+                                                                                                      "kind": "someKind",
+                                                                                                      "length": 2,
+                                                                                                      "name": "name1",
+                                                                                                      "width": 1,
+                                                                                                    },
+                                                                                                  }
+                                                            }
+                                                            modalType="EDIT_STRUCTURE_DEFINITION"
                                         >
                                                             Edit
-                                        </Button>
+                                        </Connect(OpenModalButton)>
                     </CardBody>
 </Card>,
                   "className": "card-li",
@@ -515,17 +643,33 @@ ShallowWrapper {
                                                  x 
                                                 2
                         </CardSubtitle>
-                        <CardText
-                                                tag="p"
-                        >
-                                                string
-                        </CardText>
-                        <Button
-                                                color="secondary"
-                                                tag="button"
+                        <div
+                                                className="card-text"
+                                                dangerouslySetInnerHTML={
+                                                                        Object {
+                                                                                                "__html": "string",
+                                                                                              }
+                                                }
+                        />
+                        <Connect(OpenModalButton)
+                                                modalProps={
+                                                                        Object {
+                                                                                                "ariaLabel": "Sup",
+                                                                                                "sd": Object {
+                                                                                                  "description": "string",
+                                                                                                  "id": "id1",
+                                                                                                  "imageUrl": "string",
+                                                                                                  "kind": "someKind",
+                                                                                                  "length": 2,
+                                                                                                  "name": "name1",
+                                                                                                  "width": 1,
+                                                                                                },
+                                                                                              }
+                                                }
+                                                modalType="EDIT_STRUCTURE_DEFINITION"
                         >
                                                 Edit
-                        </Button>
+                        </Connect(OpenModalButton)>
 </CardBody>,
                     ],
                     "tag": "div",
@@ -565,17 +709,33 @@ ShallowWrapper {
                              x 
                             2
 </CardSubtitle>,
-                          <CardText
-                            tag="p"
->
-                            string
-</CardText>,
-                          <Button
-                            color="secondary"
-                            tag="button"
+                          <div
+                            className="card-text"
+                            dangerouslySetInnerHTML={
+                                                        Object {
+                                                                                    "__html": "string",
+                                                                                  }
+                            }
+/>,
+                          <Connect(OpenModalButton)
+                            modalProps={
+                                                        Object {
+                                                                                    "ariaLabel": "Sup",
+                                                                                    "sd": Object {
+                                                                                      "description": "string",
+                                                                                      "id": "id1",
+                                                                                      "imageUrl": "string",
+                                                                                      "kind": "someKind",
+                                                                                      "length": 2,
+                                                                                      "name": "name1",
+                                                                                      "width": 1,
+                                                                                    },
+                                                                                  }
+                            }
+                            modalType="EDIT_STRUCTURE_DEFINITION"
 >
                             Edit
-</Button>,
+</Connect(OpenModalButton)>,
                         ],
                         "tag": "div",
                       },
@@ -616,14 +776,16 @@ ShallowWrapper {
                         Object {
                           "instance": null,
                           "key": undefined,
-                          "nodeType": "function",
+                          "nodeType": "host",
                           "props": Object {
-                            "children": "string",
-                            "tag": "p",
+                            "className": "card-text",
+                            "dangerouslySetInnerHTML": Object {
+                              "__html": "string",
+                            },
                           },
                           "ref": null,
-                          "rendered": "string",
-                          "type": [Function],
+                          "rendered": null,
+                          "type": "div",
                         },
                         Object {
                           "instance": null,
@@ -631,8 +793,19 @@ ShallowWrapper {
                           "nodeType": "class",
                           "props": Object {
                             "children": "Edit",
-                            "color": "secondary",
-                            "tag": "button",
+                            "modalProps": Object {
+                              "ariaLabel": "Sup",
+                              "sd": Object {
+                                "description": "string",
+                                "id": "id1",
+                                "imageUrl": "string",
+                                "kind": "someKind",
+                                "length": 2,
+                                "name": "name1",
+                                "width": 1,
+                              },
+                            },
+                            "modalType": "EDIT_STRUCTURE_DEFINITION",
                           },
                           "ref": null,
                           "rendered": "Edit",
@@ -676,17 +849,33 @@ ShallowWrapper {
                                                              x 
                                                             5
                                         </CardSubtitle>
-                                        <CardText
-                                                            tag="p"
-                                        >
-                                                            string
-                                        </CardText>
-                                        <Button
-                                                            color="secondary"
-                                                            tag="button"
+                                        <div
+                                                            className="card-text"
+                                                            dangerouslySetInnerHTML={
+                                                                                Object {
+                                                                                                    "__html": "string",
+                                                                                                  }
+                                                            }
+                                        />
+                                        <Connect(OpenModalButton)
+                                                            modalProps={
+                                                                                Object {
+                                                                                                    "ariaLabel": "Sup",
+                                                                                                    "sd": Object {
+                                                                                                      "description": "string",
+                                                                                                      "id": "id2",
+                                                                                                      "imageUrl": "string",
+                                                                                                      "kind": "someKind",
+                                                                                                      "length": 5,
+                                                                                                      "name": "name2",
+                                                                                                      "width": 2,
+                                                                                                    },
+                                                                                                  }
+                                                            }
+                                                            modalType="EDIT_STRUCTURE_DEFINITION"
                                         >
                                                             Edit
-                                        </Button>
+                                        </Connect(OpenModalButton)>
                     </CardBody>
 </Card>,
                   "className": "card-li",
@@ -720,17 +909,33 @@ ShallowWrapper {
                                                  x 
                                                 5
                         </CardSubtitle>
-                        <CardText
-                                                tag="p"
-                        >
-                                                string
-                        </CardText>
-                        <Button
-                                                color="secondary"
-                                                tag="button"
+                        <div
+                                                className="card-text"
+                                                dangerouslySetInnerHTML={
+                                                                        Object {
+                                                                                                "__html": "string",
+                                                                                              }
+                                                }
+                        />
+                        <Connect(OpenModalButton)
+                                                modalProps={
+                                                                        Object {
+                                                                                                "ariaLabel": "Sup",
+                                                                                                "sd": Object {
+                                                                                                  "description": "string",
+                                                                                                  "id": "id2",
+                                                                                                  "imageUrl": "string",
+                                                                                                  "kind": "someKind",
+                                                                                                  "length": 5,
+                                                                                                  "name": "name2",
+                                                                                                  "width": 2,
+                                                                                                },
+                                                                                              }
+                                                }
+                                                modalType="EDIT_STRUCTURE_DEFINITION"
                         >
                                                 Edit
-                        </Button>
+                        </Connect(OpenModalButton)>
 </CardBody>,
                     ],
                     "tag": "div",
@@ -770,17 +975,33 @@ ShallowWrapper {
                              x 
                             5
 </CardSubtitle>,
-                          <CardText
-                            tag="p"
->
-                            string
-</CardText>,
-                          <Button
-                            color="secondary"
-                            tag="button"
+                          <div
+                            className="card-text"
+                            dangerouslySetInnerHTML={
+                                                        Object {
+                                                                                    "__html": "string",
+                                                                                  }
+                            }
+/>,
+                          <Connect(OpenModalButton)
+                            modalProps={
+                                                        Object {
+                                                                                    "ariaLabel": "Sup",
+                                                                                    "sd": Object {
+                                                                                      "description": "string",
+                                                                                      "id": "id2",
+                                                                                      "imageUrl": "string",
+                                                                                      "kind": "someKind",
+                                                                                      "length": 5,
+                                                                                      "name": "name2",
+                                                                                      "width": 2,
+                                                                                    },
+                                                                                  }
+                            }
+                            modalType="EDIT_STRUCTURE_DEFINITION"
 >
                             Edit
-</Button>,
+</Connect(OpenModalButton)>,
                         ],
                         "tag": "div",
                       },
@@ -821,14 +1042,16 @@ ShallowWrapper {
                         Object {
                           "instance": null,
                           "key": undefined,
-                          "nodeType": "function",
+                          "nodeType": "host",
                           "props": Object {
-                            "children": "string",
-                            "tag": "p",
+                            "className": "card-text",
+                            "dangerouslySetInnerHTML": Object {
+                              "__html": "string",
+                            },
                           },
                           "ref": null,
-                          "rendered": "string",
-                          "type": [Function],
+                          "rendered": null,
+                          "type": "div",
                         },
                         Object {
                           "instance": null,
@@ -836,8 +1059,19 @@ ShallowWrapper {
                           "nodeType": "class",
                           "props": Object {
                             "children": "Edit",
-                            "color": "secondary",
-                            "tag": "button",
+                            "modalProps": Object {
+                              "ariaLabel": "Sup",
+                              "sd": Object {
+                                "description": "string",
+                                "id": "id2",
+                                "imageUrl": "string",
+                                "kind": "someKind",
+                                "length": 5,
+                                "name": "name2",
+                                "width": 2,
+                              },
+                            },
+                            "modalType": "EDIT_STRUCTURE_DEFINITION",
                           },
                           "ref": null,
                           "rendered": "Edit",
@@ -895,17 +1129,33 @@ ShallowWrapper {
                                                                        x 
                                                                       4
                                                         </CardSubtitle>
-                                                        <CardText
-                                                                      tag="p"
-                                                        >
-                                                                      string
-                                                        </CardText>
-                                                        <Button
-                                                                      color="secondary"
-                                                                      tag="button"
+                                                        <div
+                                                                      className="card-text"
+                                                                      dangerouslySetInnerHTML={
+                                                                                    Object {
+                                                                                                  "__html": "",
+                                                                                                }
+                                                                      }
+                                                        />
+                                                        <Connect(OpenModalButton)
+                                                                      modalProps={
+                                                                                    Object {
+                                                                                                  "ariaLabel": "Sup",
+                                                                                                  "sd": Object {
+                                                                                                    "description": undefined,
+                                                                                                    "id": "id3",
+                                                                                                    "imageUrl": "string",
+                                                                                                    "kind": "someOtherKind",
+                                                                                                    "length": 4,
+                                                                                                    "name": "name3",
+                                                                                                    "width": 3,
+                                                                                                  },
+                                                                                                }
+                                                                      }
+                                                                      modalType="EDIT_STRUCTURE_DEFINITION"
                                                         >
                                                                       Edit
-                                                        </Button>
+                                                        </Connect(OpenModalButton)>
                                           </CardBody>
                             </Card>
               </li>
@@ -960,17 +1210,33 @@ ShallowWrapper {
                                                                          x 
                                                                         4
                                                       </CardSubtitle>
-                                                      <CardText
-                                                                        tag="p"
-                                                      >
-                                                                        string
-                                                      </CardText>
-                                                      <Button
-                                                                        color="secondary"
-                                                                        tag="button"
+                                                      <div
+                                                                        className="card-text"
+                                                                        dangerouslySetInnerHTML={
+                                                                                          Object {
+                                                                                                            "__html": "",
+                                                                                                          }
+                                                                        }
+                                                      />
+                                                      <Connect(OpenModalButton)
+                                                                        modalProps={
+                                                                                          Object {
+                                                                                                            "ariaLabel": "Sup",
+                                                                                                            "sd": Object {
+                                                                                                              "description": undefined,
+                                                                                                              "id": "id3",
+                                                                                                              "imageUrl": "string",
+                                                                                                              "kind": "someOtherKind",
+                                                                                                              "length": 4,
+                                                                                                              "name": "name3",
+                                                                                                              "width": 3,
+                                                                                                            },
+                                                                                                          }
+                                                                        }
+                                                                        modalType="EDIT_STRUCTURE_DEFINITION"
                                                       >
                                                                         Edit
-                                                      </Button>
+                                                      </Connect(OpenModalButton)>
                                     </CardBody>
                   </Card>
 </li>,
@@ -1008,17 +1274,33 @@ ShallowWrapper {
                                                              x 
                                                             4
                                         </CardSubtitle>
-                                        <CardText
-                                                            tag="p"
-                                        >
-                                                            string
-                                        </CardText>
-                                        <Button
-                                                            color="secondary"
-                                                            tag="button"
+                                        <div
+                                                            className="card-text"
+                                                            dangerouslySetInnerHTML={
+                                                                                Object {
+                                                                                                    "__html": "",
+                                                                                                  }
+                                                            }
+                                        />
+                                        <Connect(OpenModalButton)
+                                                            modalProps={
+                                                                                Object {
+                                                                                                    "ariaLabel": "Sup",
+                                                                                                    "sd": Object {
+                                                                                                      "description": undefined,
+                                                                                                      "id": "id3",
+                                                                                                      "imageUrl": "string",
+                                                                                                      "kind": "someOtherKind",
+                                                                                                      "length": 4,
+                                                                                                      "name": "name3",
+                                                                                                      "width": 3,
+                                                                                                    },
+                                                                                                  }
+                                                            }
+                                                            modalType="EDIT_STRUCTURE_DEFINITION"
                                         >
                                                             Edit
-                                        </Button>
+                                        </Connect(OpenModalButton)>
                     </CardBody>
 </Card>,
                   "className": "card-li",
@@ -1052,17 +1334,33 @@ ShallowWrapper {
                                                  x 
                                                 4
                         </CardSubtitle>
-                        <CardText
-                                                tag="p"
-                        >
-                                                string
-                        </CardText>
-                        <Button
-                                                color="secondary"
-                                                tag="button"
+                        <div
+                                                className="card-text"
+                                                dangerouslySetInnerHTML={
+                                                                        Object {
+                                                                                                "__html": "",
+                                                                                              }
+                                                }
+                        />
+                        <Connect(OpenModalButton)
+                                                modalProps={
+                                                                        Object {
+                                                                                                "ariaLabel": "Sup",
+                                                                                                "sd": Object {
+                                                                                                  "description": undefined,
+                                                                                                  "id": "id3",
+                                                                                                  "imageUrl": "string",
+                                                                                                  "kind": "someOtherKind",
+                                                                                                  "length": 4,
+                                                                                                  "name": "name3",
+                                                                                                  "width": 3,
+                                                                                                },
+                                                                                              }
+                                                }
+                                                modalType="EDIT_STRUCTURE_DEFINITION"
                         >
                                                 Edit
-                        </Button>
+                        </Connect(OpenModalButton)>
 </CardBody>,
                     ],
                     "tag": "div",
@@ -1102,17 +1400,33 @@ ShallowWrapper {
                              x 
                             4
 </CardSubtitle>,
-                          <CardText
-                            tag="p"
->
-                            string
-</CardText>,
-                          <Button
-                            color="secondary"
-                            tag="button"
+                          <div
+                            className="card-text"
+                            dangerouslySetInnerHTML={
+                                                        Object {
+                                                                                    "__html": "",
+                                                                                  }
+                            }
+/>,
+                          <Connect(OpenModalButton)
+                            modalProps={
+                                                        Object {
+                                                                                    "ariaLabel": "Sup",
+                                                                                    "sd": Object {
+                                                                                      "description": undefined,
+                                                                                      "id": "id3",
+                                                                                      "imageUrl": "string",
+                                                                                      "kind": "someOtherKind",
+                                                                                      "length": 4,
+                                                                                      "name": "name3",
+                                                                                      "width": 3,
+                                                                                    },
+                                                                                  }
+                            }
+                            modalType="EDIT_STRUCTURE_DEFINITION"
 >
                             Edit
-</Button>,
+</Connect(OpenModalButton)>,
                         ],
                         "tag": "div",
                       },
@@ -1153,14 +1467,16 @@ ShallowWrapper {
                         Object {
                           "instance": null,
                           "key": undefined,
-                          "nodeType": "function",
+                          "nodeType": "host",
                           "props": Object {
-                            "children": "string",
-                            "tag": "p",
+                            "className": "card-text",
+                            "dangerouslySetInnerHTML": Object {
+                              "__html": "",
+                            },
                           },
                           "ref": null,
-                          "rendered": "string",
-                          "type": [Function],
+                          "rendered": null,
+                          "type": "div",
                         },
                         Object {
                           "instance": null,
@@ -1168,8 +1484,19 @@ ShallowWrapper {
                           "nodeType": "class",
                           "props": Object {
                             "children": "Edit",
-                            "color": "secondary",
-                            "tag": "button",
+                            "modalProps": Object {
+                              "ariaLabel": "Sup",
+                              "sd": Object {
+                                "description": undefined,
+                                "id": "id3",
+                                "imageUrl": "string",
+                                "kind": "someOtherKind",
+                                "length": 4,
+                                "name": "name3",
+                                "width": 3,
+                              },
+                            },
+                            "modalType": "EDIT_STRUCTURE_DEFINITION",
                           },
                           "ref": null,
                           "rendered": "Edit",
@@ -1242,17 +1569,33 @@ ShallowWrapper {
                                                                                      x 
                                                                                     2
                                                                       </CardSubtitle>
-                                                                      <CardText
-                                                                                    tag="p"
-                                                                      >
-                                                                                    string
-                                                                      </CardText>
-                                                                      <Button
-                                                                                    color="secondary"
-                                                                                    tag="button"
+                                                                      <div
+                                                                                    className="card-text"
+                                                                                    dangerouslySetInnerHTML={
+                                                                                                  Object {
+                                                                                                                "__html": "string",
+                                                                                                              }
+                                                                                    }
+                                                                      />
+                                                                      <Connect(OpenModalButton)
+                                                                                    modalProps={
+                                                                                                  Object {
+                                                                                                                "ariaLabel": "Sup",
+                                                                                                                "sd": Object {
+                                                                                                                  "description": "string",
+                                                                                                                  "id": "id1",
+                                                                                                                  "imageUrl": "string",
+                                                                                                                  "kind": "someKind",
+                                                                                                                  "length": 2,
+                                                                                                                  "name": "name1",
+                                                                                                                  "width": 1,
+                                                                                                                },
+                                                                                                              }
+                                                                                    }
+                                                                                    modalType="EDIT_STRUCTURE_DEFINITION"
                                                                       >
                                                                                     Edit
-                                                                      </Button>
+                                                                      </Connect(OpenModalButton)>
                                                         </CardBody>
                                           </Card>
                             </li>
@@ -1284,17 +1627,33 @@ ShallowWrapper {
                                                                                      x 
                                                                                     5
                                                                       </CardSubtitle>
-                                                                      <CardText
-                                                                                    tag="p"
-                                                                      >
-                                                                                    string
-                                                                      </CardText>
-                                                                      <Button
-                                                                                    color="secondary"
-                                                                                    tag="button"
+                                                                      <div
+                                                                                    className="card-text"
+                                                                                    dangerouslySetInnerHTML={
+                                                                                                  Object {
+                                                                                                                "__html": "string",
+                                                                                                              }
+                                                                                    }
+                                                                      />
+                                                                      <Connect(OpenModalButton)
+                                                                                    modalProps={
+                                                                                                  Object {
+                                                                                                                "ariaLabel": "Sup",
+                                                                                                                "sd": Object {
+                                                                                                                  "description": "string",
+                                                                                                                  "id": "id2",
+                                                                                                                  "imageUrl": "string",
+                                                                                                                  "kind": "someKind",
+                                                                                                                  "length": 5,
+                                                                                                                  "name": "name2",
+                                                                                                                  "width": 2,
+                                                                                                                },
+                                                                                                              }
+                                                                                    }
+                                                                                    modalType="EDIT_STRUCTURE_DEFINITION"
                                                                       >
                                                                                     Edit
-                                                                      </Button>
+                                                                      </Connect(OpenModalButton)>
                                                         </CardBody>
                                           </Card>
                             </li>
@@ -1335,17 +1694,33 @@ ShallowWrapper {
                                                                                      x 
                                                                                     4
                                                                       </CardSubtitle>
-                                                                      <CardText
-                                                                                    tag="p"
-                                                                      >
-                                                                                    string
-                                                                      </CardText>
-                                                                      <Button
-                                                                                    color="secondary"
-                                                                                    tag="button"
+                                                                      <div
+                                                                                    className="card-text"
+                                                                                    dangerouslySetInnerHTML={
+                                                                                                  Object {
+                                                                                                                "__html": "",
+                                                                                                              }
+                                                                                    }
+                                                                      />
+                                                                      <Connect(OpenModalButton)
+                                                                                    modalProps={
+                                                                                                  Object {
+                                                                                                                "ariaLabel": "Sup",
+                                                                                                                "sd": Object {
+                                                                                                                  "description": undefined,
+                                                                                                                  "id": "id3",
+                                                                                                                  "imageUrl": "string",
+                                                                                                                  "kind": "someOtherKind",
+                                                                                                                  "length": 4,
+                                                                                                                  "name": "name3",
+                                                                                                                  "width": 3,
+                                                                                                                },
+                                                                                                              }
+                                                                                    }
+                                                                                    modalType="EDIT_STRUCTURE_DEFINITION"
                                                                       >
                                                                                     Edit
-                                                                      </Button>
+                                                                      </Connect(OpenModalButton)>
                                                         </CardBody>
                                           </Card>
                             </li>
@@ -1419,17 +1794,33 @@ ShallowWrapper {
                                                                                  x 
                                                                                 2
                                                                 </CardSubtitle>
-                                                                <CardText
-                                                                                tag="p"
-                                                                >
-                                                                                string
-                                                                </CardText>
-                                                                <Button
-                                                                                color="secondary"
-                                                                                tag="button"
+                                                                <div
+                                                                                className="card-text"
+                                                                                dangerouslySetInnerHTML={
+                                                                                                Object {
+                                                                                                                "__html": "string",
+                                                                                                              }
+                                                                                }
+                                                                />
+                                                                <Connect(OpenModalButton)
+                                                                                modalProps={
+                                                                                                Object {
+                                                                                                                "ariaLabel": "Sup",
+                                                                                                                "sd": Object {
+                                                                                                                  "description": "string",
+                                                                                                                  "id": "id1",
+                                                                                                                  "imageUrl": "string",
+                                                                                                                  "kind": "someKind",
+                                                                                                                  "length": 2,
+                                                                                                                  "name": "name1",
+                                                                                                                  "width": 1,
+                                                                                                                },
+                                                                                                              }
+                                                                                }
+                                                                                modalType="EDIT_STRUCTURE_DEFINITION"
                                                                 >
                                                                                 Edit
-                                                                </Button>
+                                                                </Connect(OpenModalButton)>
                                                 </CardBody>
                                 </Card>
                 </li>
@@ -1461,17 +1852,33 @@ ShallowWrapper {
                                                                                  x 
                                                                                 5
                                                                 </CardSubtitle>
-                                                                <CardText
-                                                                                tag="p"
-                                                                >
-                                                                                string
-                                                                </CardText>
-                                                                <Button
-                                                                                color="secondary"
-                                                                                tag="button"
+                                                                <div
+                                                                                className="card-text"
+                                                                                dangerouslySetInnerHTML={
+                                                                                                Object {
+                                                                                                                "__html": "string",
+                                                                                                              }
+                                                                                }
+                                                                />
+                                                                <Connect(OpenModalButton)
+                                                                                modalProps={
+                                                                                                Object {
+                                                                                                                "ariaLabel": "Sup",
+                                                                                                                "sd": Object {
+                                                                                                                  "description": "string",
+                                                                                                                  "id": "id2",
+                                                                                                                  "imageUrl": "string",
+                                                                                                                  "kind": "someKind",
+                                                                                                                  "length": 5,
+                                                                                                                  "name": "name2",
+                                                                                                                  "width": 2,
+                                                                                                                },
+                                                                                                              }
+                                                                                }
+                                                                                modalType="EDIT_STRUCTURE_DEFINITION"
                                                                 >
                                                                                 Edit
-                                                                </Button>
+                                                                </Connect(OpenModalButton)>
                                                 </CardBody>
                                 </Card>
                 </li>
@@ -1526,17 +1933,33 @@ ShallowWrapper {
                                                                                  x 
                                                                                 2
                                                             </CardSubtitle>
-                                                            <CardText
-                                                                                tag="p"
-                                                            >
-                                                                                string
-                                                            </CardText>
-                                                            <Button
-                                                                                color="secondary"
-                                                                                tag="button"
+                                                            <div
+                                                                                className="card-text"
+                                                                                dangerouslySetInnerHTML={
+                                                                                                    Object {
+                                                                                                                        "__html": "string",
+                                                                                                                      }
+                                                                                }
+                                                            />
+                                                            <Connect(OpenModalButton)
+                                                                                modalProps={
+                                                                                                    Object {
+                                                                                                                        "ariaLabel": "Sup",
+                                                                                                                        "sd": Object {
+                                                                                                                          "description": "string",
+                                                                                                                          "id": "id1",
+                                                                                                                          "imageUrl": "string",
+                                                                                                                          "kind": "someKind",
+                                                                                                                          "length": 2,
+                                                                                                                          "name": "name1",
+                                                                                                                          "width": 1,
+                                                                                                                        },
+                                                                                                                      }
+                                                                                }
+                                                                                modalType="EDIT_STRUCTURE_DEFINITION"
                                                             >
                                                                                 Edit
-                                                            </Button>
+                                                            </Connect(OpenModalButton)>
                                         </CardBody>
                     </Card>
 </li>,
@@ -1568,17 +1991,33 @@ ShallowWrapper {
                                                                                  x 
                                                                                 5
                                                             </CardSubtitle>
-                                                            <CardText
-                                                                                tag="p"
-                                                            >
-                                                                                string
-                                                            </CardText>
-                                                            <Button
-                                                                                color="secondary"
-                                                                                tag="button"
+                                                            <div
+                                                                                className="card-text"
+                                                                                dangerouslySetInnerHTML={
+                                                                                                    Object {
+                                                                                                                        "__html": "string",
+                                                                                                                      }
+                                                                                }
+                                                            />
+                                                            <Connect(OpenModalButton)
+                                                                                modalProps={
+                                                                                                    Object {
+                                                                                                                        "ariaLabel": "Sup",
+                                                                                                                        "sd": Object {
+                                                                                                                          "description": "string",
+                                                                                                                          "id": "id2",
+                                                                                                                          "imageUrl": "string",
+                                                                                                                          "kind": "someKind",
+                                                                                                                          "length": 5,
+                                                                                                                          "name": "name2",
+                                                                                                                          "width": 2,
+                                                                                                                        },
+                                                                                                                      }
+                                                                                }
+                                                                                modalType="EDIT_STRUCTURE_DEFINITION"
                                                             >
                                                                                 Edit
-                                                            </Button>
+                                                            </Connect(OpenModalButton)>
                                         </CardBody>
                     </Card>
 </li>,
@@ -1616,17 +2055,33 @@ ShallowWrapper {
                                                                    x 
                                                                   2
                                             </CardSubtitle>
-                                            <CardText
-                                                                  tag="p"
-                                            >
-                                                                  string
-                                            </CardText>
-                                            <Button
-                                                                  color="secondary"
-                                                                  tag="button"
+                                            <div
+                                                                  className="card-text"
+                                                                  dangerouslySetInnerHTML={
+                                                                                        Object {
+                                                                                                              "__html": "string",
+                                                                                                            }
+                                                                  }
+                                            />
+                                            <Connect(OpenModalButton)
+                                                                  modalProps={
+                                                                                        Object {
+                                                                                                              "ariaLabel": "Sup",
+                                                                                                              "sd": Object {
+                                                                                                                "description": "string",
+                                                                                                                "id": "id1",
+                                                                                                                "imageUrl": "string",
+                                                                                                                "kind": "someKind",
+                                                                                                                "length": 2,
+                                                                                                                "name": "name1",
+                                                                                                                "width": 1,
+                                                                                                              },
+                                                                                                            }
+                                                                  }
+                                                                  modalType="EDIT_STRUCTURE_DEFINITION"
                                             >
                                                                   Edit
-                                            </Button>
+                                            </Connect(OpenModalButton)>
                       </CardBody>
 </Card>,
                     "className": "card-li",
@@ -1660,17 +2115,33 @@ ShallowWrapper {
                                                      x 
                                                     2
                           </CardSubtitle>
-                          <CardText
-                                                    tag="p"
-                          >
-                                                    string
-                          </CardText>
-                          <Button
-                                                    color="secondary"
-                                                    tag="button"
+                          <div
+                                                    className="card-text"
+                                                    dangerouslySetInnerHTML={
+                                                                              Object {
+                                                                                                        "__html": "string",
+                                                                                                      }
+                                                    }
+                          />
+                          <Connect(OpenModalButton)
+                                                    modalProps={
+                                                                              Object {
+                                                                                                        "ariaLabel": "Sup",
+                                                                                                        "sd": Object {
+                                                                                                          "description": "string",
+                                                                                                          "id": "id1",
+                                                                                                          "imageUrl": "string",
+                                                                                                          "kind": "someKind",
+                                                                                                          "length": 2,
+                                                                                                          "name": "name1",
+                                                                                                          "width": 1,
+                                                                                                        },
+                                                                                                      }
+                                                    }
+                                                    modalType="EDIT_STRUCTURE_DEFINITION"
                           >
                                                     Edit
-                          </Button>
+                          </Connect(OpenModalButton)>
 </CardBody>,
                       ],
                       "tag": "div",
@@ -1710,17 +2181,33 @@ ShallowWrapper {
                                x 
                               2
 </CardSubtitle>,
-                            <CardText
-                              tag="p"
->
-                              string
-</CardText>,
-                            <Button
-                              color="secondary"
-                              tag="button"
+                            <div
+                              className="card-text"
+                              dangerouslySetInnerHTML={
+                                                            Object {
+                                                                                          "__html": "string",
+                                                                                        }
+                              }
+/>,
+                            <Connect(OpenModalButton)
+                              modalProps={
+                                                            Object {
+                                                                                          "ariaLabel": "Sup",
+                                                                                          "sd": Object {
+                                                                                            "description": "string",
+                                                                                            "id": "id1",
+                                                                                            "imageUrl": "string",
+                                                                                            "kind": "someKind",
+                                                                                            "length": 2,
+                                                                                            "name": "name1",
+                                                                                            "width": 1,
+                                                                                          },
+                                                                                        }
+                              }
+                              modalType="EDIT_STRUCTURE_DEFINITION"
 >
                               Edit
-</Button>,
+</Connect(OpenModalButton)>,
                           ],
                           "tag": "div",
                         },
@@ -1761,14 +2248,16 @@ ShallowWrapper {
                           Object {
                             "instance": null,
                             "key": undefined,
-                            "nodeType": "function",
+                            "nodeType": "host",
                             "props": Object {
-                              "children": "string",
-                              "tag": "p",
+                              "className": "card-text",
+                              "dangerouslySetInnerHTML": Object {
+                                "__html": "string",
+                              },
                             },
                             "ref": null,
-                            "rendered": "string",
-                            "type": [Function],
+                            "rendered": null,
+                            "type": "div",
                           },
                           Object {
                             "instance": null,
@@ -1776,8 +2265,19 @@ ShallowWrapper {
                             "nodeType": "class",
                             "props": Object {
                               "children": "Edit",
-                              "color": "secondary",
-                              "tag": "button",
+                              "modalProps": Object {
+                                "ariaLabel": "Sup",
+                                "sd": Object {
+                                  "description": "string",
+                                  "id": "id1",
+                                  "imageUrl": "string",
+                                  "kind": "someKind",
+                                  "length": 2,
+                                  "name": "name1",
+                                  "width": 1,
+                                },
+                              },
+                              "modalType": "EDIT_STRUCTURE_DEFINITION",
                             },
                             "ref": null,
                             "rendered": "Edit",
@@ -1821,17 +2321,33 @@ ShallowWrapper {
                                                                    x 
                                                                   5
                                             </CardSubtitle>
-                                            <CardText
-                                                                  tag="p"
-                                            >
-                                                                  string
-                                            </CardText>
-                                            <Button
-                                                                  color="secondary"
-                                                                  tag="button"
+                                            <div
+                                                                  className="card-text"
+                                                                  dangerouslySetInnerHTML={
+                                                                                        Object {
+                                                                                                              "__html": "string",
+                                                                                                            }
+                                                                  }
+                                            />
+                                            <Connect(OpenModalButton)
+                                                                  modalProps={
+                                                                                        Object {
+                                                                                                              "ariaLabel": "Sup",
+                                                                                                              "sd": Object {
+                                                                                                                "description": "string",
+                                                                                                                "id": "id2",
+                                                                                                                "imageUrl": "string",
+                                                                                                                "kind": "someKind",
+                                                                                                                "length": 5,
+                                                                                                                "name": "name2",
+                                                                                                                "width": 2,
+                                                                                                              },
+                                                                                                            }
+                                                                  }
+                                                                  modalType="EDIT_STRUCTURE_DEFINITION"
                                             >
                                                                   Edit
-                                            </Button>
+                                            </Connect(OpenModalButton)>
                       </CardBody>
 </Card>,
                     "className": "card-li",
@@ -1865,17 +2381,33 @@ ShallowWrapper {
                                                      x 
                                                     5
                           </CardSubtitle>
-                          <CardText
-                                                    tag="p"
-                          >
-                                                    string
-                          </CardText>
-                          <Button
-                                                    color="secondary"
-                                                    tag="button"
+                          <div
+                                                    className="card-text"
+                                                    dangerouslySetInnerHTML={
+                                                                              Object {
+                                                                                                        "__html": "string",
+                                                                                                      }
+                                                    }
+                          />
+                          <Connect(OpenModalButton)
+                                                    modalProps={
+                                                                              Object {
+                                                                                                        "ariaLabel": "Sup",
+                                                                                                        "sd": Object {
+                                                                                                          "description": "string",
+                                                                                                          "id": "id2",
+                                                                                                          "imageUrl": "string",
+                                                                                                          "kind": "someKind",
+                                                                                                          "length": 5,
+                                                                                                          "name": "name2",
+                                                                                                          "width": 2,
+                                                                                                        },
+                                                                                                      }
+                                                    }
+                                                    modalType="EDIT_STRUCTURE_DEFINITION"
                           >
                                                     Edit
-                          </Button>
+                          </Connect(OpenModalButton)>
 </CardBody>,
                       ],
                       "tag": "div",
@@ -1915,17 +2447,33 @@ ShallowWrapper {
                                x 
                               5
 </CardSubtitle>,
-                            <CardText
-                              tag="p"
->
-                              string
-</CardText>,
-                            <Button
-                              color="secondary"
-                              tag="button"
+                            <div
+                              className="card-text"
+                              dangerouslySetInnerHTML={
+                                                            Object {
+                                                                                          "__html": "string",
+                                                                                        }
+                              }
+/>,
+                            <Connect(OpenModalButton)
+                              modalProps={
+                                                            Object {
+                                                                                          "ariaLabel": "Sup",
+                                                                                          "sd": Object {
+                                                                                            "description": "string",
+                                                                                            "id": "id2",
+                                                                                            "imageUrl": "string",
+                                                                                            "kind": "someKind",
+                                                                                            "length": 5,
+                                                                                            "name": "name2",
+                                                                                            "width": 2,
+                                                                                          },
+                                                                                        }
+                              }
+                              modalType="EDIT_STRUCTURE_DEFINITION"
 >
                               Edit
-</Button>,
+</Connect(OpenModalButton)>,
                           ],
                           "tag": "div",
                         },
@@ -1966,14 +2514,16 @@ ShallowWrapper {
                           Object {
                             "instance": null,
                             "key": undefined,
-                            "nodeType": "function",
+                            "nodeType": "host",
                             "props": Object {
-                              "children": "string",
-                              "tag": "p",
+                              "className": "card-text",
+                              "dangerouslySetInnerHTML": Object {
+                                "__html": "string",
+                              },
                             },
                             "ref": null,
-                            "rendered": "string",
-                            "type": [Function],
+                            "rendered": null,
+                            "type": "div",
                           },
                           Object {
                             "instance": null,
@@ -1981,8 +2531,19 @@ ShallowWrapper {
                             "nodeType": "class",
                             "props": Object {
                               "children": "Edit",
-                              "color": "secondary",
-                              "tag": "button",
+                              "modalProps": Object {
+                                "ariaLabel": "Sup",
+                                "sd": Object {
+                                  "description": "string",
+                                  "id": "id2",
+                                  "imageUrl": "string",
+                                  "kind": "someKind",
+                                  "length": 5,
+                                  "name": "name2",
+                                  "width": 2,
+                                },
+                              },
+                              "modalType": "EDIT_STRUCTURE_DEFINITION",
                             },
                             "ref": null,
                             "rendered": "Edit",
@@ -2040,17 +2601,33 @@ ShallowWrapper {
                                                                                  x 
                                                                                 4
                                                                 </CardSubtitle>
-                                                                <CardText
-                                                                                tag="p"
-                                                                >
-                                                                                string
-                                                                </CardText>
-                                                                <Button
-                                                                                color="secondary"
-                                                                                tag="button"
+                                                                <div
+                                                                                className="card-text"
+                                                                                dangerouslySetInnerHTML={
+                                                                                                Object {
+                                                                                                                "__html": "",
+                                                                                                              }
+                                                                                }
+                                                                />
+                                                                <Connect(OpenModalButton)
+                                                                                modalProps={
+                                                                                                Object {
+                                                                                                                "ariaLabel": "Sup",
+                                                                                                                "sd": Object {
+                                                                                                                  "description": undefined,
+                                                                                                                  "id": "id3",
+                                                                                                                  "imageUrl": "string",
+                                                                                                                  "kind": "someOtherKind",
+                                                                                                                  "length": 4,
+                                                                                                                  "name": "name3",
+                                                                                                                  "width": 3,
+                                                                                                                },
+                                                                                                              }
+                                                                                }
+                                                                                modalType="EDIT_STRUCTURE_DEFINITION"
                                                                 >
                                                                                 Edit
-                                                                </Button>
+                                                                </Connect(OpenModalButton)>
                                                 </CardBody>
                                 </Card>
                 </li>
@@ -2105,17 +2682,33 @@ ShallowWrapper {
                                                                                  x 
                                                                                 4
                                                             </CardSubtitle>
-                                                            <CardText
-                                                                                tag="p"
-                                                            >
-                                                                                string
-                                                            </CardText>
-                                                            <Button
-                                                                                color="secondary"
-                                                                                tag="button"
+                                                            <div
+                                                                                className="card-text"
+                                                                                dangerouslySetInnerHTML={
+                                                                                                    Object {
+                                                                                                                        "__html": "",
+                                                                                                                      }
+                                                                                }
+                                                            />
+                                                            <Connect(OpenModalButton)
+                                                                                modalProps={
+                                                                                                    Object {
+                                                                                                                        "ariaLabel": "Sup",
+                                                                                                                        "sd": Object {
+                                                                                                                          "description": undefined,
+                                                                                                                          "id": "id3",
+                                                                                                                          "imageUrl": "string",
+                                                                                                                          "kind": "someOtherKind",
+                                                                                                                          "length": 4,
+                                                                                                                          "name": "name3",
+                                                                                                                          "width": 3,
+                                                                                                                        },
+                                                                                                                      }
+                                                                                }
+                                                                                modalType="EDIT_STRUCTURE_DEFINITION"
                                                             >
                                                                                 Edit
-                                                            </Button>
+                                                            </Connect(OpenModalButton)>
                                         </CardBody>
                     </Card>
 </li>,
@@ -2153,17 +2746,33 @@ ShallowWrapper {
                                                                    x 
                                                                   4
                                             </CardSubtitle>
-                                            <CardText
-                                                                  tag="p"
-                                            >
-                                                                  string
-                                            </CardText>
-                                            <Button
-                                                                  color="secondary"
-                                                                  tag="button"
+                                            <div
+                                                                  className="card-text"
+                                                                  dangerouslySetInnerHTML={
+                                                                                        Object {
+                                                                                                              "__html": "",
+                                                                                                            }
+                                                                  }
+                                            />
+                                            <Connect(OpenModalButton)
+                                                                  modalProps={
+                                                                                        Object {
+                                                                                                              "ariaLabel": "Sup",
+                                                                                                              "sd": Object {
+                                                                                                                "description": undefined,
+                                                                                                                "id": "id3",
+                                                                                                                "imageUrl": "string",
+                                                                                                                "kind": "someOtherKind",
+                                                                                                                "length": 4,
+                                                                                                                "name": "name3",
+                                                                                                                "width": 3,
+                                                                                                              },
+                                                                                                            }
+                                                                  }
+                                                                  modalType="EDIT_STRUCTURE_DEFINITION"
                                             >
                                                                   Edit
-                                            </Button>
+                                            </Connect(OpenModalButton)>
                       </CardBody>
 </Card>,
                     "className": "card-li",
@@ -2197,17 +2806,33 @@ ShallowWrapper {
                                                      x 
                                                     4
                           </CardSubtitle>
-                          <CardText
-                                                    tag="p"
-                          >
-                                                    string
-                          </CardText>
-                          <Button
-                                                    color="secondary"
-                                                    tag="button"
+                          <div
+                                                    className="card-text"
+                                                    dangerouslySetInnerHTML={
+                                                                              Object {
+                                                                                                        "__html": "",
+                                                                                                      }
+                                                    }
+                          />
+                          <Connect(OpenModalButton)
+                                                    modalProps={
+                                                                              Object {
+                                                                                                        "ariaLabel": "Sup",
+                                                                                                        "sd": Object {
+                                                                                                          "description": undefined,
+                                                                                                          "id": "id3",
+                                                                                                          "imageUrl": "string",
+                                                                                                          "kind": "someOtherKind",
+                                                                                                          "length": 4,
+                                                                                                          "name": "name3",
+                                                                                                          "width": 3,
+                                                                                                        },
+                                                                                                      }
+                                                    }
+                                                    modalType="EDIT_STRUCTURE_DEFINITION"
                           >
                                                     Edit
-                          </Button>
+                          </Connect(OpenModalButton)>
 </CardBody>,
                       ],
                       "tag": "div",
@@ -2247,17 +2872,33 @@ ShallowWrapper {
                                x 
                               4
 </CardSubtitle>,
-                            <CardText
-                              tag="p"
->
-                              string
-</CardText>,
-                            <Button
-                              color="secondary"
-                              tag="button"
+                            <div
+                              className="card-text"
+                              dangerouslySetInnerHTML={
+                                                            Object {
+                                                                                          "__html": "",
+                                                                                        }
+                              }
+/>,
+                            <Connect(OpenModalButton)
+                              modalProps={
+                                                            Object {
+                                                                                          "ariaLabel": "Sup",
+                                                                                          "sd": Object {
+                                                                                            "description": undefined,
+                                                                                            "id": "id3",
+                                                                                            "imageUrl": "string",
+                                                                                            "kind": "someOtherKind",
+                                                                                            "length": 4,
+                                                                                            "name": "name3",
+                                                                                            "width": 3,
+                                                                                          },
+                                                                                        }
+                              }
+                              modalType="EDIT_STRUCTURE_DEFINITION"
 >
                               Edit
-</Button>,
+</Connect(OpenModalButton)>,
                           ],
                           "tag": "div",
                         },
@@ -2298,14 +2939,16 @@ ShallowWrapper {
                           Object {
                             "instance": null,
                             "key": undefined,
-                            "nodeType": "function",
+                            "nodeType": "host",
                             "props": Object {
-                              "children": "string",
-                              "tag": "p",
+                              "className": "card-text",
+                              "dangerouslySetInnerHTML": Object {
+                                "__html": "",
+                              },
                             },
                             "ref": null,
-                            "rendered": "string",
-                            "type": [Function],
+                            "rendered": null,
+                            "type": "div",
                           },
                           Object {
                             "instance": null,
@@ -2313,8 +2956,19 @@ ShallowWrapper {
                             "nodeType": "class",
                             "props": Object {
                               "children": "Edit",
-                              "color": "secondary",
-                              "tag": "button",
+                              "modalProps": Object {
+                                "ariaLabel": "Sup",
+                                "sd": Object {
+                                  "description": undefined,
+                                  "id": "id3",
+                                  "imageUrl": "string",
+                                  "kind": "someOtherKind",
+                                  "length": 4,
+                                  "name": "name3",
+                                  "width": 3,
+                                },
+                              },
+                              "modalType": "EDIT_STRUCTURE_DEFINITION",
                             },
                             "ref": null,
                             "rendered": "Edit",

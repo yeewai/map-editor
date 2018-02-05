@@ -1,21 +1,31 @@
 import structureDefinitionReducer, { defaultState } from './reducer';
+import { Action, defaultAction } from 'services/types';
+
+import $ from 'jquery';
 
 describe("Reducers/structureDefinition", () => {
+    let action: Action;
+
+    beforeEach( () => {
+        action = $.extend(true, {}, defaultAction);
+    })
 
     it ("renders the initial state", () => {
-        expect(structureDefinitionReducer(undefined, {})).toEqual(defaultState);
+        expect(structureDefinitionReducer(undefined, action)).toEqual(defaultState);
     });
 
     it("handles getting structureDefinition", () => {
-        expect(structureDefinitionReducer({}, {type: "structureDefinition/REQUEST"}))
-            .toEqual({
-                isFetching: true,
-                error: undefined
-            });
+        action.type = "structureDefinition/REQUEST";
+
+        const state = structureDefinitionReducer(defaultState, action )
+        expect(state.isFetching).toBe(true)
+        expect(state.error).toBe(undefined)
     });
 
     it("handles having gotten structureDefinition", () => {
-        expect(structureDefinitionReducer({}, {type: "structureDefinition/RECEIVE"}))
+        action.type ="structureDefinition/RECEIVE";
+
+        expect(structureDefinitionReducer(undefined, action ))
             .toEqual({
                 isFetching: false,
                 hasFetched: true,
@@ -24,10 +34,9 @@ describe("Reducers/structureDefinition", () => {
     });
 
     it("handles failing to get structureDefinition", () => {
-        expect(structureDefinitionReducer({}, {type: "structureDefinition/SET_ERROR"}))
-            .toEqual({
-                error: 'Error loading structureDefinition.'
-            });
+        action.type = "structureDefinition/SET_ERROR";
+        expect(structureDefinitionReducer(undefined, action).error)
+            .toEqual( 'Error loading structureDefinition.');
     });
 
 });

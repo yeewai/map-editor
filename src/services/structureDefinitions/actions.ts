@@ -4,6 +4,8 @@ import { StructureDefinition } from './types';
 import { StateTree, Action } from 'services/types';
 import * as api from 'api';
 
+import { modalActions } from 'ever-modal';
+
 export const requestStructureDefinitions: ActionCreator<Action> = () => ({
     type: 'structureDefinition/REQUEST'
 });
@@ -30,3 +32,21 @@ export const fetchStructureDefinitions: ActionCreator<ThunkAction<any, StateTree
         );
     };
 };
+
+export const putStructureDefinition: ActionCreator<Action> = () => ({
+    type: 'structureDefinition/PUT'
+});
+
+export const updateStructureDefinition: ActionCreator<ThunkAction<any, StateTree, void>> = (values) => {
+    return (dispatch: Dispatch<StateTree>, getState: () => StateTree ) => {
+
+        dispatch(putStructureDefinition());
+        return api.updateStructureDefinition(values.id, values).then(
+            resp => {
+                dispatch(modalActions.hideModal());
+                dispatch(fetchStructureDefinitions());
+            },
+            (jqXHR, textStatus, errorThrown) => dispatch(setError(jqXHR, textStatus, errorThrown))
+        );
+    };
+}

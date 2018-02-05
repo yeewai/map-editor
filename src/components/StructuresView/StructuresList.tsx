@@ -3,6 +3,8 @@ import { connect } from "react-redux";
 import { Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle, Button,
      ListGroup, ListGroupItem } from 'reactstrap';
 
+import { OpenModalButton } from 'ever-modal';
+
 import { StateTree } from 'services/types';
 
 import _ from 'lodash';
@@ -30,8 +32,8 @@ export const StructuresList: React.SFC<StateProps> = ( props ) => {
                                         <CardBody>
                                             <CardTitle>{sd.name}</CardTitle>
                                             <CardSubtitle>{sd.width} x {sd.length}</CardSubtitle>
-                                            <CardText>{sd.description}</CardText>
-                                            <Button>Edit</Button>
+                                            <div className="card-text" dangerouslySetInnerHTML={{ __html: sd.description || "" }} />
+                                            <OpenModalButton modalType="EDIT_STRUCTURE_DEFINITION" modalProps={{ariaLabel: "Sup", sd: sd}} >Edit</OpenModalButton>
                                         </CardBody>
                                     </Card>
                                 </li>
