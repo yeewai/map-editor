@@ -17,6 +17,16 @@ export function getStructureDefinitions () {
     return $.ajax(config);
 }
 
+export const createStructureDefinition = (body) => {
+    const config = {
+        ...defaultConfig,
+        type: "POST",
+        url: `${url}/structureDefinitions`,
+        data: JSON.stringify( body )
+    };
+    return $.ajax(config);
+};
+
 export function updateStructureDefinition (id, body) {
     const config = {
         ...defaultConfig,

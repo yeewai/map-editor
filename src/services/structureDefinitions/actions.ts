@@ -33,7 +33,7 @@ export const fetchStructureDefinitions: ActionCreator<ThunkAction<any, StateTree
     };
 };
 
-export const putStructureDefinition: ActionCreator<Action> = () => ({
+const putStructureDefinition: ActionCreator<Action> = () => ({
     type: 'structureDefinition/PUT'
 });
 
@@ -42,6 +42,24 @@ export const updateStructureDefinition: ActionCreator<ThunkAction<any, StateTree
 
         dispatch(putStructureDefinition());
         return api.updateStructureDefinition(values.id, values).then(
+            resp => {
+                dispatch(modalActions.hideModal());
+                dispatch(fetchStructureDefinitions());
+            },
+            (jqXHR, textStatus, errorThrown) => dispatch(setError(jqXHR, textStatus, errorThrown))
+        );
+    };
+}
+
+const createStructureDefinition: ActionCreator<Action> = () => ({
+    type: 'structureDefinition/CREATE'
+});
+
+export const addStructureDefinition: ActionCreator<ThunkAction<any, StateTree, void>> = (values) => {
+    return (dispatch: Dispatch<StateTree>, getState: () => StateTree ) => {
+
+        dispatch(createStructureDefinition());
+        return api.createStructureDefinition(values).then(
             resp => {
                 dispatch(modalActions.hideModal());
                 dispatch(fetchStructureDefinitions());

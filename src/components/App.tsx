@@ -5,11 +5,13 @@ import StructuresView from './StructuresView';
 
 import { ModalRoot, confirmModal } from 'ever-modal';
 import EditStructureDefinitionModal from './StructuresView/EditStructureDefinitionModal';
+import AddStructureDefinitionModal from './StructuresView/AddStructureDefinitionModal';
 
 class App extends React.Component {
     render() {
         const modal_components = {
             'CONFIRM_MODAL': confirmModal,
+            'ADD_STRUCTURE_DEFINITION': AddStructureDefinitionModal,
             'EDIT_STRUCTURE_DEFINITION': EditStructureDefinitionModal
         };
 

@@ -101,4 +101,43 @@ describe("Actions/structureDefinitions", () => {
         });
     });
 
+    it('makes an add structure definition api call', () => {
+        // const scope = nock('http://localhost:8080').log(console.log)
+        //     .get('/structureDefinitions')
+        //     .reply(200, { payload: [1,2,3] });
+        //
+        let stub = sandbox.stub($, 'ajax').callsFake( () => (
+            new Promise(function(resolve, reject) {
+                resolve( [1,2,3] );
+            })
+        ));
+
+        const expectedActions = [
+            { type: 'structureDefinition/CREATE' },
+            { type: "modal/HIDE", modalType: undefined},
+            { type: 'structureDefinition/REQUEST' },
+            { type: 'structureDefinition/RECEIVE', payload: [1,2,3]  }
+        ];
+
+        return store.dispatch(actions.addStructureDefinition({})).then(() => {
+            expect(store.getActions()).toEqual(expectedActions);
+        });
+    });
+
+    it('sets error if add structure definition api call fails', () => {
+        // const scope = nock('http://localhost:8080').log(console.log)
+        //     .get('/structureDefinitions')
+        //     .reply(200, { payload: [1,2,3] });
+        //
+        let stub = sandbox.stub($, 'ajax').callsFake( () => (
+            new Promise(function(resolve, reject) {
+                reject();
+            })
+        ));
+
+
+        return store.dispatch(actions.addStructureDefinition({})).then(() => {
+            expect(store.getActions()[1]).toMatchObject({"type": "structureDefinition/SET_ERROR" });
+        });
+    });
 })

@@ -21,6 +21,7 @@ ShallowWrapper {
         <Connect(ModalRoot)
           modal_components={
                     Object {
+                              "ADD_STRUCTURE_DEFINITION": [Function],
                               "CONFIRM_MODAL": undefined,
                               "EDIT_STRUCTURE_DEFINITION": [Function],
                             }
@@ -43,6 +44,7 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "modal_components": Object {
+            "ADD_STRUCTURE_DEFINITION": [Function],
             "CONFIRM_MODAL": undefined,
             "EDIT_STRUCTURE_DEFINITION": [Function],
           },
@@ -89,6 +91,7 @@ ShallowWrapper {
           <Connect(ModalRoot)
             modal_components={
                         Object {
+                                    "ADD_STRUCTURE_DEFINITION": [Function],
                                     "CONFIRM_MODAL": undefined,
                                     "EDIT_STRUCTURE_DEFINITION": [Function],
                                   }
@@ -111,6 +114,7 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "modal_components": Object {
+              "ADD_STRUCTURE_DEFINITION": [Function],
               "CONFIRM_MODAL": undefined,
               "EDIT_STRUCTURE_DEFINITION": [Function],
             },

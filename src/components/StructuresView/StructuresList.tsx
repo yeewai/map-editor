@@ -19,7 +19,10 @@ export const StructuresList: React.SFC<StateProps> = ( props ) => {
 
     return (
         <ListGroup>
-            <ListGroupItem key="title"><h2>Structure Library</h2></ListGroupItem>
+            <ListGroupItem key="title">
+                <h2>Structure Library</h2>
+                <OpenModalButton modalType="ADD_STRUCTURE_DEFINITION" modalProps={{ariaLabel: "Sup"}} >New</OpenModalButton>
+            </ListGroupItem>
             {
                 Object.keys(structureDefinitions).map( (key) => (
                     <ListGroupItem key={key}>
