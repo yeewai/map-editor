@@ -18,21 +18,31 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <Connect(ModalRoot)
-          modal_components={
-                    Object {
-                              "ADD_STRUCTURE_DEFINITION": [Function],
-                              "CONFIRM_MODAL": undefined,
-                              "EDIT_STRUCTURE_DEFINITION": [Function],
-                            }
-          }
-/>,
         <Switch>
           <Route
                     component={[Function]}
                     path="/structures"
           />
+          <Route
+                    component={[Function]}
+                    path="/worlds"
+          />
 </Switch>,
+        <Connect(ModalRoot)
+          modal_components={
+                    Object {
+                              "ADD_STRUCTURE_DEFINITION": [Function],
+                              "EDIT_STRUCTURE_DEFINITION": [Function],
+                            }
+          }
+/>,
+        <Connect(ModalRoot)
+          modal_components={
+                    Object {
+                              "CONFIRM_MODAL": [Function],
+                            }
+          }
+/>,
       ],
       "className": "App",
     },
@@ -43,9 +53,53 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
+          "children": Array [
+            <Route
+              component={[Function]}
+              path="/structures"
+/>,
+            <Route
+              component={[Function]}
+              path="/worlds"
+/>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "component": [Function],
+              "path": "/structures",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "component": [Function],
+              "path": "/worlds",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
           "modal_components": Object {
             "ADD_STRUCTURE_DEFINITION": [Function],
-            "CONFIRM_MODAL": undefined,
             "EDIT_STRUCTURE_DEFINITION": [Function],
           },
         },
@@ -58,24 +112,12 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "children": <Route
-            component={[Function]}
-            path="/structures"
-/>,
+          "modal_components": Object {
+            "CONFIRM_MODAL": [Function],
+          },
         },
         "ref": null,
-        "rendered": Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "component": [Function],
-            "path": "/structures",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
+        "rendered": null,
         "type": [Function],
       },
     ],
@@ -88,21 +130,31 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <Connect(ModalRoot)
-            modal_components={
-                        Object {
-                                    "ADD_STRUCTURE_DEFINITION": [Function],
-                                    "CONFIRM_MODAL": undefined,
-                                    "EDIT_STRUCTURE_DEFINITION": [Function],
-                                  }
-            }
-/>,
           <Switch>
             <Route
                         component={[Function]}
                         path="/structures"
             />
+            <Route
+                        component={[Function]}
+                        path="/worlds"
+            />
 </Switch>,
+          <Connect(ModalRoot)
+            modal_components={
+                        Object {
+                                    "ADD_STRUCTURE_DEFINITION": [Function],
+                                    "EDIT_STRUCTURE_DEFINITION": [Function],
+                                  }
+            }
+/>,
+          <Connect(ModalRoot)
+            modal_components={
+                        Object {
+                                    "CONFIRM_MODAL": [Function],
+                                  }
+            }
+/>,
         ],
         "className": "App",
       },
@@ -113,9 +165,53 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
+            "children": Array [
+              <Route
+                component={[Function]}
+                path="/structures"
+/>,
+              <Route
+                component={[Function]}
+                path="/worlds"
+/>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "component": [Function],
+                "path": "/structures",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "component": [Function],
+                "path": "/worlds",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
             "modal_components": Object {
               "ADD_STRUCTURE_DEFINITION": [Function],
-              "CONFIRM_MODAL": undefined,
               "EDIT_STRUCTURE_DEFINITION": [Function],
             },
           },
@@ -128,24 +224,12 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "children": <Route
-              component={[Function]}
-              path="/structures"
-/>,
+            "modal_components": Object {
+              "CONFIRM_MODAL": [Function],
+            },
           },
           "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "component": [Function],
-              "path": "/structures",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
+          "rendered": null,
           "type": [Function],
         },
       ],

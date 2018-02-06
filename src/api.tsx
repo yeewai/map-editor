@@ -1,5 +1,8 @@
 import $ from 'jquery';
 
+// -------------------------------------------------------------
+// Setup
+// -------------------------------------------------------------
 const url = 'http://localhost:8080';
 
 export const defaultHeaders = {
@@ -12,7 +15,10 @@ export const defaultConfig = {
     headers: defaultHeaders
 };
 
-export function getStructureDefinitions () {
+// -------------------------------------------------------------
+// Structure Definitions
+// -------------------------------------------------------------
+export const getStructureDefinitions = () =>  {
     const config = { ...defaultConfig, url: `${url}/structureDefinitions`, type: "GET" };
     return $.ajax(config);
 }
@@ -27,7 +33,7 @@ export const createStructureDefinition = (body) => {
     return $.ajax(config);
 };
 
-export function updateStructureDefinition (id, body) {
+export const updateStructureDefinition = (id, body) => {
     const config = {
         ...defaultConfig,
         type: "PUT",
@@ -36,3 +42,21 @@ export function updateStructureDefinition (id, body) {
     };
     return $.ajax(config);
 }
+
+// -------------------------------------------------------------
+// Worlds
+// -------------------------------------------------------------
+export const getWorlds = () =>  {
+    const config = { ...defaultConfig, url: `${url}/worlds`, type: "GET" };
+    return $.ajax(config);
+}
+
+export const createWorld = (body) => {
+    const config = {
+        ...defaultConfig,
+        type: "POST",
+        url: `${url}/worlds`,
+        data: JSON.stringify( body )
+    };
+    return $.ajax(config);
+};

@@ -1,0 +1,882 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Worlds List matches snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Unknown
+    worlds={
+        Array [
+            Object {
+              "createdAt": 1,
+              "description": "string",
+              "id": "id1",
+              "isPublished": true,
+              "key": "key1",
+              "length": 2,
+              "name": "name1",
+              "width": 1,
+            },
+            Object {
+              "createdAt": 3,
+              "description": undefined,
+              "id": "id3",
+              "isPublished": false,
+              "key": "key2",
+              "length": 4,
+              "name": "name3",
+              "width": 3,
+            },
+          ]
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": Array [
+        <ListGroupItem
+          tag="li"
+>
+          <h2>
+                    Worlds
+          </h2>
+          <Connect(OpenModalButton)
+                    modalProps={
+                              Object {
+                                        "ariaLabel": "Sup",
+                                        "formName": "world",
+                                      }
+                    }
+                    modalType="ADD_WORLD"
+          >
+                    New
+          </Connect(OpenModalButton)>
+</ListGroupItem>,
+        <ListGroupItem
+          tag="li"
+>
+          <ListGroup
+                    className="list-group-flush"
+                    tag="ul"
+          >
+                    <ListGroupItem
+                              action={true}
+                              href="#/worlds"
+                              tag="a"
+                    >
+                              <h3>
+                                        name1
+                              </h3>
+                              <time
+                                        className="start-date"
+                                        dateTime="Dec 31, 1969 6:00 PM"
+                              >
+                                         
+                                        Dec 31, 1969 6:00 PM
+                              </time>
+                              <div
+                                        dangerouslySetInnerHTML={
+                                                  Object {
+                                                            "__html": "string",
+                                                          }
+                                        }
+                              />
+                    </ListGroupItem>
+                    <ListGroupItem
+                              action={true}
+                              href="#/worlds"
+                              tag="a"
+                    >
+                              <h3>
+                                        name3
+                              </h3>
+                              <time
+                                        className="start-date"
+                                        dateTime="Dec 31, 1969 6:00 PM"
+                              >
+                                         
+                                        Dec 31, 1969 6:00 PM
+                              </time>
+                              <div
+                                        dangerouslySetInnerHTML={
+                                                  Object {
+                                                            "__html": "",
+                                                          }
+                                        }
+                              />
+                    </ListGroupItem>
+          </ListGroup>
+</ListGroupItem>,
+      ],
+      "tag": "ul",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": "title",
+        "nodeType": "function",
+        "props": Object {
+          "children": Array [
+            <h2>
+              Worlds
+</h2>,
+            <Connect(OpenModalButton)
+              modalProps={
+                            Object {
+                                          "ariaLabel": "Sup",
+                                          "formName": "world",
+                                        }
+              }
+              modalType="ADD_WORLD"
+>
+              New
+</Connect(OpenModalButton)>,
+          ],
+          "tag": "li",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Worlds",
+            },
+            "ref": null,
+            "rendered": "Worlds",
+            "type": "h2",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "New",
+              "modalProps": Object {
+                "ariaLabel": "Sup",
+                "formName": "world",
+              },
+              "modalType": "ADD_WORLD",
+            },
+            "ref": null,
+            "rendered": "New",
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "worlds",
+        "nodeType": "function",
+        "props": Object {
+          "children": <ListGroup
+            className="list-group-flush"
+            tag="ul"
+>
+            <ListGroupItem
+                        action={true}
+                        href="#/worlds"
+                        tag="a"
+            >
+                        <h3>
+                                    name1
+                        </h3>
+                        <time
+                                    className="start-date"
+                                    dateTime="Dec 31, 1969 6:00 PM"
+                        >
+                                     
+                                    Dec 31, 1969 6:00 PM
+                        </time>
+                        <div
+                                    dangerouslySetInnerHTML={
+                                                Object {
+                                                            "__html": "string",
+                                                          }
+                                    }
+                        />
+            </ListGroupItem>
+            <ListGroupItem
+                        action={true}
+                        href="#/worlds"
+                        tag="a"
+            >
+                        <h3>
+                                    name3
+                        </h3>
+                        <time
+                                    className="start-date"
+                                    dateTime="Dec 31, 1969 6:00 PM"
+                        >
+                                     
+                                    Dec 31, 1969 6:00 PM
+                        </time>
+                        <div
+                                    dangerouslySetInnerHTML={
+                                                Object {
+                                                            "__html": "",
+                                                          }
+                                    }
+                        />
+            </ListGroupItem>
+</ListGroup>,
+          "tag": "li",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": Array [
+              <ListGroupItem
+                action={true}
+                href="#/worlds"
+                tag="a"
+>
+                <h3>
+                                name1
+                </h3>
+                <time
+                                className="start-date"
+                                dateTime="Dec 31, 1969 6:00 PM"
+                >
+                                 
+                                Dec 31, 1969 6:00 PM
+                </time>
+                <div
+                                dangerouslySetInnerHTML={
+                                                Object {
+                                                                "__html": "string",
+                                                              }
+                                }
+                />
+</ListGroupItem>,
+              <ListGroupItem
+                action={true}
+                href="#/worlds"
+                tag="a"
+>
+                <h3>
+                                name3
+                </h3>
+                <time
+                                className="start-date"
+                                dateTime="Dec 31, 1969 6:00 PM"
+                >
+                                 
+                                Dec 31, 1969 6:00 PM
+                </time>
+                <div
+                                dangerouslySetInnerHTML={
+                                                Object {
+                                                                "__html": "",
+                                                              }
+                                }
+                />
+</ListGroupItem>,
+            ],
+            "className": "list-group-flush",
+            "tag": "ul",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "id1",
+              "nodeType": "function",
+              "props": Object {
+                "action": true,
+                "children": Array [
+                  <h3>
+                    name1
+</h3>,
+                  <time
+                    className="start-date"
+                    dateTime="Dec 31, 1969 6:00 PM"
+>
+                     
+                    Dec 31, 1969 6:00 PM
+</time>,
+                  <div
+                    dangerouslySetInnerHTML={
+                                        Object {
+                                                            "__html": "string",
+                                                          }
+                    }
+/>,
+                ],
+                "href": "#/worlds",
+                "tag": "a",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "name1",
+                  },
+                  "ref": null,
+                  "rendered": "name1",
+                  "type": "h3",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      " ",
+                      "Dec 31, 1969 6:00 PM",
+                    ],
+                    "className": "start-date",
+                    "dateTime": "Dec 31, 1969 6:00 PM",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    " ",
+                    "Dec 31, 1969 6:00 PM",
+                  ],
+                  "type": "time",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "dangerouslySetInnerHTML": Object {
+                      "__html": "string",
+                    },
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "div",
+                },
+              ],
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "id3",
+              "nodeType": "function",
+              "props": Object {
+                "action": true,
+                "children": Array [
+                  <h3>
+                    name3
+</h3>,
+                  <time
+                    className="start-date"
+                    dateTime="Dec 31, 1969 6:00 PM"
+>
+                     
+                    Dec 31, 1969 6:00 PM
+</time>,
+                  <div
+                    dangerouslySetInnerHTML={
+                                        Object {
+                                                            "__html": "",
+                                                          }
+                    }
+/>,
+                ],
+                "href": "#/worlds",
+                "tag": "a",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "name3",
+                  },
+                  "ref": null,
+                  "rendered": "name3",
+                  "type": "h3",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      " ",
+                      "Dec 31, 1969 6:00 PM",
+                    ],
+                    "className": "start-date",
+                    "dateTime": "Dec 31, 1969 6:00 PM",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    " ",
+                    "Dec 31, 1969 6:00 PM",
+                  ],
+                  "type": "time",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "dangerouslySetInnerHTML": Object {
+                      "__html": "",
+                    },
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "div",
+                },
+              ],
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+        "type": [Function],
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          <ListGroupItem
+            tag="li"
+>
+            <h2>
+                        Worlds
+            </h2>
+            <Connect(OpenModalButton)
+                        modalProps={
+                                    Object {
+                                                "ariaLabel": "Sup",
+                                                "formName": "world",
+                                              }
+                        }
+                        modalType="ADD_WORLD"
+            >
+                        New
+            </Connect(OpenModalButton)>
+</ListGroupItem>,
+          <ListGroupItem
+            tag="li"
+>
+            <ListGroup
+                        className="list-group-flush"
+                        tag="ul"
+            >
+                        <ListGroupItem
+                                    action={true}
+                                    href="#/worlds"
+                                    tag="a"
+                        >
+                                    <h3>
+                                                name1
+                                    </h3>
+                                    <time
+                                                className="start-date"
+                                                dateTime="Dec 31, 1969 6:00 PM"
+                                    >
+                                                 
+                                                Dec 31, 1969 6:00 PM
+                                    </time>
+                                    <div
+                                                dangerouslySetInnerHTML={
+                                                            Object {
+                                                                        "__html": "string",
+                                                                      }
+                                                }
+                                    />
+                        </ListGroupItem>
+                        <ListGroupItem
+                                    action={true}
+                                    href="#/worlds"
+                                    tag="a"
+                        >
+                                    <h3>
+                                                name3
+                                    </h3>
+                                    <time
+                                                className="start-date"
+                                                dateTime="Dec 31, 1969 6:00 PM"
+                                    >
+                                                 
+                                                Dec 31, 1969 6:00 PM
+                                    </time>
+                                    <div
+                                                dangerouslySetInnerHTML={
+                                                            Object {
+                                                                        "__html": "",
+                                                                      }
+                                                }
+                                    />
+                        </ListGroupItem>
+            </ListGroup>
+</ListGroupItem>,
+        ],
+        "tag": "ul",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": "title",
+          "nodeType": "function",
+          "props": Object {
+            "children": Array [
+              <h2>
+                Worlds
+</h2>,
+              <Connect(OpenModalButton)
+                modalProps={
+                                Object {
+                                                "ariaLabel": "Sup",
+                                                "formName": "world",
+                                              }
+                }
+                modalType="ADD_WORLD"
+>
+                New
+</Connect(OpenModalButton)>,
+            ],
+            "tag": "li",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Worlds",
+              },
+              "ref": null,
+              "rendered": "Worlds",
+              "type": "h2",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "New",
+                "modalProps": Object {
+                  "ariaLabel": "Sup",
+                  "formName": "world",
+                },
+                "modalType": "ADD_WORLD",
+              },
+              "ref": null,
+              "rendered": "New",
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "worlds",
+          "nodeType": "function",
+          "props": Object {
+            "children": <ListGroup
+              className="list-group-flush"
+              tag="ul"
+>
+              <ListGroupItem
+                            action={true}
+                            href="#/worlds"
+                            tag="a"
+              >
+                            <h3>
+                                          name1
+                            </h3>
+                            <time
+                                          className="start-date"
+                                          dateTime="Dec 31, 1969 6:00 PM"
+                            >
+                                           
+                                          Dec 31, 1969 6:00 PM
+                            </time>
+                            <div
+                                          dangerouslySetInnerHTML={
+                                                        Object {
+                                                                      "__html": "string",
+                                                                    }
+                                          }
+                            />
+              </ListGroupItem>
+              <ListGroupItem
+                            action={true}
+                            href="#/worlds"
+                            tag="a"
+              >
+                            <h3>
+                                          name3
+                            </h3>
+                            <time
+                                          className="start-date"
+                                          dateTime="Dec 31, 1969 6:00 PM"
+                            >
+                                           
+                                          Dec 31, 1969 6:00 PM
+                            </time>
+                            <div
+                                          dangerouslySetInnerHTML={
+                                                        Object {
+                                                                      "__html": "",
+                                                                    }
+                                          }
+                            />
+              </ListGroupItem>
+</ListGroup>,
+            "tag": "li",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": Array [
+                <ListGroupItem
+                  action={true}
+                  href="#/worlds"
+                  tag="a"
+>
+                  <h3>
+                                    name1
+                  </h3>
+                  <time
+                                    className="start-date"
+                                    dateTime="Dec 31, 1969 6:00 PM"
+                  >
+                                     
+                                    Dec 31, 1969 6:00 PM
+                  </time>
+                  <div
+                                    dangerouslySetInnerHTML={
+                                                      Object {
+                                                                        "__html": "string",
+                                                                      }
+                                    }
+                  />
+</ListGroupItem>,
+                <ListGroupItem
+                  action={true}
+                  href="#/worlds"
+                  tag="a"
+>
+                  <h3>
+                                    name3
+                  </h3>
+                  <time
+                                    className="start-date"
+                                    dateTime="Dec 31, 1969 6:00 PM"
+                  >
+                                     
+                                    Dec 31, 1969 6:00 PM
+                  </time>
+                  <div
+                                    dangerouslySetInnerHTML={
+                                                      Object {
+                                                                        "__html": "",
+                                                                      }
+                                    }
+                  />
+</ListGroupItem>,
+              ],
+              "className": "list-group-flush",
+              "tag": "ul",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": "id1",
+                "nodeType": "function",
+                "props": Object {
+                  "action": true,
+                  "children": Array [
+                    <h3>
+                      name1
+</h3>,
+                    <time
+                      className="start-date"
+                      dateTime="Dec 31, 1969 6:00 PM"
+>
+                       
+                      Dec 31, 1969 6:00 PM
+</time>,
+                    <div
+                      dangerouslySetInnerHTML={
+                                            Object {
+                                                                  "__html": "string",
+                                                                }
+                      }
+/>,
+                  ],
+                  "href": "#/worlds",
+                  "tag": "a",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "name1",
+                    },
+                    "ref": null,
+                    "rendered": "name1",
+                    "type": "h3",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        " ",
+                        "Dec 31, 1969 6:00 PM",
+                      ],
+                      "className": "start-date",
+                      "dateTime": "Dec 31, 1969 6:00 PM",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      " ",
+                      "Dec 31, 1969 6:00 PM",
+                    ],
+                    "type": "time",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "dangerouslySetInnerHTML": Object {
+                        "__html": "string",
+                      },
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "div",
+                  },
+                ],
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "id3",
+                "nodeType": "function",
+                "props": Object {
+                  "action": true,
+                  "children": Array [
+                    <h3>
+                      name3
+</h3>,
+                    <time
+                      className="start-date"
+                      dateTime="Dec 31, 1969 6:00 PM"
+>
+                       
+                      Dec 31, 1969 6:00 PM
+</time>,
+                    <div
+                      dangerouslySetInnerHTML={
+                                            Object {
+                                                                  "__html": "",
+                                                                }
+                      }
+/>,
+                  ],
+                  "href": "#/worlds",
+                  "tag": "a",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "name3",
+                    },
+                    "ref": null,
+                    "rendered": "name3",
+                    "type": "h3",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        " ",
+                        "Dec 31, 1969 6:00 PM",
+                      ],
+                      "className": "start-date",
+                      "dateTime": "Dec 31, 1969 6:00 PM",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      " ",
+                      "Dec 31, 1969 6:00 PM",
+                    ],
+                    "type": "time",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "dangerouslySetInnerHTML": Object {
+                        "__html": "",
+                      },
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "div",
+                  },
+                ],
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

@@ -21,7 +21,7 @@ export const StructuresList: React.SFC<StateProps> = ( props ) => {
         <ListGroup>
             <ListGroupItem key="title">
                 <h2>Structure Library</h2>
-                <OpenModalButton modalType="ADD_STRUCTURE_DEFINITION" modalProps={{ariaLabel: "Sup"}} >New</OpenModalButton>
+                <OpenModalButton modalType="ADD_STRUCTURE_DEFINITION" modalProps={{ariaLabel: "Sup", formName: "structureDefinition"}} >New</OpenModalButton>
             </ListGroupItem>
             {
                 Object.keys(structureDefinitions).map( (key) => (
@@ -36,7 +36,7 @@ export const StructuresList: React.SFC<StateProps> = ( props ) => {
                                             <CardTitle>{sd.name}</CardTitle>
                                             <CardSubtitle>{sd.width} x {sd.length}</CardSubtitle>
                                             <div className="card-text" dangerouslySetInnerHTML={{ __html: sd.description || "" }} />
-                                            <OpenModalButton modalType="EDIT_STRUCTURE_DEFINITION" modalProps={{ariaLabel: "Sup", sd: sd}} >Edit</OpenModalButton>
+                                            <OpenModalButton modalType="EDIT_STRUCTURE_DEFINITION" modalProps={{ariaLabel: "Sup", sd: sd, formName: "structureDefinition"}} >Edit</OpenModalButton>
                                         </CardBody>
                                     </Card>
                                 </li>
