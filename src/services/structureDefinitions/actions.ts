@@ -4,8 +4,35 @@ import { StructureDefinition } from './types';
 import { StateTree, Action } from 'services/types';
 import * as api from 'api';
 
-import { modalActions } from 'ever-modal';
+import { modalActions } from '@evercourse/ever-modal';
 
+// -------------------------------------------------------------
+// Parsing the images for their size
+// -------------------------------------------------------------
+export const requestSDImageSize: ActionCreator<Action> = () => ({
+    type: 'structureDefinition/REQUEST_IMAGE'
+});
+
+export const receiveSDImageSize: ActionCreator<Action> = ( image: any, definition: StructureDefinition )=> ({
+    type: 'structureDefinition/RECEIVE_IMAGE',
+    payload: { image, definition }
+});
+
+export const fetchSDImageSize: ActionCreator<ThunkAction<any, StateTree, void>> = ( definition ) => {
+    return (dispatch: Dispatch<StateTree>): any => {
+        dispatch(requestSDImageSize());
+        return api.getImage(definition.imageUrl).then (
+            resp => dispatch(receiveSDImageSize(resp, definition)),
+            (jqXHR, textStatus, errorThrown) =>{
+                 dispatch(setError(jqXHR, textStatus, errorThrown))
+             }
+        );
+    };
+};
+
+// -------------------------------------------------------------
+// Structure Definitions
+// -------------------------------------------------------------
 export const requestStructureDefinitions: ActionCreator<Action> = () => ({
     type: 'structureDefinition/REQUEST'
 });
@@ -25,7 +52,10 @@ export const fetchStructureDefinitions: ActionCreator<ThunkAction<any, StateTree
     return (dispatch: Dispatch<StateTree>): any => {
         dispatch(requestStructureDefinitions());
         return api.getStructureDefinitions().then (
-            resp => dispatch(receiveStructureDefinitions(resp)),
+            resp => {
+                dispatch(receiveStructureDefinitions(resp))
+                resp.forEach( r => { dispatch(fetchSDImageSize(r)) })
+            },
             (jqXHR, textStatus, errorThrown) =>{
                  dispatch(setError(jqXHR, textStatus, errorThrown))
              }

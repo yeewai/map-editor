@@ -1,11 +1,12 @@
 
 @import './vendor/loading-indicator.scss';
 @import './vendor/node_modules/bootstrap/dist/css/bootstrap.css';
-@import './vendor/node_modules/ever-modal/build/styles/modal.css';
+@import './vendor/node_modules/@evercourse/ever-modal/build/styles/modal.css';
 @import './vendor/node_modules/react-quill/dist/quill.snow';
 @import './vendor/node_modules/react-select/dist/react-select.css';
 
 @import './components/structureDefinitions.scss';
+@import './components/map.scss';
 
 body {
   margin: 0;

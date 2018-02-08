@@ -4,7 +4,7 @@ import { Route, Switch } from 'react-router-dom';
 import StructuresView from './StructuresView';
 import WorldsView from './WorldsView';
 
-import { ModalRoot, ConfirmModal } from 'ever-modal';
+import { ModalRoot, ConfirmModal } from '@evercourse/ever-modal';
 import EditStructureDefinitionModal from './StructuresView/EditStructureDefinitionModal';
 import AddStructureDefinitionModal from './StructuresView/AddStructureDefinitionModal';
 

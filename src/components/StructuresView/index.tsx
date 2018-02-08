@@ -31,7 +31,7 @@ class StructuresView extends React.Component<StructuresViewProps, any> {
 }
 
 const mapStateToProps = (state: StateTree) => ({
-    isFetching: structureDefinitionsSelectors.isCurrentProfileFetching(state),
+    isFetching: structureDefinitionsSelectors.isFetching(state),
     hasFetched: structureDefinitionsSelectors.getHasFetched(state),
     error: structureDefinitionsSelectors.getError(state)
 });

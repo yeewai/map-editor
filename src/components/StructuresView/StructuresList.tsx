@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import { Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle, Button,
      ListGroup, ListGroupItem } from 'reactstrap';
 
-import { OpenModalButton } from 'ever-modal';
+import { OpenModalButton } from '@evercourse/ever-modal';
 
 import { StateTree } from 'services/types';
 

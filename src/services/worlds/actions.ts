@@ -4,7 +4,7 @@ import { World } from './types';
 import { StateTree, Action } from 'services/types';
 import * as api from 'api';
 
-import { modalActions } from 'ever-modal';
+import { modalActions } from '@evercourse/ever-modal';
 
 export const requestWorlds: ActionCreator<Action> = () => ({
     type: 'world/REQUEST'

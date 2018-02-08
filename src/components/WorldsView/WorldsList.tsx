@@ -2,19 +2,28 @@ import * as React from 'react';
 import { connect } from "react-redux";
 import { ListGroup, ListGroupItem } from 'reactstrap';
 import moment from 'moment';
+import { Link, RouteComponentProps } from 'react-router-dom';
 
-import { OpenModalButton } from 'ever-modal';
+import { OpenModalButton } from '@evercourse/ever-modal';
 
 import { StateTree } from 'services/types';
 
 import _ from 'lodash';
 import { worldSelectors, worldTypes } from 'services/worlds';
 
-export interface StateProps {
+export interface MapProps {
     worlds: worldTypes.World[]
 }
+export const mapStateToProps = (state: StateTree) => ({
+    worlds: worldSelectors.getUniqueWorlds(state)
+});
 
-export const WorldsList: React.SFC<StateProps> = (  { worlds } ) => (
+interface OwnProps extends RouteComponentProps<any>, React.Props<any> {};
+
+export type StateProps = MapProps & OwnProps;
+
+
+export const WorldsList: React.SFC<StateProps> = (  { worlds, match } ) => (
     <ListGroup>
         <ListGroupItem key="title">
             <h2>Worlds</h2>
@@ -24,11 +33,13 @@ export const WorldsList: React.SFC<StateProps> = (  { worlds } ) => (
         <ListGroup className="list-group-flush">
             { worlds.map( ( world: worldTypes.World ) => {
                 const createdAtStr = moment(world.createdAt).format("lll");
-                return (<ListGroupItem key={world.id} tag="a" href="#/worlds" action>
-                    <h3>{world.name}</h3>
-                    <time className="start-date" dateTime={createdAtStr}> { createdAtStr }</time>
-                    <div dangerouslySetInnerHTML={{__html: world.description || ""}}/>
-                </ListGroupItem>);
+                return (
+                    <Link to={`${match.url}/${world.id}`} key={world.id} className="list-group-item list-group-item-action">
+                        <h3>{world.name}</h3>
+                        <time className="start-date" dateTime={createdAtStr}> { createdAtStr }</time>
+                        <div dangerouslySetInnerHTML={{__html: world.description || ""}}/>
+                    </Link>
+                );
             } ) }
         </ListGroup>
 
@@ -36,9 +47,6 @@ export const WorldsList: React.SFC<StateProps> = (  { worlds } ) => (
     </ListGroup>
 );
 
-export const mapStateToProps = (state: StateTree) => ({
-    worlds: worldSelectors.getUniqueWorlds(state)
-});
 
 
-export default connect<StateProps, any, any>(mapStateToProps)(WorldsList);
+export default connect<MapProps, any, any>(mapStateToProps)(WorldsList);

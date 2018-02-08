@@ -43,6 +43,11 @@ export const updateStructureDefinition = (id, body) => {
     return $.ajax(config);
 }
 
+export const getImage = (image) => {
+    const config = { ...defaultConfig, url: image, type: "GET" };
+    return $.ajax(config);
+}
+
 // -------------------------------------------------------------
 // Worlds
 // -------------------------------------------------------------

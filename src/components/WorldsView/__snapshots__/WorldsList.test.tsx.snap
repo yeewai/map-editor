@@ -5,6 +5,44 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Unknown
+    history={
+        Object {
+            "action": "POP",
+            "block": [Function],
+            "createHref": [Function],
+            "go": [Function],
+            "goBack": [Function],
+            "goForward": [Function],
+            "length": 2,
+            "listen": [Function],
+            "location": Object {
+              "hash": "",
+              "key": "",
+              "pathname": "",
+              "search": "",
+              "state": Object {},
+            },
+            "push": [Function],
+            "replace": [Function],
+          }
+    }
+    location={
+        Object {
+            "hash": "",
+            "key": "",
+            "pathname": "",
+            "search": "",
+            "state": Object {},
+          }
+    }
+    match={
+        Object {
+            "isExact": true,
+            "params": null,
+            "path": "",
+            "url": "",
+          }
+    }
     worlds={
         Array [
             Object {
@@ -68,10 +106,10 @@ ShallowWrapper {
                     className="list-group-flush"
                     tag="ul"
           >
-                    <ListGroupItem
-                              action={true}
-                              href="#/worlds"
-                              tag="a"
+                    <Link
+                              className="list-group-item list-group-item-action"
+                              replace={false}
+                              to="/id1"
                     >
                               <h3>
                                         name1
@@ -90,11 +128,11 @@ ShallowWrapper {
                                                           }
                                         }
                               />
-                    </ListGroupItem>
-                    <ListGroupItem
-                              action={true}
-                              href="#/worlds"
-                              tag="a"
+                    </Link>
+                    <Link
+                              className="list-group-item list-group-item-action"
+                              replace={false}
+                              to="/id3"
                     >
                               <h3>
                                         name3
@@ -113,7 +151,7 @@ ShallowWrapper {
                                                           }
                                         }
                               />
-                    </ListGroupItem>
+                    </Link>
           </ListGroup>
 </ListGroupItem>,
       ],
@@ -185,10 +223,10 @@ ShallowWrapper {
             className="list-group-flush"
             tag="ul"
 >
-            <ListGroupItem
-                        action={true}
-                        href="#/worlds"
-                        tag="a"
+            <Link
+                        className="list-group-item list-group-item-action"
+                        replace={false}
+                        to="/id1"
             >
                         <h3>
                                     name1
@@ -207,11 +245,11 @@ ShallowWrapper {
                                                           }
                                     }
                         />
-            </ListGroupItem>
-            <ListGroupItem
-                        action={true}
-                        href="#/worlds"
-                        tag="a"
+            </Link>
+            <Link
+                        className="list-group-item list-group-item-action"
+                        replace={false}
+                        to="/id3"
             >
                         <h3>
                                     name3
@@ -230,7 +268,7 @@ ShallowWrapper {
                                                           }
                                     }
                         />
-            </ListGroupItem>
+            </Link>
 </ListGroup>,
           "tag": "li",
         },
@@ -241,10 +279,10 @@ ShallowWrapper {
           "nodeType": "function",
           "props": Object {
             "children": Array [
-              <ListGroupItem
-                action={true}
-                href="#/worlds"
-                tag="a"
+              <Link
+                className="list-group-item list-group-item-action"
+                replace={false}
+                to="/id1"
 >
                 <h3>
                                 name1
@@ -263,11 +301,11 @@ ShallowWrapper {
                                                               }
                                 }
                 />
-</ListGroupItem>,
-              <ListGroupItem
-                action={true}
-                href="#/worlds"
-                tag="a"
+</Link>,
+              <Link
+                className="list-group-item list-group-item-action"
+                replace={false}
+                to="/id3"
 >
                 <h3>
                                 name3
@@ -286,7 +324,7 @@ ShallowWrapper {
                                                               }
                                 }
                 />
-</ListGroupItem>,
+</Link>,
             ],
             "className": "list-group-flush",
             "tag": "ul",
@@ -296,9 +334,8 @@ ShallowWrapper {
             Object {
               "instance": null,
               "key": "id1",
-              "nodeType": "function",
+              "nodeType": "class",
               "props": Object {
-                "action": true,
                 "children": Array [
                   <h3>
                     name1
@@ -318,8 +355,9 @@ ShallowWrapper {
                     }
 />,
                 ],
-                "href": "#/worlds",
-                "tag": "a",
+                "className": "list-group-item list-group-item-action",
+                "replace": false,
+                "to": "/id1",
               },
               "ref": null,
               "rendered": Array [
@@ -372,9 +410,8 @@ ShallowWrapper {
             Object {
               "instance": null,
               "key": "id3",
-              "nodeType": "function",
+              "nodeType": "class",
               "props": Object {
-                "action": true,
                 "children": Array [
                   <h3>
                     name3
@@ -394,8 +431,9 @@ ShallowWrapper {
                     }
 />,
                 ],
-                "href": "#/worlds",
-                "tag": "a",
+                "className": "list-group-item list-group-item-action",
+                "replace": false,
+                "to": "/id3",
               },
               "ref": null,
               "rendered": Array [
@@ -485,10 +523,10 @@ ShallowWrapper {
                         className="list-group-flush"
                         tag="ul"
             >
-                        <ListGroupItem
-                                    action={true}
-                                    href="#/worlds"
-                                    tag="a"
+                        <Link
+                                    className="list-group-item list-group-item-action"
+                                    replace={false}
+                                    to="/id1"
                         >
                                     <h3>
                                                 name1
@@ -507,11 +545,11 @@ ShallowWrapper {
                                                                       }
                                                 }
                                     />
-                        </ListGroupItem>
-                        <ListGroupItem
-                                    action={true}
-                                    href="#/worlds"
-                                    tag="a"
+                        </Link>
+                        <Link
+                                    className="list-group-item list-group-item-action"
+                                    replace={false}
+                                    to="/id3"
                         >
                                     <h3>
                                                 name3
@@ -530,7 +568,7 @@ ShallowWrapper {
                                                                       }
                                                 }
                                     />
-                        </ListGroupItem>
+                        </Link>
             </ListGroup>
 </ListGroupItem>,
         ],
@@ -602,10 +640,10 @@ ShallowWrapper {
               className="list-group-flush"
               tag="ul"
 >
-              <ListGroupItem
-                            action={true}
-                            href="#/worlds"
-                            tag="a"
+              <Link
+                            className="list-group-item list-group-item-action"
+                            replace={false}
+                            to="/id1"
               >
                             <h3>
                                           name1
@@ -624,11 +662,11 @@ ShallowWrapper {
                                                                     }
                                           }
                             />
-              </ListGroupItem>
-              <ListGroupItem
-                            action={true}
-                            href="#/worlds"
-                            tag="a"
+              </Link>
+              <Link
+                            className="list-group-item list-group-item-action"
+                            replace={false}
+                            to="/id3"
               >
                             <h3>
                                           name3
@@ -647,7 +685,7 @@ ShallowWrapper {
                                                                     }
                                           }
                             />
-              </ListGroupItem>
+              </Link>
 </ListGroup>,
             "tag": "li",
           },
@@ -658,10 +696,10 @@ ShallowWrapper {
             "nodeType": "function",
             "props": Object {
               "children": Array [
-                <ListGroupItem
-                  action={true}
-                  href="#/worlds"
-                  tag="a"
+                <Link
+                  className="list-group-item list-group-item-action"
+                  replace={false}
+                  to="/id1"
 >
                   <h3>
                                     name1
@@ -680,11 +718,11 @@ ShallowWrapper {
                                                                       }
                                     }
                   />
-</ListGroupItem>,
-                <ListGroupItem
-                  action={true}
-                  href="#/worlds"
-                  tag="a"
+</Link>,
+                <Link
+                  className="list-group-item list-group-item-action"
+                  replace={false}
+                  to="/id3"
 >
                   <h3>
                                     name3
@@ -703,7 +741,7 @@ ShallowWrapper {
                                                                       }
                                     }
                   />
-</ListGroupItem>,
+</Link>,
               ],
               "className": "list-group-flush",
               "tag": "ul",
@@ -713,9 +751,8 @@ ShallowWrapper {
               Object {
                 "instance": null,
                 "key": "id1",
-                "nodeType": "function",
+                "nodeType": "class",
                 "props": Object {
-                  "action": true,
                   "children": Array [
                     <h3>
                       name1
@@ -735,8 +772,9 @@ ShallowWrapper {
                       }
 />,
                   ],
-                  "href": "#/worlds",
-                  "tag": "a",
+                  "className": "list-group-item list-group-item-action",
+                  "replace": false,
+                  "to": "/id1",
                 },
                 "ref": null,
                 "rendered": Array [
@@ -789,9 +827,8 @@ ShallowWrapper {
               Object {
                 "instance": null,
                 "key": "id3",
-                "nodeType": "function",
+                "nodeType": "class",
                 "props": Object {
-                  "action": true,
                   "children": Array [
                     <h3>
                       name3
@@ -811,8 +848,9 @@ ShallowWrapper {
                       }
 />,
                   ],
-                  "href": "#/worlds",
-                  "tag": "a",
+                  "className": "list-group-item list-group-item-action",
+                  "replace": false,
+                  "to": "/id3",
                 },
                 "ref": null,
                 "rendered": Array [

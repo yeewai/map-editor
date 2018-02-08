@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import Modal from 'ever-modal';
+import Modal from '@evercourse/ever-modal';
 
 import StructureDefinitionForm from './StructureDefinitionForm';
 

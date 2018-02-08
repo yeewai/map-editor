@@ -6,6 +6,7 @@ import $ from 'jquery';
 import configureMockStore from 'redux-mock-store';*/
 /*import sinon from 'sinon';*/
 
+import { getMockRouterProps } from 'helpers/test/react-router';
 import { WorldsList, mapStateToProps, StateProps } from './WorldsList';
 import { StateTree, defaultStateTree } from 'services/types';
 
@@ -56,7 +57,12 @@ describe("Worlds List", () => {
     };
 
     it( "matches snapshot", () => {
-        const wrapper = shallow(<WorldsList worlds={[world1, world3]}/>);
+        const routerProps = getMockRouterProps<any>(null);
+        const wrapper = shallow(<WorldsList worlds={[world1, world3]}
+                history={routerProps.history}
+                location={routerProps.location}
+                match={routerProps.match}
+            />);
         expect(wrapper).toMatchSnapshot();
     })
 

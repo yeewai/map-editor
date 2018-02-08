@@ -1,6 +1,6 @@
 import { routerReducer } from 'react-router-redux';
 import { combineReducers } from 'redux';
-import { modalReducer } from 'ever-modal';
+import { modalReducer } from '@evercourse/ever-modal';
 import { reducer as formReducer } from 'redux-form'
 
 import { StateTree } from './types';
