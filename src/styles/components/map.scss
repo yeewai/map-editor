@@ -1,4 +1,14 @@
-.tile {
+use {
     transition:all 0.3s ease;
-    use:hover { fill: red; }
+
+    color: blue;
+
+    path {
+        color: green;
+    }
+    &:hover {
+        path {
+            color: red;
+        }
+    }
 }
