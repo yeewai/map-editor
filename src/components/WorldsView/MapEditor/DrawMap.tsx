@@ -28,30 +28,28 @@ export const DrawMap: React.SFC<OwnProps> = (  { world } ) => {
             <svg className="map" width="100%" height="800" viewBox={`${-TILE_SIZE*10/2} ${TILE_HEIGHT*1.5} ${TILE_SIZE*10} ${TILE_SIZE*10}`} preserveAspectRatio="xMidYMid">
             <defs className="structureReference">
             { world.structures.map( s => (
-                <svg id={s.definition.id} key={s.definition.id}
-                width={ TILE_SIZE }
+                <symbol id={s.definition.id} key={s.definition.id}
+
                 viewBox={`0 0 ${s.definition.imageWidth} ${s.definition.imageHeight}`}
                 dangerouslySetInnerHTML={{__html: s.definition.image.innerHTML}}
-                fill="currentcolor"
                 />
-            ))}
+            )) /**/}
             </defs>
             { board.map( (row, x) => (
                 row.map( (col, y) => {
                     const definition = world.structures[Math.floor(Math.random() * 4)].definition;
                     const ratio =  TILE_SIZE/definition.imageWidth;
 
-                    return (
-
-                        <use className="tile"
+                    return (<use className="tile"
+                            width={ TILE_SIZE }
                             key={x*1000 + y}
                             x={ x * TILE_WIDTH_HALF - y * TILE_WIDTH_HALF }
                             y={ (x * TILE_HEIGHT_HALF + y * TILE_HEIGHT_HALF) + ((TILE_HEIGHT - (definition.imageHeight * ratio))/2) }
                             xlinkHref={`#${definition.id}`}
-                            fill="yellow"
                         />
 
-)
+                    )
+
                 })
             )) }
             </svg>

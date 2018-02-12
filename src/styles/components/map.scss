@@ -1,14 +1,13 @@
 use {
     transition:all 0.3s ease;
 
-    color: blue;
-
-    path {
-        color: green;
-    }
     &:hover {
-        path {
-            color: red;
-        }
+        stroke: #5793d0;
+        stroke-width: 2%;
     }
+}
+
+
+svg path {
+    stroke: inherit !important;
 }
