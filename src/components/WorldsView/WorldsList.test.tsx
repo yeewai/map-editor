@@ -23,7 +23,8 @@ describe("Worlds List", () => {
         "width": 1,
         "length": 2,
         "createdAt": 1,
-        "isPublished": true
+        "isPublished": true,
+        "structures": []
     };
     const world2: worldTypes.World = {
         "id": "id2",
@@ -33,7 +34,8 @@ describe("Worlds List", () => {
         "width": 2,
         "length": 5,
         "createdAt": 2,
-        "isPublished": true
+        "isPublished": true,
+        "structures": []
     };
     const world3: worldTypes.World = {
         "id": "id3",
@@ -43,7 +45,8 @@ describe("Worlds List", () => {
         "width": 3,
         "length": 4,
         "createdAt": 3,
-        "isPublished": false
+        "isPublished": false,
+        "structures": []
     };
     const world4: worldTypes.World = {
         "id": "id4",
@@ -53,7 +56,8 @@ describe("Worlds List", () => {
         "width": 3,
         "length": 4,
         "createdAt": 1,
-        "isPublished": false
+        "isPublished": false,
+        "structures": []
     };
 
     it( "matches snapshot", () => {

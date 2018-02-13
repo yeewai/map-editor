@@ -24,7 +24,15 @@ describe("Worlds View Index (World Library)", () => {
             worlds: {
                 isFetching: false,
                 hasFetched: false,
-                error: undefined
+                error: undefined,
+                items: []
+            },
+            structureDefinitions: {
+                isFetching: false,
+                hasFetched: true,
+                error: undefined,
+                items: [],
+                itemsRequested: 0
             }
         };
         routerProps = getMockRouterProps<any>(null);

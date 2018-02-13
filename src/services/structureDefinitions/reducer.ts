@@ -14,7 +14,6 @@ const structureDefinitionReducer = (state = defaultState, action: Action ): Type
         case 'structureDefinition/REQUEST':
             return { ...state, isFetching: true, error: undefined };
         case 'structureDefinition/RECEIVE':
-            console.log(action.payload)
             return {
                 ...state,
                 isFetching: false,

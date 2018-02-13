@@ -6,13 +6,15 @@ import { reducer as formReducer } from 'redux-form'
 import { StateTree } from './types';
 import structureDefinitions from './structureDefinitions';
 import worlds from './worlds';
+import mapEditor from './mapEditor';
 
 const rootReducer = combineReducers<StateTree>({
     router: routerReducer,
     modals: modalReducer,
     form: formReducer,
     structureDefinitions,
-    worlds
+    worlds,
+    mapEditor
 
 });
 

@@ -7,8 +7,6 @@ import $ from 'jquery';
 
 import api from 'api';
 
-
-
 const mockStore = configureMockStore([thunk]);
 
 describe("Actions/structureDefinitions", () => {
@@ -40,7 +38,9 @@ describe("Actions/structureDefinitions", () => {
         ];
 
         return store.dispatch(actions.fetchStructureDefinitions()).then(() => {
-            expect(store.getActions()).toEqual(expectedActions);
+            const gotActions = store.getActions();
+            expect(gotActions[0]).toEqual(expectedActions[0]);
+            expect(gotActions[1]).toEqual(expectedActions[1]);
         });
     });
 
@@ -80,7 +80,11 @@ describe("Actions/structureDefinitions", () => {
         ];
 
         return store.dispatch(actions.updateStructureDefinition({ id: "sup"})).then(() => {
-            expect(store.getActions()).toEqual(expectedActions);
+            const gotActions = store.getActions();
+            expect(gotActions[0]).toEqual(expectedActions[0]);
+            expect(gotActions[1]).toEqual(expectedActions[1]);
+            expect(gotActions[2]).toEqual(expectedActions[2]);
+            expect(gotActions[3]).toEqual(expectedActions[3]);
         });
     });
 
@@ -120,7 +124,11 @@ describe("Actions/structureDefinitions", () => {
         ];
 
         return store.dispatch(actions.addStructureDefinition({})).then(() => {
-            expect(store.getActions()).toEqual(expectedActions);
+            const gotActions = store.getActions();
+            expect(gotActions[0]).toEqual(expectedActions[0]);
+            expect(gotActions[1]).toEqual(expectedActions[1]);
+            expect(gotActions[2]).toEqual(expectedActions[2]);
+            expect(gotActions[3]).toEqual(expectedActions[3]);
         });
     });
 

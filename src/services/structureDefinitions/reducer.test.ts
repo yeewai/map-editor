@@ -16,6 +16,7 @@ describe("Reducers/structureDefinition", () => {
 
     it("handles getting structureDefinition", () => {
         action.type = "structureDefinition/REQUEST";
+        action.payload = [1,2];
 
         const state = structureDefinitionReducer(defaultState, action )
         expect(state.isFetching).toBe(true)
@@ -24,12 +25,15 @@ describe("Reducers/structureDefinition", () => {
 
     it("handles having gotten structureDefinition", () => {
         action.type ="structureDefinition/RECEIVE";
+        action.payload = [1,2];
 
         expect(structureDefinitionReducer(undefined, action ))
             .toEqual({
                 isFetching: false,
                 hasFetched: true,
-                error: undefined
+                error: undefined,
+                items: [],
+                itemsRequested: 2
             });
     });
 

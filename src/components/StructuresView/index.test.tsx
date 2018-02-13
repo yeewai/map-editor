@@ -23,7 +23,9 @@ describe("Structures View Index (Structure Library)", () => {
             structureDefinitions: {
                 isFetching: false,
                 hasFetched: false,
-                error: undefined
+                error: undefined,
+                items: [],
+                itemsRequested: 0
             }
         };
     });

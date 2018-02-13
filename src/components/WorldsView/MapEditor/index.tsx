@@ -10,6 +10,7 @@ import { StateTree } from 'services/types';
 import { worldSelectors, worldTypes } from 'services/worlds';
 
 import DrawMap from './DrawMap';
+import CameraControls from './CameraControls';
 
 export type StateProps  = {
     world: worldTypes.World | undefined
@@ -29,11 +30,19 @@ export const MapEditor: React.SFC<StateProps> = (  { world } ) => {
         );
     }
 
+    let board = _.times(30, _.constant(_.times(30, _.constant(null))));
+    board = board.map( (row, x) => (
+                row.map( (col, y) =>
+                    world.structures[Math.floor(Math.random() * 4)].definition
+                )
+            )
+        );
 
     return (
         <article>
             <h2>{world.name}</h2>
-            <DrawMap world={world} />
+            <CameraControls />
+            <DrawMap world={world} board={board} />
         </article>
     )
 

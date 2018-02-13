@@ -6,26 +6,46 @@ import _ from 'lodash';
 
 import { OpenModalButton } from '@evercourse/ever-modal';
 
+import { DrawBoard } from './DrawBoard';
+
 import { StateTree } from 'services/types';
 import { worldTypes } from 'services/worlds';
 
-export type OwnProps  = {
-    world: worldTypes.World
+interface OwnProps {
+    world: worldTypes.World,
+    board: any
 }
 
-export const DrawMap: React.SFC<OwnProps> = (  { world } ) => {
-    const TILE_SIZE = 100;
+interface StateProps {
+    zoom: number,
+    panV: number,
+    panH: number
+}
 
-    const board = _.times(10, _.constant(_.times(10, _.constant(null))));
+export const mapStateToProps = (state: StateTree, ownProps: OwnProps): StateProps => ({
+    zoom: state.mapEditor.zoom,
+    panV: state.mapEditor.panV,
+    panH: state.mapEditor.panH
+});
 
-    const TILE_WIDTH_HALF = TILE_SIZE/2;
-    const TILE_HEIGHT_HALF = (TILE_SIZE/4) + (TILE_SIZE * 0.04); //The 0.04 is to offset the ground having a thickness
+export type PropTypes = OwnProps & StateProps;
 
+export const DrawMap: React.SFC<PropTypes> = ( { world, zoom, board , panH, panV} ) => {
+    const TILE_SIZE = 10;
+    const INITIAL_ZOOM = 10;
     const TILE_HEIGHT = TILE_SIZE*4;
+
+    const viewBox = [
+        (panH * TILE_SIZE) + (-TILE_SIZE * 30/4),
+        (panV * TILE_SIZE) + ( TILE_SIZE * 30/2 ) ,
+        (TILE_SIZE*INITIAL_ZOOM)/zoom,
+        TILE_SIZE*INITIAL_ZOOM/zoom
+    ].join(" ");
+
     return (
         <section>
 
-            <svg className="map" width="100%" height="800" viewBox={`${-TILE_SIZE*10/2} ${TILE_HEIGHT*1.5} ${TILE_SIZE*10} ${TILE_SIZE*10}`} preserveAspectRatio="xMidYMid">
+            <svg className="map" width="100%" height="800" viewBox= {viewBox} preserveAspectRatio="xMidYMid">
             <defs className="structureReference">
             { world.structures.map( s => (
                 <symbol id={s.definition.id} key={s.definition.id}
@@ -35,29 +55,14 @@ export const DrawMap: React.SFC<OwnProps> = (  { world } ) => {
                 />
             )) /**/}
             </defs>
-            { board.map( (row, x) => (
-                row.map( (col, y) => {
-                    const definition = world.structures[Math.floor(Math.random() * 4)].definition;
-                    const ratio =  TILE_SIZE/definition.imageWidth;
 
-                    return (<use className="tile"
-                            width={ TILE_SIZE }
-                            key={x*1000 + y}
-                            x={ x * TILE_WIDTH_HALF - y * TILE_WIDTH_HALF }
-                            y={ (x * TILE_HEIGHT_HALF + y * TILE_HEIGHT_HALF) + ((TILE_HEIGHT - (definition.imageHeight * ratio))/2) }
-                            xlinkHref={`#${definition.id}`}
-                        />
-
-                    )
-
-                })
-            )) }
+            { <DrawBoard board={board} TILE_SIZE={TILE_SIZE} TILE_HEIGHT={TILE_HEIGHT} />}
             </svg>
         </section>
     )
 };
 
-export default DrawMap;
+export default connect<StateProps, any, any>(mapStateToProps)(DrawMap);
 // <svg>{renderHTML(definitionImage.innerHTML)}</svg>
 
 //http://jsiso.com/tutorials/2014/10/26/isometric-engine-basics.html

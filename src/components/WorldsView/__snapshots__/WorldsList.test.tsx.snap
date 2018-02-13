@@ -53,6 +53,7 @@ ShallowWrapper {
               "key": "key1",
               "length": 2,
               "name": "name1",
+              "structures": Array [],
               "width": 1,
             },
             Object {
@@ -63,6 +64,7 @@ ShallowWrapper {
               "key": "key2",
               "length": 4,
               "name": "name3",
+              "structures": Array [],
               "width": 3,
             },
           ]
