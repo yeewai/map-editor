@@ -1,7 +1,8 @@
+import sinon from 'sinon';
+import $ from 'jquery';
+
 import structureDefinitionReducer, { defaultState } from './reducer';
 import { Action, defaultAction } from 'services/types';
-
-import $ from 'jquery';
 
 describe("Reducers/structureDefinition", () => {
     let action: Action;
@@ -43,4 +44,39 @@ describe("Reducers/structureDefinition", () => {
             .toEqual( 'Error loading structureDefinition.');
     });
 
+
+    describe("Requesting structure definition image", () => {
+        it("handles getting structureDefinition", () => {
+            action.type = "structureDefinition/REQUEST_IMAGE";
+
+            const state = structureDefinitionReducer(defaultState, action )
+            expect(state.isFetching).toBe(true)
+            expect(state.error).toBe(undefined)
+        });
+
+        it("handles having gotten definition image", () => {
+            const imageDef = {a: 1};
+            const image = { viewBox : { baseVal: { width: 3, height: 4}}};
+
+            const queryStub = sinon.stub().returns(image);
+
+            action.type ="structureDefinition/RECEIVE_IMAGE";
+            action.payload = { definition: imageDef, image: {querySelector: queryStub} }
+
+            const state = structureDefinitionReducer(defaultState, action )
+            expect(state.items).toContainEqual({
+                ...imageDef,
+                imageWidth: 3,
+                imageHeight: 4,
+                image
+            })
+
+        });
+
+        xit("handles failing to get structureDefinition", () => {
+            action.type = "structureDefinition/SET_ERROR";
+            expect(structureDefinitionReducer(undefined, action).error)
+                .toEqual( 'Error loading structureDefinition.');
+        });
+    })
 });

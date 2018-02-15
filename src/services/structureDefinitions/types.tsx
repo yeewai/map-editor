@@ -11,6 +11,15 @@ export interface StructureDefinition {
     image?: any
 }
 
+export const emptyStructureDefintion = {
+    id: "",
+    name: "",
+    width: 1,
+    length: 1,
+    kind: "",
+    imageUrl: ""
+}
+
 export interface State {
     items: StructureDefinition[],
     itemsRequested: number,

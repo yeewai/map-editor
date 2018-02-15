@@ -3,8 +3,10 @@ import { ThunkAction } from 'redux-thunk';
 import { World } from './types';
 import { StateTree, Action } from 'services/types';
 import * as api from 'api';
+import _ from 'lodash';
 
 import { modalActions } from '@evercourse/ever-modal';
+import { structureDefinitionsSelectors } from 'services/structureDefinitions';
 
 export const requestWorlds: ActionCreator<Action> = () => ({
     type: 'world/REQUEST'
@@ -41,7 +43,7 @@ export const updateWorld: ActionCreator<ThunkAction<any, StateTree, void>> = (va
     return (dispatch: Dispatch<StateTree>, getState: () => StateTree ) => {
 
         dispatch(putWorld());
-        return dispatch(addWorld(values));
+        return dispatch(processWorld(values));
     };
 }
 
@@ -53,6 +55,17 @@ export const addWorld: ActionCreator<ThunkAction<any, StateTree, void>> = (value
     return (dispatch: Dispatch<StateTree>, getState: () => StateTree ) => {
 
         dispatch(createWorld());
+
+        return dispatch(processWorld(values));
+    };
+}
+
+// const processingWorld: ActionCreator<Action> = () => ({
+//     type: 'world/PROCESS'
+// });
+export const processWorld: ActionCreator<ThunkAction<any, StateTree, void>> = (values) => {
+    return (dispatch: Dispatch<StateTree>, getState: () => StateTree ) => {
+
         return api.createWorld(values).then(
             resp => {
                 dispatch(modalActions.hideModal());

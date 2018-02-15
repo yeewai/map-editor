@@ -148,4 +148,46 @@ describe("Actions/structureDefinitions", () => {
             expect(store.getActions()[1]).toMatchObject({"type": "structureDefinition/SET_ERROR" });
         });
     });
+
+    describe("Fetching image", () => {
+        it('makes a fetch image api call', () => {
+        // const scope = nock('http://localhost:8080').log(console.log)
+        //     .get('/structureDefinitions')
+        //     .reply(200, { payload: [1,2,3] });
+        //
+        let stub = sandbox.stub($, 'ajax').callsFake( () => (
+            new Promise(function(resolve, reject) {
+                resolve( [1,2,3] );
+            })
+        ));
+
+        const expectedActions = [
+            { type: 'structureDefinition/REQUEST_IMAGE' },
+            { type: 'structureDefinition/RECEIVE_IMAGE', payload: { definition: {}, image: [1,2,3] }  }
+        ];
+
+        return store.dispatch(actions.fetchSDImageSize({})).then(() => {
+            const gotActions = store.getActions();
+            expect(gotActions[0]).toEqual(expectedActions[0]);
+            expect(gotActions[1]).toEqual(expectedActions[1]);
+        });
+    });
+
+    it('sets error if fetch image api call fails', () => {
+        // const scope = nock('http://localhost:8080').log(console.log)
+        //     .get('/structureDefinitions')
+        //     .reply(200, { payload: [1,2,3] });
+        //
+        let stub = sandbox.stub($, 'ajax').callsFake( () => (
+            new Promise(function(resolve, reject) {
+                reject();
+            })
+        ));
+
+
+        return store.dispatch(actions.fetchSDImageSize({})).then(() => {
+            expect(store.getActions()[1]).toMatchObject({"type": "structureDefinition/SET_ERROR" });
+        });
+    });
+    })
 })

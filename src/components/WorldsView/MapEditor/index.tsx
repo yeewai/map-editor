@@ -1,8 +1,7 @@
 import * as React from 'react';
 import { connect } from "react-redux";
-import { ListGroup, ListGroupItem, Alert } from 'reactstrap';
-import moment from 'moment';
-import _ from 'lodash';
+import { Alert } from 'reactstrap';
+// import moment from 'moment';
 
 import { OpenModalButton } from '@evercourse/ever-modal';
 
@@ -13,11 +12,11 @@ import DrawMap from './DrawMap';
 import CameraControls from './CameraControls';
 
 export type StateProps  = {
-    world: worldTypes.World | undefined
+    world: worldTypes.WorldWithBoard | undefined
 }
 
 export const mapStateToProps = (state: StateTree, ownProps): StateProps => ({
-    world: worldSelectors.getWorldById(state, ownProps.match.params.id)
+    world: worldSelectors.getWorldWithBoardByKey(state, ownProps.match.params.id)
 });
 
 export const MapEditor: React.SFC<StateProps> = (  { world } ) => {
@@ -30,19 +29,11 @@ export const MapEditor: React.SFC<StateProps> = (  { world } ) => {
         );
     }
 
-    let board = _.times(30, _.constant(_.times(30, _.constant(null))));
-    board = board.map( (row, x) => (
-                row.map( (col, y) =>
-                    world.structures[Math.floor(Math.random() * 4)].definition
-                )
-            )
-        );
-
     return (
         <article>
             <h2>{world.name}</h2>
             <CameraControls />
-            <DrawMap world={world} board={board} />
+            <DrawMap world={world}/>
         </article>
     )
 

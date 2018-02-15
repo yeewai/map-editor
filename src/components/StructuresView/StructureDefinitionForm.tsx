@@ -7,6 +7,7 @@ import classnames from 'classnames';
 import { FormGroup, Label, Col, Button } from 'reactstrap';
 
 import * as FormValidations from 'helpers/formValidations';
+import { renderField } from 'helpers/formHelpers';
 import { structureDefinitionsSelectors, structureDefinitionTypes } from 'services/structureDefinitions';
 
 export interface StateProps {
@@ -45,29 +46,6 @@ export const StructureDefinitionForm: React.SFC<StateProps> = ({ handleFormSubmi
 
     const labelWidth = 2;
 
-    const printErrors = (key: string): null | JSX.Element => {
-        return formErrors[key] && formfields[key] && formfields[key].touched
-            ? <span className="validation-error field-error animated fadeInDown">{ formErrors[key] }</span>
-            : null
-    }
-
-    const renderField = (
-        fieldName: string,
-        prettyFieldName: string,
-        valdidations: FormValidations.validationFunc[],
-        width: number,
-        component: string | (({ input }: { input: any; }) => JSX.Element),
-        inputType: string
-    ) : JSX.Element => (
-        <FormGroup row key={fieldName}>
-            <Label for={ fieldName } sm={ labelWidth }> { prettyFieldName }</Label>
-            <Col sm={ width }>
-                <Field className="form-control" name={ fieldName } component={component} type={inputType} validate={valdidations} />
-                { printErrors(fieldName) }
-            </Col>
-        </FormGroup>
-    )
-
     const fieldDefaults = { width: 12 - labelWidth, component: "input", inputType: "text"  }
     const fields = [
         {
@@ -92,7 +70,7 @@ export const StructureDefinitionForm: React.SFC<StateProps> = ({ handleFormSubmi
         <div>
             <form onSubmit={handleSubmit(handleFormSubmit)}>
 
-                { fields.map( f => renderField(f.name, f.prettyName, f.validations, f.width, f.component, f.inputType)) }
+                { fields.map( f => renderField(f.name, f.prettyName, f.validations, f.width, f.component, f.inputType, labelWidth, formErrors[f.name], formfields[f.name])) }
                 <FormGroup row>
                     <Col sm={{ size: labelWidth, offset: labelWidth }}>
                         <button disabled={!isValid} className={classnames("btn btn-primary", { disabled: !isValid})} type="submit">Submit</button>

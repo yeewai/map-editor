@@ -93,7 +93,8 @@
             "!src/index.tsx",
             "!src/middlewares/**/*.{ts,tsx}",
             "!src/registerServiceWorker.ts",
-            "!src/test/*"
+            "!src/test/*",
+            "!src/helpers/test/*"
         ]
     }
 }

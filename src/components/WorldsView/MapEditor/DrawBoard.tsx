@@ -4,15 +4,15 @@ import { ListGroup, ListGroupItem, Alert } from 'reactstrap';
 import moment from 'moment';
 import _ from 'lodash';
 
+import { TILE_SIZE } from 'conf';
 import { OpenModalButton } from '@evercourse/ever-modal';
+import { DrawTile } from './DrawTile';
 
 import { StateTree } from 'services/types';
 import { worldTypes } from 'services/worlds';
 
 interface OwnProps {
-    board: any,
-    TILE_SIZE: number,
-    TILE_HEIGHT: number
+    board: any
 }
 
 export type PropTypes = OwnProps;
@@ -23,37 +23,18 @@ export class DrawBoard extends React.Component<PropTypes> {
     }
 
     render() {
-        const { board, TILE_SIZE, TILE_HEIGHT } = this.props;
-        const TILE_WIDTH_HALF = TILE_SIZE/2;
-        const TILE_HEIGHT_HALF = (TILE_SIZE/4) + (TILE_SIZE * 0.04); //The 0.04 is to offset the ground having a thickness
+        const { board } = this.props;
 
         return (
             <g className="tiles">
-
                 { board.map( (row, x) => (
-                    row.map( (col, y) => {
-                        const definition = board[x][y]; //world.structures[Math.floor(Math.random() * 4)].definition;
-                        if (!definition) { return null; }
-
-                        const ratio =  TILE_SIZE/definition.imageWidth;
-
-                        return (<use className="tile"
-                                width={ TILE_SIZE }
-                                key={x*1000 + y}
-                                x={ x * TILE_WIDTH_HALF - y * TILE_WIDTH_HALF }
-                                y={ (x * TILE_HEIGHT_HALF + y * TILE_HEIGHT_HALF) + ((TILE_HEIGHT - (definition.imageHeight * ratio))/2) }
-                                xlinkHref={`#${definition.id}`}
-                            />
-
-                        )
-
-                    })
+                    row.map( (col, y) => (
+                        <DrawTile structure={board[x][y]} x={x} y={y} key={ `x${x}y${y}`}/>
+                    ))
                 )) }
             </g>
         )
     };
 }
-
-
 
 export default DrawBoard;

@@ -22,7 +22,10 @@ describe("Camera Controls for Map", () => {
     });
 
     it ("renders camera controls", () => {
-		wrapper = shallow(<CameraControls />)
+		wrapper = shallow(<CameraControls
+            zoomIn={sinon.spy()} zoomOut={sinon.spy()} zoomReset={sinon.spy()}
+            panUp={sinon.spy()} panDown={sinon.spy()} panLeft={sinon.spy()} panRight={sinon.spy()} panReset={sinon.spy()}
+        />)
 		expect(wrapper).toMatchSnapshot();
 	});
 
@@ -35,7 +38,7 @@ describe("Camera Controls for Map", () => {
 
             mapDispatchToProps(dispatchSpy)[a]();
             expect(spy.called).toBe(true);
-            
+
             sandbox.restore();
         })
 

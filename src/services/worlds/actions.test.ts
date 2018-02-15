@@ -74,7 +74,6 @@ describe("Actions/worlds", () => {
 
         const expectedActions = [
             { type: 'world/PUT' },
-            { type: 'world/CREATE' },
             { type: "modal/HIDE", modalType: undefined},
             { type: 'world/REQUEST' },
             { type: 'world/RECEIVE', payload: [1,2,3]  }

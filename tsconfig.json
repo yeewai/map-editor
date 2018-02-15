@@ -33,7 +33,8 @@
     "webpack",
     "jest",
     "src/setupTests.ts",
-    "**/*.test.{ts, tsx}",
+    "./src/**/*.test.tsx",
+    "./src/**/*.test.ts",
     "coverage"
   ]
 }

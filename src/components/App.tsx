@@ -7,13 +7,15 @@ import WorldsView from './WorldsView';
 import { ModalRoot, ConfirmModal } from '@evercourse/ever-modal';
 import EditStructureDefinitionModal from './StructuresView/EditStructureDefinitionModal';
 import AddStructureDefinitionModal from './StructuresView/AddStructureDefinitionModal';
+import AddWorldModal from './WorldsView/AddWorldModal';
 
 class App extends React.Component {
     render() {
         const modal_components = {
 
             'ADD_STRUCTURE_DEFINITION': AddStructureDefinitionModal,
-            'EDIT_STRUCTURE_DEFINITION': EditStructureDefinitionModal
+            'EDIT_STRUCTURE_DEFINITION': EditStructureDefinitionModal,
+            'ADD_WORLD': AddWorldModal
         };
 
         return (

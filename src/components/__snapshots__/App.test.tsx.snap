@@ -32,6 +32,7 @@ ShallowWrapper {
           modal_components={
                     Object {
                               "ADD_STRUCTURE_DEFINITION": [Function],
+                              "ADD_WORLD": [Function],
                               "EDIT_STRUCTURE_DEFINITION": [Function],
                             }
           }
@@ -100,6 +101,7 @@ ShallowWrapper {
         "props": Object {
           "modal_components": Object {
             "ADD_STRUCTURE_DEFINITION": [Function],
+            "ADD_WORLD": [Function],
             "EDIT_STRUCTURE_DEFINITION": [Function],
           },
         },
@@ -144,6 +146,7 @@ ShallowWrapper {
             modal_components={
                         Object {
                                     "ADD_STRUCTURE_DEFINITION": [Function],
+                                    "ADD_WORLD": [Function],
                                     "EDIT_STRUCTURE_DEFINITION": [Function],
                                   }
             }
@@ -212,6 +215,7 @@ ShallowWrapper {
           "props": Object {
             "modal_components": Object {
               "ADD_STRUCTURE_DEFINITION": [Function],
+              "ADD_WORLD": [Function],
               "EDIT_STRUCTURE_DEFINITION": [Function],
             },
           },

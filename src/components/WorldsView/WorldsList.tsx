@@ -34,7 +34,7 @@ export const WorldsList: React.SFC<StateProps> = (  { worlds, match } ) => (
             { worlds.map( ( world: worldTypes.World ) => {
                 const createdAtStr = moment(world.createdAt).format("lll");
                 return (
-                    <Link to={`${match.url}/${world.id}`} key={world.id} className="list-group-item list-group-item-action">
+                    <Link to={`${match.url}/${world.key}`} key={world.id} className="list-group-item list-group-item-action">
                         <h3>{world.name}</h3>
                         <time className="start-date" dateTime={createdAtStr}> { createdAtStr }</time>
                         <div dangerouslySetInnerHTML={{__html: world.description || ""}}/>

@@ -1,0 +1,409 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Drawing the board renders 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <DrawBoard
+    board={
+        Array [
+            Array [
+              1,
+              2,
+              3,
+            ],
+            Array [
+              4,
+              5,
+              6,
+            ],
+            Array [
+              7,
+              8,
+              9,
+            ],
+          ]
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        Array [
+          <DrawTile
+            structure={1}
+            x={0}
+            y={0}
+/>,
+          <DrawTile
+            structure={2}
+            x={0}
+            y={1}
+/>,
+          <DrawTile
+            structure={3}
+            x={0}
+            y={2}
+/>,
+        ],
+        Array [
+          <DrawTile
+            structure={4}
+            x={1}
+            y={0}
+/>,
+          <DrawTile
+            structure={5}
+            x={1}
+            y={1}
+/>,
+          <DrawTile
+            structure={6}
+            x={1}
+            y={2}
+/>,
+        ],
+        Array [
+          <DrawTile
+            structure={7}
+            x={2}
+            y={0}
+/>,
+          <DrawTile
+            structure={8}
+            x={2}
+            y={1}
+/>,
+          <DrawTile
+            structure={9}
+            x={2}
+            y={2}
+/>,
+        ],
+      ],
+      "className": "tiles",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": "x0y0",
+        "nodeType": "class",
+        "props": Object {
+          "structure": 1,
+          "x": 0,
+          "y": 0,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "x0y1",
+        "nodeType": "class",
+        "props": Object {
+          "structure": 2,
+          "x": 0,
+          "y": 1,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "x0y2",
+        "nodeType": "class",
+        "props": Object {
+          "structure": 3,
+          "x": 0,
+          "y": 2,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "x1y0",
+        "nodeType": "class",
+        "props": Object {
+          "structure": 4,
+          "x": 1,
+          "y": 0,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "x1y1",
+        "nodeType": "class",
+        "props": Object {
+          "structure": 5,
+          "x": 1,
+          "y": 1,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "x1y2",
+        "nodeType": "class",
+        "props": Object {
+          "structure": 6,
+          "x": 1,
+          "y": 2,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "x2y0",
+        "nodeType": "class",
+        "props": Object {
+          "structure": 7,
+          "x": 2,
+          "y": 0,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "x2y1",
+        "nodeType": "class",
+        "props": Object {
+          "structure": 8,
+          "x": 2,
+          "y": 1,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "x2y2",
+        "nodeType": "class",
+        "props": Object {
+          "structure": 9,
+          "x": 2,
+          "y": 2,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "g",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          Array [
+            <DrawTile
+              structure={1}
+              x={0}
+              y={0}
+/>,
+            <DrawTile
+              structure={2}
+              x={0}
+              y={1}
+/>,
+            <DrawTile
+              structure={3}
+              x={0}
+              y={2}
+/>,
+          ],
+          Array [
+            <DrawTile
+              structure={4}
+              x={1}
+              y={0}
+/>,
+            <DrawTile
+              structure={5}
+              x={1}
+              y={1}
+/>,
+            <DrawTile
+              structure={6}
+              x={1}
+              y={2}
+/>,
+          ],
+          Array [
+            <DrawTile
+              structure={7}
+              x={2}
+              y={0}
+/>,
+            <DrawTile
+              structure={8}
+              x={2}
+              y={1}
+/>,
+            <DrawTile
+              structure={9}
+              x={2}
+              y={2}
+/>,
+          ],
+        ],
+        "className": "tiles",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": "x0y0",
+          "nodeType": "class",
+          "props": Object {
+            "structure": 1,
+            "x": 0,
+            "y": 0,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "x0y1",
+          "nodeType": "class",
+          "props": Object {
+            "structure": 2,
+            "x": 0,
+            "y": 1,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "x0y2",
+          "nodeType": "class",
+          "props": Object {
+            "structure": 3,
+            "x": 0,
+            "y": 2,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "x1y0",
+          "nodeType": "class",
+          "props": Object {
+            "structure": 4,
+            "x": 1,
+            "y": 0,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "x1y1",
+          "nodeType": "class",
+          "props": Object {
+            "structure": 5,
+            "x": 1,
+            "y": 1,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "x1y2",
+          "nodeType": "class",
+          "props": Object {
+            "structure": 6,
+            "x": 1,
+            "y": 2,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "x2y0",
+          "nodeType": "class",
+          "props": Object {
+            "structure": 7,
+            "x": 2,
+            "y": 0,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "x2y1",
+          "nodeType": "class",
+          "props": Object {
+            "structure": 8,
+            "x": 2,
+            "y": 1,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "x2y2",
+          "nodeType": "class",
+          "props": Object {
+            "structure": 9,
+            "x": 2,
+            "y": 2,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "g",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
