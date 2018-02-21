@@ -1,5 +1,6 @@
 # See https://help.github.com/ignore-files/ for more about ignoring files.
 
+# React Redux
 # dependencies
 /node_modules
 
@@ -21,3 +22,7 @@ yarn-debug.log*
 yarn-error.log*
 
 *.css
+
+## Java Spring
+.DS_store
+target/
