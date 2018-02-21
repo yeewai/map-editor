@@ -35,11 +35,13 @@ npm run start
 ## Running the tests
 ### Backend
 To run tests and generate a surefire report (so it's easier to see test results)
-* ``Â mvn surefire-report:report``
+
+* `` mvn surefire-report:report``
 * Navigate to ``<<project root>>/target/site/surefire-report.html``
     * If the html looks unformatted, you may have to generate the css first using ``mvn site``
 
 To check coverage
+
 * ``mvn test``
 * Navigate to ``<<project root>>/target/jacoco-ut/mapeditor/index.html``
 
