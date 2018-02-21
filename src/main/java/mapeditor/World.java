@@ -8,6 +8,8 @@ import javax.validation.constraints.Min;
 
 import java.util.Comparator;
 import mapeditor.validation.StructuresDoNotOverlap;
+import mapeditor.validation.StructureDefinitionExists;
+import mapeditor.validation.ImageUrl;
 
 import java.util.Date;
 import java.util.List;
@@ -43,6 +45,12 @@ public class World {
 
     @StructuresDoNotOverlap
     private List<Structure> structures;
+
+    @ImageUrl(message = "Background Image URL has to be a valid svg, png, or gif!")
+    private String bgImageUrl;
+
+    // @StructureDefinitionExists(message = "Must have a valid definition (id)!")
+    // private String nullStructureId;
 
 
     public static Comparator<World> SortByDate = new Comparator<World>() {

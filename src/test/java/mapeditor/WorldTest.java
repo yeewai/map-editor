@@ -253,13 +253,13 @@ public class WorldTest {
     //     s2.setName("Structure Name");
     //     s2.setDescription("Structure Description");
     //     s2.setDefinitionId(sd.getId());
-    //     s2.setXPosition(2);
+    //     s2.setXPosition(1);
     //     s2.setYPosition(1);
     //
     //     world2.setStructures(Arrays.asList(s1, s2));
     //     String json = mapper.writeValueAsString(world2);
     //
-    //     when(worldRepository.exists("c")).thenReturn(true);
+    //     when(worldRepository.exists(world2.getId())).thenReturn(false);
     //     when(structureDefinitionRepository.findOne(Mockito.any(String.class)))
     //         .thenReturn(sd);
     //

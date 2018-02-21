@@ -20,6 +20,11 @@ how to install in LMS
 how to create test instances (automated scripts, etc)
 ```
 
+### Starting the server
+```
+mvn spring-boot:run
+```
+
 ## Running the tests
 To run tests and generate a surefire report (so it's easier to see test results)
 * `` mvn surefire-report:report``
