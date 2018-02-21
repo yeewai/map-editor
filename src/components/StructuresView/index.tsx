@@ -6,6 +6,7 @@ import { structureDefinitionsActions, structureDefinitionsSelectors } from 'serv
 
 import LoadingIndicator from 'components/common/LoadingIndicator';
 import StructuresList from './StructuresList';
+import StructureCard from './StructureCard';
 
 interface StateProps {
     isFetching: boolean,
@@ -17,7 +18,9 @@ interface DispatchProps {
     fetchStructureDefinitions: any
 }
 
-type StructuresViewProps = StateProps & DispatchProps;
+interface OwnProps { LiComponent: React.SFC<any> }
+
+type StructuresViewProps = StateProps & DispatchProps & OwnProps;
 
 class StructuresView extends React.Component<StructuresViewProps, any> {
     componentDidMount () {
@@ -26,7 +29,8 @@ class StructuresView extends React.Component<StructuresViewProps, any> {
     }
 
     render() {
-        return this.props.hasFetched ? <StructuresList /> : <LoadingIndicator />;
+        const { hasFetched, LiComponent } = this.props;
+        return hasFetched ? <StructuresList LiComponent={ LiComponent || StructureCard } /> : <LoadingIndicator />;
     }
 }
 

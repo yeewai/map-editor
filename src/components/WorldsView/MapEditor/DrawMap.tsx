@@ -4,10 +4,13 @@ import { connect } from "react-redux";
 import { TILE_SIZE, INITIAL_ZOOM } from 'conf';
 import { OpenModalButton } from '@evercourse/ever-modal';
 
-import { DrawBoard } from './DrawBoard';
+import DrawBoard from './DrawBoard';
+import DrawTile from './DrawTile';
+import DrawAddStructureDefinitionTile from './DrawAddStructureDefinitionTile';
 
 import { StateTree } from 'services/types';
 import { worldTypes } from 'services/worlds';
+import { structureDefinitionTypes } from 'services/structureDefinitions';
 import { mapEditorSelectors } from 'services/mapEditor';
 
 interface OwnProps {
@@ -29,7 +32,7 @@ export const mapStateToProps = (state: StateTree, ownProps: OwnProps): StateProp
 
 export type PropTypes = OwnProps & StateProps;
 
-export const DrawMap: React.SFC<PropTypes> = ( { world, zoom, pan} ) => {
+export const DrawMap: React.SFC<PropTypes> = ( { world, zoom, pan } ) => {
     const viewBox = [
         (pan.h * TILE_SIZE) + (-TILE_SIZE * 30/4),
         (pan.v * TILE_SIZE) + ( TILE_SIZE * 30/2 ) ,
@@ -40,17 +43,24 @@ export const DrawMap: React.SFC<PropTypes> = ( { world, zoom, pan} ) => {
     return (
         <section>
 
-            <svg className="map" width="100%" height="800" viewBox= {viewBox} preserveAspectRatio="xMidYMid">
-            <defs className="structureReference">
-            { world.uniqueStructures.map( definition => (
-                <symbol id={definition.id} key={definition.id}
-                    viewBox={`0 0 ${definition.imageWidth} ${definition.imageHeight}`}
-                    dangerouslySetInnerHTML={{__html: definition.image.innerHTML}}
-                />
-            )) }
-            </defs>
+            <svg className="map" viewBox= {viewBox} preserveAspectRatio="xMinYMax">
 
-            { <DrawBoard board={world.board} />}
+                <image xlinkHref={world.bgImageUrl} width={TILE_SIZE*world.width} x={-TILE_SIZE*world.width/2} className="mapBG"/>
+
+                <defs className="structureReference">
+                { world.uniqueStructures.map( definition => (
+                    <symbol id={definition.id} key={definition.id}
+                        viewBox={`0 0 ${definition.imageWidth} ${definition.imageHeight}`}
+                        preserveAspectRatio="xMidYMid"
+                        dangerouslySetInnerHTML={{__html: definition.image.innerHTML}}
+                    />
+                )) }
+                </defs>
+
+
+                <DrawBoard board={world.board} />
+                <DrawAddStructureDefinitionTile uniqueStructures={ world.uniqueStructures } />
+
             </svg>
         </section>
     )

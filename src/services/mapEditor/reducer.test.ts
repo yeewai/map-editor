@@ -87,4 +87,61 @@ describe("Reducers/mapEditor", () => {
         });
     })
 
+    it("tracks the highlighted build structure", () => {
+        action.type = "mapEditor/SET_BUILD_STRUCTUREDEFINITION";
+        action.payload = "a";
+
+        const state = mapEditorReducer(defaultState, action )
+        expect(state.buildStructureDefinition).toBe("a")
+    })
+
+    it("untracks the highlighted build structure if the same one is selected", () => {
+        action.type = "mapEditor/SET_BUILD_STRUCTUREDEFINITION";
+        action.payload = "a";
+
+        const state = mapEditorReducer({buildStructureDefinition: "a"}, action )
+        expect(state.buildStructureDefinition).toBe(defaultState.buildStructureDefinition)
+    })
+
+    it("sets the mouse position", () => {
+        action.type = "mapEditor/SET_MOUSE_POSITION";
+        action.payload = "a";
+
+        const state = mapEditorReducer(defaultState, action )
+        expect(state.mousePosition).toBe("a")
+    })
+
+    it("sets the active world", () => {
+        action.type = "mapEditor/SET_ACTIVE";
+        action.payload = "a";
+
+        const state = mapEditorReducer(defaultState, action )
+        expect(state.activeWorld).toBe("a")
+    })
+
+    describe("Handling mouse click", () => {
+        beforeEach( () => {
+            action.type = "mapEditor/MOUSE_CLICK";
+        })
+
+        it ("does nothing if there is no mouse position or buildStructureDefinition", () => {
+
+            [
+                { mousePosition: null, buildStructureDefinition: null },
+                { mousePosition: "a", buildStructureDefinition: null }
+            ].forEach( s => {
+                const state = mapEditorReducer(s, action )
+                expect(state).toMatchObject(s)
+            })
+        })
+
+        it ("puts the new building on the map", () => {
+            const buildStructureDefinition = {id: "a"};
+            const prevState = { mousePosition: {x: 1, y: 2}, buildStructureDefinition, activeWorld: {} };
+
+            const state = mapEditorReducer(prevState, action )
+            expect(state.activeWorld.structures[0].definition).toMatchObject(buildStructureDefinition)
+
+        })
+    })
 });

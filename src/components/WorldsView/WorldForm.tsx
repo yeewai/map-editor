@@ -10,7 +10,6 @@ import { GROUND_TYPE } from 'conf';
 import * as FormValidations from 'helpers/formValidations';
 import { renderField } from 'helpers/formHelpers';
 import { worldSelectors, worldTypes } from 'services/worlds';
-import { structureDefinitionsSelectors, structureDefinitionTypes } from 'services/structureDefinitions';
 
 export interface StateProps {
     handleSubmit: ( event: any ) => any, //This is passed in from redux-form
@@ -20,13 +19,9 @@ export interface StateProps {
     formErrors: any, //I'm not sure how I want to do the object yet...
     formfields: any, //I'm not sure how I want to do the object yet...
     isValid: boolean,
-    structureDefinitions: _.Dictionary<structureDefinitionTypes.StructureDefinition[]>
 }
 
-export const WorldForm: React.SFC<StateProps> = ({ handleFormSubmit, handleSubmit, isValid, formErrors, formfields, structureDefinitions }) => {
-
-    if (!structureDefinitions || !structureDefinitions[GROUND_TYPE]) { return <Alert color="danger"><h4 className="alert-heading">There are no structures of type {GROUND_TYPE}!</h4> Please create one before creating a world. </Alert>}
-
+export const WorldForm: React.SFC<StateProps> = ({ handleFormSubmit, handleSubmit, isValid, formErrors, formfields }) => {
     const labelWidth = 2;
 
     const fieldDefaults = { width: 12 - labelWidth, component: "input", inputType: "text"  }
@@ -43,6 +38,9 @@ export const WorldForm: React.SFC<StateProps> = ({ handleFormSubmit, handleSubmi
         },{
             ...fieldDefaults, name: "length", prettyName: "Length",
             validations: [FormValidations.required], width: labelWidth, inputType: "number"
+        }, {
+            ...fieldDefaults, name: "bgImageUrl", prettyName: "Background Image URL",
+            validations: [FormValidations.required, FormValidations.validUrl]
         }
     ]
 
@@ -51,29 +49,6 @@ export const WorldForm: React.SFC<StateProps> = ({ handleFormSubmit, handleSubmi
             <form onSubmit={handleSubmit(handleFormSubmit)}>
 
                 {fields.map( f => renderField(f.name, f.prettyName, f.validations, f.width, f.component, f.inputType, labelWidth, formErrors[f.name], formfields[f.name])) }
-                <FormGroup row>
-                    <legend> Tile to initialize the map with </legend>
-                    <FormGroup row check>
-                        {
-                            <ul>
-                                { structureDefinitions[GROUND_TYPE].map( ( sd: structureDefinitionTypes.StructureDefinition, i:number ) => (
-                                    <li className="card-li" key={sd.id} >
-                                        <Label check>
-                                            <Card>
-                                                <CardImg top width="100%" src={sd.imageUrl} alt={sd.name} />
-                                                <CardBody>
-                                                    <CardTitle>{sd.name}</CardTitle>
-                                                    <CardSubtitle>{sd.width} x {sd.length}</CardSubtitle>
-                                                    <Field name="nullStructureId" component="input" type="radio" value={sd.id}/>
-                                                </CardBody>
-                                            </Card>
-                                        </Label>
-                                    </li>
-                                )) }
-                            </ul>
-                        }
-                    </FormGroup>
-                </FormGroup>
 
                 <FormGroup row>
                     <Col sm={{ size: labelWidth, offset: labelWidth }}>
@@ -94,16 +69,12 @@ export const mapStateToProps = ( state, ownProps ) => {
     const isValid = form && form.syncErrors === undefined;
     const formfields = form && form.fields || {};
 
-    const structureDefinitions= structureDefinitionsSelectors.getByGroup(state);
-    const nullStructureId = structureDefinitions[GROUND_TYPE] && structureDefinitions[GROUND_TYPE][0] && structureDefinitions[GROUND_TYPE][0].id;
-
     return {
         form: ownProps.formName,
-        initialValues: { ...ownProps.sd, nullStructureId  },
+        initialValues: ownProps.sd,
         formErrors,
         isValid,
         formfields,
-        structureDefinitions
     }
 }
 

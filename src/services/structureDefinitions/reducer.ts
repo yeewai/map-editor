@@ -12,7 +12,7 @@ export const defaultState: Types.State = {
 const structureDefinitionReducer = (state = defaultState, action: Action ): Types.State => {
     switch(action.type) {
         case 'structureDefinition/REQUEST':
-            return { ...state, isFetching: true, error: undefined };
+            return { ...state, isFetching: true, error: undefined, items: defaultState.items };
         case 'structureDefinition/RECEIVE':
             return {
                 ...state,

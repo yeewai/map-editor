@@ -40,21 +40,6 @@ describe("Structure Definition Form", () => {
         expect(wrapper).toMatchSnapshot();
     });
 
-    it ("Errors if there are no structure definitions of Ground type", () => {
-        const wrapper = shallow( <WorldForm
-            form="a"
-            initialValues={world1}
-            handleFormSubmit={sinon.spy()}
-            handleSubmit={sinon.spy()}
-            isValid={false}
-            formErrors={{}}
-            formfields={{}}
-            structureDefinitions={{}}
-            />);
-
-        expect(wrapper.find("Alert").exists()).toBe(true);
-    })
-
     it ("maps state to props", () => {
         const state = {
             form: {

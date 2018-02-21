@@ -39,55 +39,100 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         Array [
-          <DrawTile
-            structure={1}
-            x={0}
-            y={0}
-/>,
-          <DrawTile
-            structure={2}
-            x={0}
-            y={1}
-/>,
-          <DrawTile
-            structure={3}
-            x={0}
-            y={2}
-/>,
+          <a
+            onMouseDown={[Function]}
+            onMouseEnter={[Function]}
+>
+            <DrawTile
+                        structureDefinition={undefined}
+                        x={0}
+                        y={0}
+            />
+</a>,
+          <a
+            onMouseDown={[Function]}
+            onMouseEnter={[Function]}
+>
+            <DrawTile
+                        structureDefinition={undefined}
+                        x={0}
+                        y={1}
+            />
+</a>,
+          <a
+            onMouseDown={[Function]}
+            onMouseEnter={[Function]}
+>
+            <DrawTile
+                        structureDefinition={undefined}
+                        x={0}
+                        y={2}
+            />
+</a>,
         ],
         Array [
-          <DrawTile
-            structure={4}
-            x={1}
-            y={0}
-/>,
-          <DrawTile
-            structure={5}
-            x={1}
-            y={1}
-/>,
-          <DrawTile
-            structure={6}
-            x={1}
-            y={2}
-/>,
+          <a
+            onMouseDown={[Function]}
+            onMouseEnter={[Function]}
+>
+            <DrawTile
+                        structureDefinition={undefined}
+                        x={1}
+                        y={0}
+            />
+</a>,
+          <a
+            onMouseDown={[Function]}
+            onMouseEnter={[Function]}
+>
+            <DrawTile
+                        structureDefinition={undefined}
+                        x={1}
+                        y={1}
+            />
+</a>,
+          <a
+            onMouseDown={[Function]}
+            onMouseEnter={[Function]}
+>
+            <DrawTile
+                        structureDefinition={undefined}
+                        x={1}
+                        y={2}
+            />
+</a>,
         ],
         Array [
-          <DrawTile
-            structure={7}
-            x={2}
-            y={0}
-/>,
-          <DrawTile
-            structure={8}
-            x={2}
-            y={1}
-/>,
-          <DrawTile
-            structure={9}
-            x={2}
-            y={2}
-/>,
+          <a
+            onMouseDown={[Function]}
+            onMouseEnter={[Function]}
+>
+            <DrawTile
+                        structureDefinition={undefined}
+                        x={2}
+                        y={0}
+            />
+</a>,
+          <a
+            onMouseDown={[Function]}
+            onMouseEnter={[Function]}
+>
+            <DrawTile
+                        structureDefinition={undefined}
+                        x={2}
+                        y={1}
+            />
+</a>,
+          <a
+            onMouseDown={[Function]}
+            onMouseEnter={[Function]}
+>
+            <DrawTile
+                        structureDefinition={undefined}
+                        x={2}
+                        y={2}
+            />
+</a>,
         ],
       ],
       "className": "tiles",
@@ -97,119 +142,263 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": "x0y0",
-        "nodeType": "class",
+        "nodeType": "host",
         "props": Object {
-          "structure": 1,
-          "x": 0,
-          "y": 0,
+          "children": <DrawTile
+            structureDefinition={undefined}
+            x={0}
+            y={0}
+/>,
+          "onMouseDown": [Function],
+          "onMouseEnter": [Function],
         },
         "ref": null,
-        "rendered": null,
-        "type": [Function],
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "structureDefinition": undefined,
+            "x": 0,
+            "y": 0,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        "type": "a",
       },
       Object {
         "instance": null,
         "key": "x0y1",
-        "nodeType": "class",
+        "nodeType": "host",
         "props": Object {
-          "structure": 2,
-          "x": 0,
-          "y": 1,
+          "children": <DrawTile
+            structureDefinition={undefined}
+            x={0}
+            y={1}
+/>,
+          "onMouseDown": [Function],
+          "onMouseEnter": [Function],
         },
         "ref": null,
-        "rendered": null,
-        "type": [Function],
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "structureDefinition": undefined,
+            "x": 0,
+            "y": 1,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        "type": "a",
       },
       Object {
         "instance": null,
         "key": "x0y2",
-        "nodeType": "class",
+        "nodeType": "host",
         "props": Object {
-          "structure": 3,
-          "x": 0,
-          "y": 2,
+          "children": <DrawTile
+            structureDefinition={undefined}
+            x={0}
+            y={2}
+/>,
+          "onMouseDown": [Function],
+          "onMouseEnter": [Function],
         },
         "ref": null,
-        "rendered": null,
-        "type": [Function],
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "structureDefinition": undefined,
+            "x": 0,
+            "y": 2,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        "type": "a",
       },
       Object {
         "instance": null,
         "key": "x1y0",
-        "nodeType": "class",
+        "nodeType": "host",
         "props": Object {
-          "structure": 4,
-          "x": 1,
-          "y": 0,
+          "children": <DrawTile
+            structureDefinition={undefined}
+            x={1}
+            y={0}
+/>,
+          "onMouseDown": [Function],
+          "onMouseEnter": [Function],
         },
         "ref": null,
-        "rendered": null,
-        "type": [Function],
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "structureDefinition": undefined,
+            "x": 1,
+            "y": 0,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        "type": "a",
       },
       Object {
         "instance": null,
         "key": "x1y1",
-        "nodeType": "class",
+        "nodeType": "host",
         "props": Object {
-          "structure": 5,
-          "x": 1,
-          "y": 1,
+          "children": <DrawTile
+            structureDefinition={undefined}
+            x={1}
+            y={1}
+/>,
+          "onMouseDown": [Function],
+          "onMouseEnter": [Function],
         },
         "ref": null,
-        "rendered": null,
-        "type": [Function],
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "structureDefinition": undefined,
+            "x": 1,
+            "y": 1,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        "type": "a",
       },
       Object {
         "instance": null,
         "key": "x1y2",
-        "nodeType": "class",
+        "nodeType": "host",
         "props": Object {
-          "structure": 6,
-          "x": 1,
-          "y": 2,
+          "children": <DrawTile
+            structureDefinition={undefined}
+            x={1}
+            y={2}
+/>,
+          "onMouseDown": [Function],
+          "onMouseEnter": [Function],
         },
         "ref": null,
-        "rendered": null,
-        "type": [Function],
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "structureDefinition": undefined,
+            "x": 1,
+            "y": 2,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        "type": "a",
       },
       Object {
         "instance": null,
         "key": "x2y0",
-        "nodeType": "class",
+        "nodeType": "host",
         "props": Object {
-          "structure": 7,
-          "x": 2,
-          "y": 0,
+          "children": <DrawTile
+            structureDefinition={undefined}
+            x={2}
+            y={0}
+/>,
+          "onMouseDown": [Function],
+          "onMouseEnter": [Function],
         },
         "ref": null,
-        "rendered": null,
-        "type": [Function],
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "structureDefinition": undefined,
+            "x": 2,
+            "y": 0,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        "type": "a",
       },
       Object {
         "instance": null,
         "key": "x2y1",
-        "nodeType": "class",
+        "nodeType": "host",
         "props": Object {
-          "structure": 8,
-          "x": 2,
-          "y": 1,
+          "children": <DrawTile
+            structureDefinition={undefined}
+            x={2}
+            y={1}
+/>,
+          "onMouseDown": [Function],
+          "onMouseEnter": [Function],
         },
         "ref": null,
-        "rendered": null,
-        "type": [Function],
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "structureDefinition": undefined,
+            "x": 2,
+            "y": 1,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        "type": "a",
       },
       Object {
         "instance": null,
         "key": "x2y2",
-        "nodeType": "class",
+        "nodeType": "host",
         "props": Object {
-          "structure": 9,
-          "x": 2,
-          "y": 2,
+          "children": <DrawTile
+            structureDefinition={undefined}
+            x={2}
+            y={2}
+/>,
+          "onMouseDown": [Function],
+          "onMouseEnter": [Function],
         },
         "ref": null,
-        "rendered": null,
-        "type": [Function],
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "structureDefinition": undefined,
+            "x": 2,
+            "y": 2,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        "type": "a",
       },
     ],
     "type": "g",
@@ -222,55 +411,100 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           Array [
-            <DrawTile
-              structure={1}
-              x={0}
-              y={0}
-/>,
-            <DrawTile
-              structure={2}
-              x={0}
-              y={1}
-/>,
-            <DrawTile
-              structure={3}
-              x={0}
-              y={2}
-/>,
+            <a
+              onMouseDown={[Function]}
+              onMouseEnter={[Function]}
+>
+              <DrawTile
+                            structureDefinition={undefined}
+                            x={0}
+                            y={0}
+              />
+</a>,
+            <a
+              onMouseDown={[Function]}
+              onMouseEnter={[Function]}
+>
+              <DrawTile
+                            structureDefinition={undefined}
+                            x={0}
+                            y={1}
+              />
+</a>,
+            <a
+              onMouseDown={[Function]}
+              onMouseEnter={[Function]}
+>
+              <DrawTile
+                            structureDefinition={undefined}
+                            x={0}
+                            y={2}
+              />
+</a>,
           ],
           Array [
-            <DrawTile
-              structure={4}
-              x={1}
-              y={0}
-/>,
-            <DrawTile
-              structure={5}
-              x={1}
-              y={1}
-/>,
-            <DrawTile
-              structure={6}
-              x={1}
-              y={2}
-/>,
+            <a
+              onMouseDown={[Function]}
+              onMouseEnter={[Function]}
+>
+              <DrawTile
+                            structureDefinition={undefined}
+                            x={1}
+                            y={0}
+              />
+</a>,
+            <a
+              onMouseDown={[Function]}
+              onMouseEnter={[Function]}
+>
+              <DrawTile
+                            structureDefinition={undefined}
+                            x={1}
+                            y={1}
+              />
+</a>,
+            <a
+              onMouseDown={[Function]}
+              onMouseEnter={[Function]}
+>
+              <DrawTile
+                            structureDefinition={undefined}
+                            x={1}
+                            y={2}
+              />
+</a>,
           ],
           Array [
-            <DrawTile
-              structure={7}
-              x={2}
-              y={0}
-/>,
-            <DrawTile
-              structure={8}
-              x={2}
-              y={1}
-/>,
-            <DrawTile
-              structure={9}
-              x={2}
-              y={2}
-/>,
+            <a
+              onMouseDown={[Function]}
+              onMouseEnter={[Function]}
+>
+              <DrawTile
+                            structureDefinition={undefined}
+                            x={2}
+                            y={0}
+              />
+</a>,
+            <a
+              onMouseDown={[Function]}
+              onMouseEnter={[Function]}
+>
+              <DrawTile
+                            structureDefinition={undefined}
+                            x={2}
+                            y={1}
+              />
+</a>,
+            <a
+              onMouseDown={[Function]}
+              onMouseEnter={[Function]}
+>
+              <DrawTile
+                            structureDefinition={undefined}
+                            x={2}
+                            y={2}
+              />
+</a>,
           ],
         ],
         "className": "tiles",
@@ -280,119 +514,263 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": "x0y0",
-          "nodeType": "class",
+          "nodeType": "host",
           "props": Object {
-            "structure": 1,
-            "x": 0,
-            "y": 0,
+            "children": <DrawTile
+              structureDefinition={undefined}
+              x={0}
+              y={0}
+/>,
+            "onMouseDown": [Function],
+            "onMouseEnter": [Function],
           },
           "ref": null,
-          "rendered": null,
-          "type": [Function],
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "structureDefinition": undefined,
+              "x": 0,
+              "y": 0,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": "a",
         },
         Object {
           "instance": null,
           "key": "x0y1",
-          "nodeType": "class",
+          "nodeType": "host",
           "props": Object {
-            "structure": 2,
-            "x": 0,
-            "y": 1,
+            "children": <DrawTile
+              structureDefinition={undefined}
+              x={0}
+              y={1}
+/>,
+            "onMouseDown": [Function],
+            "onMouseEnter": [Function],
           },
           "ref": null,
-          "rendered": null,
-          "type": [Function],
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "structureDefinition": undefined,
+              "x": 0,
+              "y": 1,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": "a",
         },
         Object {
           "instance": null,
           "key": "x0y2",
-          "nodeType": "class",
+          "nodeType": "host",
           "props": Object {
-            "structure": 3,
-            "x": 0,
-            "y": 2,
+            "children": <DrawTile
+              structureDefinition={undefined}
+              x={0}
+              y={2}
+/>,
+            "onMouseDown": [Function],
+            "onMouseEnter": [Function],
           },
           "ref": null,
-          "rendered": null,
-          "type": [Function],
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "structureDefinition": undefined,
+              "x": 0,
+              "y": 2,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": "a",
         },
         Object {
           "instance": null,
           "key": "x1y0",
-          "nodeType": "class",
+          "nodeType": "host",
           "props": Object {
-            "structure": 4,
-            "x": 1,
-            "y": 0,
+            "children": <DrawTile
+              structureDefinition={undefined}
+              x={1}
+              y={0}
+/>,
+            "onMouseDown": [Function],
+            "onMouseEnter": [Function],
           },
           "ref": null,
-          "rendered": null,
-          "type": [Function],
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "structureDefinition": undefined,
+              "x": 1,
+              "y": 0,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": "a",
         },
         Object {
           "instance": null,
           "key": "x1y1",
-          "nodeType": "class",
+          "nodeType": "host",
           "props": Object {
-            "structure": 5,
-            "x": 1,
-            "y": 1,
+            "children": <DrawTile
+              structureDefinition={undefined}
+              x={1}
+              y={1}
+/>,
+            "onMouseDown": [Function],
+            "onMouseEnter": [Function],
           },
           "ref": null,
-          "rendered": null,
-          "type": [Function],
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "structureDefinition": undefined,
+              "x": 1,
+              "y": 1,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": "a",
         },
         Object {
           "instance": null,
           "key": "x1y2",
-          "nodeType": "class",
+          "nodeType": "host",
           "props": Object {
-            "structure": 6,
-            "x": 1,
-            "y": 2,
+            "children": <DrawTile
+              structureDefinition={undefined}
+              x={1}
+              y={2}
+/>,
+            "onMouseDown": [Function],
+            "onMouseEnter": [Function],
           },
           "ref": null,
-          "rendered": null,
-          "type": [Function],
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "structureDefinition": undefined,
+              "x": 1,
+              "y": 2,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": "a",
         },
         Object {
           "instance": null,
           "key": "x2y0",
-          "nodeType": "class",
+          "nodeType": "host",
           "props": Object {
-            "structure": 7,
-            "x": 2,
-            "y": 0,
+            "children": <DrawTile
+              structureDefinition={undefined}
+              x={2}
+              y={0}
+/>,
+            "onMouseDown": [Function],
+            "onMouseEnter": [Function],
           },
           "ref": null,
-          "rendered": null,
-          "type": [Function],
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "structureDefinition": undefined,
+              "x": 2,
+              "y": 0,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": "a",
         },
         Object {
           "instance": null,
           "key": "x2y1",
-          "nodeType": "class",
+          "nodeType": "host",
           "props": Object {
-            "structure": 8,
-            "x": 2,
-            "y": 1,
+            "children": <DrawTile
+              structureDefinition={undefined}
+              x={2}
+              y={1}
+/>,
+            "onMouseDown": [Function],
+            "onMouseEnter": [Function],
           },
           "ref": null,
-          "rendered": null,
-          "type": [Function],
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "structureDefinition": undefined,
+              "x": 2,
+              "y": 1,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": "a",
         },
         Object {
           "instance": null,
           "key": "x2y2",
-          "nodeType": "class",
+          "nodeType": "host",
           "props": Object {
-            "structure": 9,
-            "x": 2,
-            "y": 2,
+            "children": <DrawTile
+              structureDefinition={undefined}
+              x={2}
+              y={2}
+/>,
+            "onMouseDown": [Function],
+            "onMouseEnter": [Function],
           },
           "ref": null,
-          "rendered": null,
-          "type": [Function],
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "structureDefinition": undefined,
+              "x": 2,
+              "y": 2,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": "a",
         },
       ],
       "type": "g",

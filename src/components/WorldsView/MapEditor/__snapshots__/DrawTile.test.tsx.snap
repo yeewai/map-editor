@@ -5,22 +5,16 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <DrawTile
-    structure={
+    structureDefinition={
         Object {
-            "definition": Object {
-              "id": "",
-              "imageHeight": 2,
-              "imageUrl": "",
-              "imageWidth": 1,
-              "kind": "",
-              "length": 1,
-              "name": "",
-              "width": 1,
-            },
-            "definitionId": "",
+            "id": "",
+            "imageHeight": 2,
+            "imageUrl": "",
+            "imageWidth": 1,
+            "kind": "",
+            "length": 1,
             "name": "",
-            "xposition": 1,
-            "yposition": 1,
+            "width": 1,
           }
     }
     x={1}
@@ -39,10 +33,11 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "className": "tile",
+      "height": 20,
       "width": 10,
-      "x": -5,
+      "x": -10,
       "xlinkHref": "#",
-      "y": -11.339745962155614,
+      "y": -5.566243270259357,
     },
     "ref": null,
     "rendered": null,
@@ -55,14 +50,67 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "className": "tile",
+        "height": 20,
         "width": 10,
-        "x": -5,
+        "x": -10,
         "xlinkHref": "#",
-        "y": -11.339745962155614,
+        "y": -5.566243270259357,
       },
       "ref": null,
       "rendered": null,
       "type": "use",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`Drawing the board renders the null tile if no structure 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <DrawTile
+    structureDefinition={null}
+    x={1}
+    y={2}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "className": "nullTile",
+      "points": "-5,8.660254037844386 0,11.547005383792515 -5,14.433756729740644 -10,11.547005383792515",
+    },
+    "ref": null,
+    "rendered": null,
+    "type": "polygon",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "className": "nullTile",
+        "points": "-5,8.660254037844386 0,11.547005383792515 -5,14.433756729740644 -10,11.547005383792515",
+      },
+      "ref": null,
+      "rendered": null,
+      "type": "polygon",
     },
   ],
   Symbol(enzyme.__options__): Object {

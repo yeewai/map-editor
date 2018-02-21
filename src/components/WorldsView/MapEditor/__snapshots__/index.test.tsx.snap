@@ -4,9 +4,11 @@ exports[`Map Editor renders 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Unknown
+  Symbol(enzyme.__unrendered__): <MapEditor
+    setActiveWorld={[Function]}
     world={
         Object {
+            "bgImageUrl": "",
             "board": Array [
               Array [
                 Object {
@@ -31,7 +33,6 @@ ShallowWrapper {
             "key": "",
             "length": 1,
             "name": "",
-            "nullStructureId": "",
             "structures": Array [
               Object {
                 "definition": Object {
@@ -80,6 +81,7 @@ ShallowWrapper {
         <Connect(Component)
           world={
                     Object {
+                              "bgImageUrl": "",
                               "board": Array [
                                 Array [
                                   Object {
@@ -104,7 +106,6 @@ ShallowWrapper {
                               "key": "",
                               "length": 1,
                               "name": "",
-                              "nullStructureId": "",
                               "structures": Array [
                                 Object {
                                   "definition": Object {
@@ -135,7 +136,11 @@ ShallowWrapper {
                             }
           }
 />,
+        <Connect(Component)
+          LiComponent={[Function]}
+/>,
       ],
+      "className": "map-editor",
     },
     "ref": null,
     "rendered": Array [
@@ -165,6 +170,7 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "world": Object {
+            "bgImageUrl": "",
             "board": Array [
               Array [
                 Object {
@@ -189,7 +195,6 @@ ShallowWrapper {
             "key": "",
             "length": 1,
             "name": "",
-            "nullStructureId": "",
             "structures": Array [
               Object {
                 "definition": Object {
@@ -223,6 +228,17 @@ ShallowWrapper {
         "rendered": null,
         "type": [Function],
       },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "LiComponent": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
     ],
     "type": "article",
   },
@@ -238,6 +254,7 @@ ShallowWrapper {
           <Connect(Component)
             world={
                         Object {
+                                    "bgImageUrl": "",
                                     "board": Array [
                                       Array [
                                         Object {
@@ -262,7 +279,6 @@ ShallowWrapper {
                                     "key": "",
                                     "length": 1,
                                     "name": "",
-                                    "nullStructureId": "",
                                     "structures": Array [
                                       Object {
                                         "definition": Object {
@@ -293,7 +309,11 @@ ShallowWrapper {
                                   }
             }
 />,
+          <Connect(Component)
+            LiComponent={[Function]}
+/>,
         ],
+        "className": "map-editor",
       },
       "ref": null,
       "rendered": Array [
@@ -323,6 +343,7 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "world": Object {
+              "bgImageUrl": "",
               "board": Array [
                 Array [
                   Object {
@@ -347,7 +368,6 @@ ShallowWrapper {
               "key": "",
               "length": 1,
               "name": "",
-              "nullStructureId": "",
               "structures": Array [
                 Object {
                   "definition": Object {
@@ -376,6 +396,17 @@ ShallowWrapper {
               ],
               "width": 1,
             },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "LiComponent": [Function],
           },
           "ref": null,
           "rendered": null,

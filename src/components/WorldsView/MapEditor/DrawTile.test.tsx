@@ -4,16 +4,16 @@ import Adapter from 'enzyme-adapter-react-16';
 import sinon from 'sinon';
 
 import DrawTile from './DrawTile';
-import { worldTypes } from 'services/worlds';
+import { structureDefinitionTypes } from 'services/structureDefinitions';
 
 Enzyme.configure({ adapter: new Adapter() });
 
 describe("Drawing the board", () => {
-    let sandbox, wrapper, structure;
+    let sandbox, wrapper, sd;
 
     beforeEach(() => {
         sandbox = sinon.createSandbox();
-        structure = worldTypes.emptyStructure;
+        sd = structureDefinitionTypes.emptyStructureDefintion;
     });
 
     afterEach(() => {
@@ -21,23 +21,23 @@ describe("Drawing the board", () => {
     });
 
     it ("renders", () => {
-        structure.definition.imageWidth = 1;
-        structure.definition.imageHeight = 2;
+        sd.imageWidth = 1;
+        sd.imageHeight = 2;
 
-        wrapper = shallow(<DrawTile structure={structure} x={1} y={2} />);
+        wrapper = shallow(<DrawTile structureDefinition={sd} x={1} y={2} />);
         expect(wrapper).toMatchSnapshot();
     });
 
-    it ("renders nothing if no structure", () => {
-        wrapper = shallow(<DrawTile structure={null} x={1} y={2} />);
-        expect(wrapper.get(0)).toBe(null);
+    it ("renders the null tile if no structure", () => {
+        wrapper = shallow(<DrawTile structureDefinition={null} x={1} y={2} />);
+        expect(wrapper).toMatchSnapshot();
     })
 
     it ("doesn't rerender if the structure hasn't changed (eg adjusting the camera)", () => {
-        const wrapper = shallow(<DrawTile structure={structure} />)
+        const wrapper = shallow(<DrawTile structureDefinition={sd} />)
 
-        expect(wrapper.instance().shouldComponentUpdate({structure})).toBe(false)
-        expect(wrapper.instance().shouldComponentUpdate({structure: [[1]]})).toBe(true)
+        expect(wrapper.instance().shouldComponentUpdate({structureDefinition: sd})).toBe(false)
+        expect(wrapper.instance().shouldComponentUpdate({structureDefinition: "WoooOOoOo"})).toBe(true)
     })
 
 });

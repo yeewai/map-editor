@@ -9,7 +9,7 @@ export interface Structure {
     yposition: number
 }
 
-export const emptyStructure = {
+export const emptyStructure: Structure = {
     name: "",
     definitionId: structureDefinitionTypes.emptyStructureDefintion.id,
     definition: structureDefinitionTypes.emptyStructureDefintion,
@@ -28,10 +28,10 @@ export interface World {
     saveMessage?: string,
     isPublished: boolean,
     structures?: Structure[],
-    nullStructureId: string
+    bgImageUrl: string
 }
 
-export const emptyWorld = {
+export const emptyWorld: World = {
     id: "",
     name: "",
     key: "",
@@ -40,7 +40,7 @@ export const emptyWorld = {
     createdAt: 1,
     isPublished: false,
     structures: [ emptyStructure ],
-    nullStructureId: structureDefinitionTypes.emptyStructureDefintion.id
+    bgImageUrl: ""
 }
 
 export interface WorldWithBoard extends World {
@@ -48,7 +48,7 @@ export interface WorldWithBoard extends World {
     uniqueStructures: structureDefinitionTypes.StructureDefinition[]
 }
 
-export const emptyWorldWithBoard = {
+export const emptyWorldWithBoard: WorldWithBoard = {
     ...emptyWorld,
     board: [
         [ emptyStructure ]

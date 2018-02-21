@@ -12,4 +12,8 @@ describe ("Map Editor Actions ", () => {
         expect(mapEditorActions.panReset()).toBeDefined();
 
     })
+
+    it ("has actions for mouse click", () => {
+        expect(mapEditorActions.mouseClick()).toBeDefined();
+    })
 })

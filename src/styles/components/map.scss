@@ -1,13 +1,71 @@
-use {
+use, .nullTile {
     transition:all 0.3s ease;
 
     &:hover {
         stroke: #5793d0;
-        stroke-width: 2%;
+        stroke-width: 1%;
     }
 }
 
+.nullTile {
+    fill: white;
+    fill-opacity: 0.01
+}
 
 svg path {
     stroke: inherit !important;
+}
+
+.AddStructure {
+    use {
+        stroke: green;
+        stroke-width: 1%;
+        stroke-opacity: 0.5;
+        fill-opacity: 0.8 !important;
+    }
+}
+
+use.ground {
+    z-index: -1;
+}
+
+.map-editor {
+    svg{
+        width: 60%;
+        height: 800px;
+        display: inline-block;
+        float: left;
+
+        .mapBG {
+            z-index: -1;
+        }
+    }
+
+
+    .structure-library {
+        width: 40%;
+        display: inline-block;
+        float: left;
+
+        .structure-btn {
+            border: none;
+            &:focus {
+                outline: none;
+            }
+        }
+
+        .active .card{
+            background-color: lightblue;
+        }
+
+        .card {
+            width: 160px;
+            height: 240px;
+            cursor: pointer;
+
+            .card-img-top {
+                height: 120px;
+            }
+        }
+    }
 }

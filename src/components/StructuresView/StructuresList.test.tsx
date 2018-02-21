@@ -48,7 +48,8 @@ describe("Structures List", () => {
     };
 
     it( "matches snapshot", () => {
-        const wrapper = shallow(<StructuresList structureDefinitions={sd}/>);
+        const component = () => (<div />);
+        const wrapper = shallow(<StructuresList structureDefinitions={sd} LiComponent={component}/>);
         expect(wrapper).toMatchSnapshot();
     })
 

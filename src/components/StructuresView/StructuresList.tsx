@@ -10,15 +10,21 @@ import { StateTree } from 'services/types';
 import _ from 'lodash';
 import { structureDefinitionsSelectors, structureDefinitionTypes } from 'services/structureDefinitions';
 
+
 export interface StateProps {
     structureDefinitions: _.Dictionary<structureDefinitionTypes.StructureDefinition[]>
 }
+export const mapStateToProps = (state: StateTree) => ({
+    structureDefinitions: structureDefinitionsSelectors.getByGroup(state)
+});
 
-export const StructuresList: React.SFC<StateProps> = ( props ) => {
-    const { structureDefinitions } = props;
+interface OwnProps { LiComponent: React.SFC<any> }
 
+type Props = StateProps & OwnProps;
+
+export const StructuresList: React.SFC<Props> = ( { structureDefinitions, LiComponent } ) => {
     return (
-        <ListGroup>
+        <ListGroup className="structure-library">
             <ListGroupItem key="title">
                 <h2>Structure Library</h2>
                 <OpenModalButton modalType="ADD_STRUCTURE_DEFINITION" modalProps={{ariaLabel: "Sup", formName: "structureDefinition"}} >New</OpenModalButton>
@@ -29,17 +35,7 @@ export const StructuresList: React.SFC<StateProps> = ( props ) => {
                         <h3>{key}</h3>
                         <ul>
                             { structureDefinitions[key].map( ( sd: structureDefinitionTypes.StructureDefinition ) => (
-                                <li className="card-li" key={sd.id} >
-                                    <Card>
-                                        <CardImg top width="100%" src={sd.imageUrl} alt={sd.name} />
-                                        <CardBody>
-                                            <CardTitle>{sd.name}</CardTitle>
-                                            <CardSubtitle>{sd.width} x {sd.length}</CardSubtitle>
-                                            <div className="card-text" dangerouslySetInnerHTML={{ __html: sd.description || "" }} />
-                                            <OpenModalButton modalType="EDIT_STRUCTURE_DEFINITION" modalProps={{ariaLabel: "Sup", sd: sd, formName: "structureDefinition"}} >Edit</OpenModalButton>
-                                        </CardBody>
-                                    </Card>
-                                </li>
+                                <LiComponent structureDefinition={ sd } key={sd.id} />
                             )) }
                         </ul>
                     </ListGroupItem>
@@ -48,10 +44,6 @@ export const StructuresList: React.SFC<StateProps> = ( props ) => {
         </ListGroup>
     );
 }
-
-export const mapStateToProps = (state: StateTree) => ({
-    structureDefinitions: structureDefinitionsSelectors.getByGroup(state)
-});
 
 
 export default connect<StateProps, any, any>(mapStateToProps)(StructuresList);

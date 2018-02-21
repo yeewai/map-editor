@@ -5,6 +5,7 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Unknown
+    LiComponent={[Function]}
     structureDefinitions={
         Object {
             "someKind": Array [
@@ -80,124 +81,32 @@ ShallowWrapper {
                         someKind
             </h3>
             <ul>
-                        <li
-                                    className="card-li"
-                        >
-                                    <Card
-                                                tag="div"
-                                    >
-                                                <CardImg
-                                                            alt="name1"
-                                                            src="string"
-                                                            tag="img"
-                                                            top={true}
-                                                            width="100%"
-                                                />
-                                                <CardBody
-                                                            tag="div"
-                                                >
-                                                            <CardTitle
-                                                                        tag="h4"
-                                                            >
-                                                                        name1
-                                                            </CardTitle>
-                                                            <CardSubtitle
-                                                                        tag="h6"
-                                                            >
-                                                                        1
-                                                                         x 
-                                                                        2
-                                                            </CardSubtitle>
-                                                            <div
-                                                                        className="card-text"
-                                                                        dangerouslySetInnerHTML={
-                                                                                    Object {
-                                                                                                "__html": "string",
-                                                                                              }
-                                                                        }
-                                                            />
-                                                            <Connect(OpenModalButton)
-                                                                        modalProps={
-                                                                                    Object {
-                                                                                                "ariaLabel": "Sup",
-                                                                                                "formName": "structureDefinition",
-                                                                                                "sd": Object {
-                                                                                                  "description": "string",
-                                                                                                  "id": "id1",
-                                                                                                  "imageUrl": "string",
-                                                                                                  "kind": "someKind",
-                                                                                                  "length": 2,
-                                                                                                  "name": "name1",
-                                                                                                  "width": 1,
-                                                                                                },
-                                                                                              }
-                                                                        }
-                                                                        modalType="EDIT_STRUCTURE_DEFINITION"
-                                                            >
-                                                                        Edit
-                                                            </Connect(OpenModalButton)>
-                                                </CardBody>
-                                    </Card>
-                        </li>
-                        <li
-                                    className="card-li"
-                        >
-                                    <Card
-                                                tag="div"
-                                    >
-                                                <CardImg
-                                                            alt="name2"
-                                                            src="string"
-                                                            tag="img"
-                                                            top={true}
-                                                            width="100%"
-                                                />
-                                                <CardBody
-                                                            tag="div"
-                                                >
-                                                            <CardTitle
-                                                                        tag="h4"
-                                                            >
-                                                                        name2
-                                                            </CardTitle>
-                                                            <CardSubtitle
-                                                                        tag="h6"
-                                                            >
-                                                                        2
-                                                                         x 
-                                                                        5
-                                                            </CardSubtitle>
-                                                            <div
-                                                                        className="card-text"
-                                                                        dangerouslySetInnerHTML={
-                                                                                    Object {
-                                                                                                "__html": "string",
-                                                                                              }
-                                                                        }
-                                                            />
-                                                            <Connect(OpenModalButton)
-                                                                        modalProps={
-                                                                                    Object {
-                                                                                                "ariaLabel": "Sup",
-                                                                                                "formName": "structureDefinition",
-                                                                                                "sd": Object {
-                                                                                                  "description": "string",
-                                                                                                  "id": "id2",
-                                                                                                  "imageUrl": "string",
-                                                                                                  "kind": "someKind",
-                                                                                                  "length": 5,
-                                                                                                  "name": "name2",
-                                                                                                  "width": 2,
-                                                                                                },
-                                                                                              }
-                                                                        }
-                                                                        modalType="EDIT_STRUCTURE_DEFINITION"
-                                                            >
-                                                                        Edit
-                                                            </Connect(OpenModalButton)>
-                                                </CardBody>
-                                    </Card>
-                        </li>
+                        <component
+                                    structureDefinition={
+                                                Object {
+                                                            "description": "string",
+                                                            "id": "id1",
+                                                            "imageUrl": "string",
+                                                            "kind": "someKind",
+                                                            "length": 2,
+                                                            "name": "name1",
+                                                            "width": 1,
+                                                          }
+                                    }
+                        />
+                        <component
+                                    structureDefinition={
+                                                Object {
+                                                            "description": "string",
+                                                            "id": "id2",
+                                                            "imageUrl": "string",
+                                                            "kind": "someKind",
+                                                            "length": 5,
+                                                            "name": "name2",
+                                                            "width": 2,
+                                                          }
+                                    }
+                        />
             </ul>
 </ListGroupItem>,
           <ListGroupItem
@@ -207,69 +116,24 @@ ShallowWrapper {
                         someOtherKind
             </h3>
             <ul>
-                        <li
-                                    className="card-li"
-                        >
-                                    <Card
-                                                tag="div"
-                                    >
-                                                <CardImg
-                                                            alt="name3"
-                                                            src="string"
-                                                            tag="img"
-                                                            top={true}
-                                                            width="100%"
-                                                />
-                                                <CardBody
-                                                            tag="div"
-                                                >
-                                                            <CardTitle
-                                                                        tag="h4"
-                                                            >
-                                                                        name3
-                                                            </CardTitle>
-                                                            <CardSubtitle
-                                                                        tag="h6"
-                                                            >
-                                                                        3
-                                                                         x 
-                                                                        4
-                                                            </CardSubtitle>
-                                                            <div
-                                                                        className="card-text"
-                                                                        dangerouslySetInnerHTML={
-                                                                                    Object {
-                                                                                                "__html": "",
-                                                                                              }
-                                                                        }
-                                                            />
-                                                            <Connect(OpenModalButton)
-                                                                        modalProps={
-                                                                                    Object {
-                                                                                                "ariaLabel": "Sup",
-                                                                                                "formName": "structureDefinition",
-                                                                                                "sd": Object {
-                                                                                                  "description": undefined,
-                                                                                                  "id": "id3",
-                                                                                                  "imageUrl": "string",
-                                                                                                  "kind": "someOtherKind",
-                                                                                                  "length": 4,
-                                                                                                  "name": "name3",
-                                                                                                  "width": 3,
-                                                                                                },
-                                                                                              }
-                                                                        }
-                                                                        modalType="EDIT_STRUCTURE_DEFINITION"
-                                                            >
-                                                                        Edit
-                                                            </Connect(OpenModalButton)>
-                                                </CardBody>
-                                    </Card>
-                        </li>
+                        <component
+                                    structureDefinition={
+                                                Object {
+                                                            "description": undefined,
+                                                            "id": "id3",
+                                                            "imageUrl": "string",
+                                                            "kind": "someOtherKind",
+                                                            "length": 4,
+                                                            "name": "name3",
+                                                            "width": 3,
+                                                          }
+                                    }
+                        />
             </ul>
 </ListGroupItem>,
         ],
       ],
+      "className": "structure-library",
       "tag": "ul",
     },
     "ref": null,
@@ -339,124 +203,32 @@ ShallowWrapper {
               someKind
 </h3>,
             <ul>
-              <li
-                            className="card-li"
-              >
-                            <Card
-                                          tag="div"
-                            >
-                                          <CardImg
-                                                        alt="name1"
-                                                        src="string"
-                                                        tag="img"
-                                                        top={true}
-                                                        width="100%"
-                                          />
-                                          <CardBody
-                                                        tag="div"
-                                          >
-                                                        <CardTitle
-                                                                      tag="h4"
-                                                        >
-                                                                      name1
-                                                        </CardTitle>
-                                                        <CardSubtitle
-                                                                      tag="h6"
-                                                        >
-                                                                      1
-                                                                       x 
-                                                                      2
-                                                        </CardSubtitle>
-                                                        <div
-                                                                      className="card-text"
-                                                                      dangerouslySetInnerHTML={
-                                                                                    Object {
-                                                                                                  "__html": "string",
-                                                                                                }
-                                                                      }
-                                                        />
-                                                        <Connect(OpenModalButton)
-                                                                      modalProps={
-                                                                                    Object {
-                                                                                                  "ariaLabel": "Sup",
-                                                                                                  "formName": "structureDefinition",
-                                                                                                  "sd": Object {
-                                                                                                    "description": "string",
-                                                                                                    "id": "id1",
-                                                                                                    "imageUrl": "string",
-                                                                                                    "kind": "someKind",
-                                                                                                    "length": 2,
-                                                                                                    "name": "name1",
-                                                                                                    "width": 1,
-                                                                                                  },
-                                                                                                }
-                                                                      }
-                                                                      modalType="EDIT_STRUCTURE_DEFINITION"
-                                                        >
-                                                                      Edit
-                                                        </Connect(OpenModalButton)>
-                                          </CardBody>
-                            </Card>
-              </li>
-              <li
-                            className="card-li"
-              >
-                            <Card
-                                          tag="div"
-                            >
-                                          <CardImg
-                                                        alt="name2"
-                                                        src="string"
-                                                        tag="img"
-                                                        top={true}
-                                                        width="100%"
-                                          />
-                                          <CardBody
-                                                        tag="div"
-                                          >
-                                                        <CardTitle
-                                                                      tag="h4"
-                                                        >
-                                                                      name2
-                                                        </CardTitle>
-                                                        <CardSubtitle
-                                                                      tag="h6"
-                                                        >
-                                                                      2
-                                                                       x 
-                                                                      5
-                                                        </CardSubtitle>
-                                                        <div
-                                                                      className="card-text"
-                                                                      dangerouslySetInnerHTML={
-                                                                                    Object {
-                                                                                                  "__html": "string",
-                                                                                                }
-                                                                      }
-                                                        />
-                                                        <Connect(OpenModalButton)
-                                                                      modalProps={
-                                                                                    Object {
-                                                                                                  "ariaLabel": "Sup",
-                                                                                                  "formName": "structureDefinition",
-                                                                                                  "sd": Object {
-                                                                                                    "description": "string",
-                                                                                                    "id": "id2",
-                                                                                                    "imageUrl": "string",
-                                                                                                    "kind": "someKind",
-                                                                                                    "length": 5,
-                                                                                                    "name": "name2",
-                                                                                                    "width": 2,
-                                                                                                  },
-                                                                                                }
-                                                                      }
-                                                                      modalType="EDIT_STRUCTURE_DEFINITION"
-                                                        >
-                                                                      Edit
-                                                        </Connect(OpenModalButton)>
-                                          </CardBody>
-                            </Card>
-              </li>
+              <component
+                            structureDefinition={
+                                          Object {
+                                                        "description": "string",
+                                                        "id": "id1",
+                                                        "imageUrl": "string",
+                                                        "kind": "someKind",
+                                                        "length": 2,
+                                                        "name": "name1",
+                                                        "width": 1,
+                                                      }
+                            }
+              />
+              <component
+                            structureDefinition={
+                                          Object {
+                                                        "description": "string",
+                                                        "id": "id2",
+                                                        "imageUrl": "string",
+                                                        "kind": "someKind",
+                                                        "length": 5,
+                                                        "name": "name2",
+                                                        "width": 2,
+                                                      }
+                            }
+              />
 </ul>,
           ],
           "tag": "li",
@@ -480,124 +252,32 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": Array [
-                <li
-                  className="card-li"
->
-                  <Card
-                                    tag="div"
-                  >
-                                    <CardImg
-                                                      alt="name1"
-                                                      src="string"
-                                                      tag="img"
-                                                      top={true}
-                                                      width="100%"
-                                    />
-                                    <CardBody
-                                                      tag="div"
-                                    >
-                                                      <CardTitle
-                                                                        tag="h4"
-                                                      >
-                                                                        name1
-                                                      </CardTitle>
-                                                      <CardSubtitle
-                                                                        tag="h6"
-                                                      >
-                                                                        1
-                                                                         x 
-                                                                        2
-                                                      </CardSubtitle>
-                                                      <div
-                                                                        className="card-text"
-                                                                        dangerouslySetInnerHTML={
-                                                                                          Object {
-                                                                                                            "__html": "string",
-                                                                                                          }
-                                                                        }
-                                                      />
-                                                      <Connect(OpenModalButton)
-                                                                        modalProps={
-                                                                                          Object {
-                                                                                                            "ariaLabel": "Sup",
-                                                                                                            "formName": "structureDefinition",
-                                                                                                            "sd": Object {
-                                                                                                              "description": "string",
-                                                                                                              "id": "id1",
-                                                                                                              "imageUrl": "string",
-                                                                                                              "kind": "someKind",
-                                                                                                              "length": 2,
-                                                                                                              "name": "name1",
-                                                                                                              "width": 1,
-                                                                                                            },
-                                                                                                          }
-                                                                        }
-                                                                        modalType="EDIT_STRUCTURE_DEFINITION"
-                                                      >
-                                                                        Edit
-                                                      </Connect(OpenModalButton)>
-                                    </CardBody>
-                  </Card>
-</li>,
-                <li
-                  className="card-li"
->
-                  <Card
-                                    tag="div"
-                  >
-                                    <CardImg
-                                                      alt="name2"
-                                                      src="string"
-                                                      tag="img"
-                                                      top={true}
-                                                      width="100%"
-                                    />
-                                    <CardBody
-                                                      tag="div"
-                                    >
-                                                      <CardTitle
-                                                                        tag="h4"
-                                                      >
-                                                                        name2
-                                                      </CardTitle>
-                                                      <CardSubtitle
-                                                                        tag="h6"
-                                                      >
-                                                                        2
-                                                                         x 
-                                                                        5
-                                                      </CardSubtitle>
-                                                      <div
-                                                                        className="card-text"
-                                                                        dangerouslySetInnerHTML={
-                                                                                          Object {
-                                                                                                            "__html": "string",
-                                                                                                          }
-                                                                        }
-                                                      />
-                                                      <Connect(OpenModalButton)
-                                                                        modalProps={
-                                                                                          Object {
-                                                                                                            "ariaLabel": "Sup",
-                                                                                                            "formName": "structureDefinition",
-                                                                                                            "sd": Object {
-                                                                                                              "description": "string",
-                                                                                                              "id": "id2",
-                                                                                                              "imageUrl": "string",
-                                                                                                              "kind": "someKind",
-                                                                                                              "length": 5,
-                                                                                                              "name": "name2",
-                                                                                                              "width": 2,
-                                                                                                            },
-                                                                                                          }
-                                                                        }
-                                                                        modalType="EDIT_STRUCTURE_DEFINITION"
-                                                      >
-                                                                        Edit
-                                                      </Connect(OpenModalButton)>
-                                    </CardBody>
-                  </Card>
-</li>,
+                <component
+                  structureDefinition={
+                                    Object {
+                                                      "description": "string",
+                                                      "id": "id1",
+                                                      "imageUrl": "string",
+                                                      "kind": "someKind",
+                                                      "length": 2,
+                                                      "name": "name1",
+                                                      "width": 1,
+                                                    }
+                  }
+/>,
+                <component
+                  structureDefinition={
+                                    Object {
+                                                      "description": "string",
+                                                      "id": "id2",
+                                                      "imageUrl": "string",
+                                                      "kind": "someKind",
+                                                      "length": 5,
+                                                      "name": "name2",
+                                                      "width": 2,
+                                                    }
+                  }
+/>,
               ],
             },
             "ref": null,
@@ -605,542 +285,40 @@ ShallowWrapper {
               Object {
                 "instance": null,
                 "key": "id1",
-                "nodeType": "host",
+                "nodeType": "function",
                 "props": Object {
-                  "children": <Card
-                    tag="div"
->
-                    <CardImg
-                                        alt="name1"
-                                        src="string"
-                                        tag="img"
-                                        top={true}
-                                        width="100%"
-                    />
-                    <CardBody
-                                        tag="div"
-                    >
-                                        <CardTitle
-                                                            tag="h4"
-                                        >
-                                                            name1
-                                        </CardTitle>
-                                        <CardSubtitle
-                                                            tag="h6"
-                                        >
-                                                            1
-                                                             x 
-                                                            2
-                                        </CardSubtitle>
-                                        <div
-                                                            className="card-text"
-                                                            dangerouslySetInnerHTML={
-                                                                                Object {
-                                                                                                    "__html": "string",
-                                                                                                  }
-                                                            }
-                                        />
-                                        <Connect(OpenModalButton)
-                                                            modalProps={
-                                                                                Object {
-                                                                                                    "ariaLabel": "Sup",
-                                                                                                    "formName": "structureDefinition",
-                                                                                                    "sd": Object {
-                                                                                                      "description": "string",
-                                                                                                      "id": "id1",
-                                                                                                      "imageUrl": "string",
-                                                                                                      "kind": "someKind",
-                                                                                                      "length": 2,
-                                                                                                      "name": "name1",
-                                                                                                      "width": 1,
-                                                                                                    },
-                                                                                                  }
-                                                            }
-                                                            modalType="EDIT_STRUCTURE_DEFINITION"
-                                        >
-                                                            Edit
-                                        </Connect(OpenModalButton)>
-                    </CardBody>
-</Card>,
-                  "className": "card-li",
+                  "structureDefinition": Object {
+                    "description": "string",
+                    "id": "id1",
+                    "imageUrl": "string",
+                    "kind": "someKind",
+                    "length": 2,
+                    "name": "name1",
+                    "width": 1,
+                  },
                 },
                 "ref": null,
-                "rendered": Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "function",
-                  "props": Object {
-                    "children": Array [
-                      <CardImg
-                        alt="name1"
-                        src="string"
-                        tag="img"
-                        top={true}
-                        width="100%"
-/>,
-                      <CardBody
-                        tag="div"
->
-                        <CardTitle
-                                                tag="h4"
-                        >
-                                                name1
-                        </CardTitle>
-                        <CardSubtitle
-                                                tag="h6"
-                        >
-                                                1
-                                                 x 
-                                                2
-                        </CardSubtitle>
-                        <div
-                                                className="card-text"
-                                                dangerouslySetInnerHTML={
-                                                                        Object {
-                                                                                                "__html": "string",
-                                                                                              }
-                                                }
-                        />
-                        <Connect(OpenModalButton)
-                                                modalProps={
-                                                                        Object {
-                                                                                                "ariaLabel": "Sup",
-                                                                                                "formName": "structureDefinition",
-                                                                                                "sd": Object {
-                                                                                                  "description": "string",
-                                                                                                  "id": "id1",
-                                                                                                  "imageUrl": "string",
-                                                                                                  "kind": "someKind",
-                                                                                                  "length": 2,
-                                                                                                  "name": "name1",
-                                                                                                  "width": 1,
-                                                                                                },
-                                                                                              }
-                                                }
-                                                modalType="EDIT_STRUCTURE_DEFINITION"
-                        >
-                                                Edit
-                        </Connect(OpenModalButton)>
-</CardBody>,
-                    ],
-                    "tag": "div",
-                  },
-                  "ref": null,
-                  "rendered": Array [
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "function",
-                      "props": Object {
-                        "alt": "name1",
-                        "src": "string",
-                        "tag": "img",
-                        "top": true,
-                        "width": "100%",
-                      },
-                      "ref": null,
-                      "rendered": null,
-                      "type": [Function],
-                    },
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "function",
-                      "props": Object {
-                        "children": Array [
-                          <CardTitle
-                            tag="h4"
->
-                            name1
-</CardTitle>,
-                          <CardSubtitle
-                            tag="h6"
->
-                            1
-                             x 
-                            2
-</CardSubtitle>,
-                          <div
-                            className="card-text"
-                            dangerouslySetInnerHTML={
-                                                        Object {
-                                                                                    "__html": "string",
-                                                                                  }
-                            }
-/>,
-                          <Connect(OpenModalButton)
-                            modalProps={
-                                                        Object {
-                                                                                    "ariaLabel": "Sup",
-                                                                                    "formName": "structureDefinition",
-                                                                                    "sd": Object {
-                                                                                      "description": "string",
-                                                                                      "id": "id1",
-                                                                                      "imageUrl": "string",
-                                                                                      "kind": "someKind",
-                                                                                      "length": 2,
-                                                                                      "name": "name1",
-                                                                                      "width": 1,
-                                                                                    },
-                                                                                  }
-                            }
-                            modalType="EDIT_STRUCTURE_DEFINITION"
->
-                            Edit
-</Connect(OpenModalButton)>,
-                        ],
-                        "tag": "div",
-                      },
-                      "ref": null,
-                      "rendered": Array [
-                        Object {
-                          "instance": null,
-                          "key": undefined,
-                          "nodeType": "function",
-                          "props": Object {
-                            "children": "name1",
-                            "tag": "h4",
-                          },
-                          "ref": null,
-                          "rendered": "name1",
-                          "type": [Function],
-                        },
-                        Object {
-                          "instance": null,
-                          "key": undefined,
-                          "nodeType": "function",
-                          "props": Object {
-                            "children": Array [
-                              1,
-                              " x ",
-                              2,
-                            ],
-                            "tag": "h6",
-                          },
-                          "ref": null,
-                          "rendered": Array [
-                            1,
-                            " x ",
-                            2,
-                          ],
-                          "type": [Function],
-                        },
-                        Object {
-                          "instance": null,
-                          "key": undefined,
-                          "nodeType": "host",
-                          "props": Object {
-                            "className": "card-text",
-                            "dangerouslySetInnerHTML": Object {
-                              "__html": "string",
-                            },
-                          },
-                          "ref": null,
-                          "rendered": null,
-                          "type": "div",
-                        },
-                        Object {
-                          "instance": null,
-                          "key": undefined,
-                          "nodeType": "class",
-                          "props": Object {
-                            "children": "Edit",
-                            "modalProps": Object {
-                              "ariaLabel": "Sup",
-                              "formName": "structureDefinition",
-                              "sd": Object {
-                                "description": "string",
-                                "id": "id1",
-                                "imageUrl": "string",
-                                "kind": "someKind",
-                                "length": 2,
-                                "name": "name1",
-                                "width": 1,
-                              },
-                            },
-                            "modalType": "EDIT_STRUCTURE_DEFINITION",
-                          },
-                          "ref": null,
-                          "rendered": "Edit",
-                          "type": [Function],
-                        },
-                      ],
-                      "type": [Function],
-                    },
-                  ],
-                  "type": [Function],
-                },
-                "type": "li",
+                "rendered": null,
+                "type": [Function],
               },
               Object {
                 "instance": null,
                 "key": "id2",
-                "nodeType": "host",
+                "nodeType": "function",
                 "props": Object {
-                  "children": <Card
-                    tag="div"
->
-                    <CardImg
-                                        alt="name2"
-                                        src="string"
-                                        tag="img"
-                                        top={true}
-                                        width="100%"
-                    />
-                    <CardBody
-                                        tag="div"
-                    >
-                                        <CardTitle
-                                                            tag="h4"
-                                        >
-                                                            name2
-                                        </CardTitle>
-                                        <CardSubtitle
-                                                            tag="h6"
-                                        >
-                                                            2
-                                                             x 
-                                                            5
-                                        </CardSubtitle>
-                                        <div
-                                                            className="card-text"
-                                                            dangerouslySetInnerHTML={
-                                                                                Object {
-                                                                                                    "__html": "string",
-                                                                                                  }
-                                                            }
-                                        />
-                                        <Connect(OpenModalButton)
-                                                            modalProps={
-                                                                                Object {
-                                                                                                    "ariaLabel": "Sup",
-                                                                                                    "formName": "structureDefinition",
-                                                                                                    "sd": Object {
-                                                                                                      "description": "string",
-                                                                                                      "id": "id2",
-                                                                                                      "imageUrl": "string",
-                                                                                                      "kind": "someKind",
-                                                                                                      "length": 5,
-                                                                                                      "name": "name2",
-                                                                                                      "width": 2,
-                                                                                                    },
-                                                                                                  }
-                                                            }
-                                                            modalType="EDIT_STRUCTURE_DEFINITION"
-                                        >
-                                                            Edit
-                                        </Connect(OpenModalButton)>
-                    </CardBody>
-</Card>,
-                  "className": "card-li",
+                  "structureDefinition": Object {
+                    "description": "string",
+                    "id": "id2",
+                    "imageUrl": "string",
+                    "kind": "someKind",
+                    "length": 5,
+                    "name": "name2",
+                    "width": 2,
+                  },
                 },
                 "ref": null,
-                "rendered": Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "function",
-                  "props": Object {
-                    "children": Array [
-                      <CardImg
-                        alt="name2"
-                        src="string"
-                        tag="img"
-                        top={true}
-                        width="100%"
-/>,
-                      <CardBody
-                        tag="div"
->
-                        <CardTitle
-                                                tag="h4"
-                        >
-                                                name2
-                        </CardTitle>
-                        <CardSubtitle
-                                                tag="h6"
-                        >
-                                                2
-                                                 x 
-                                                5
-                        </CardSubtitle>
-                        <div
-                                                className="card-text"
-                                                dangerouslySetInnerHTML={
-                                                                        Object {
-                                                                                                "__html": "string",
-                                                                                              }
-                                                }
-                        />
-                        <Connect(OpenModalButton)
-                                                modalProps={
-                                                                        Object {
-                                                                                                "ariaLabel": "Sup",
-                                                                                                "formName": "structureDefinition",
-                                                                                                "sd": Object {
-                                                                                                  "description": "string",
-                                                                                                  "id": "id2",
-                                                                                                  "imageUrl": "string",
-                                                                                                  "kind": "someKind",
-                                                                                                  "length": 5,
-                                                                                                  "name": "name2",
-                                                                                                  "width": 2,
-                                                                                                },
-                                                                                              }
-                                                }
-                                                modalType="EDIT_STRUCTURE_DEFINITION"
-                        >
-                                                Edit
-                        </Connect(OpenModalButton)>
-</CardBody>,
-                    ],
-                    "tag": "div",
-                  },
-                  "ref": null,
-                  "rendered": Array [
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "function",
-                      "props": Object {
-                        "alt": "name2",
-                        "src": "string",
-                        "tag": "img",
-                        "top": true,
-                        "width": "100%",
-                      },
-                      "ref": null,
-                      "rendered": null,
-                      "type": [Function],
-                    },
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "function",
-                      "props": Object {
-                        "children": Array [
-                          <CardTitle
-                            tag="h4"
->
-                            name2
-</CardTitle>,
-                          <CardSubtitle
-                            tag="h6"
->
-                            2
-                             x 
-                            5
-</CardSubtitle>,
-                          <div
-                            className="card-text"
-                            dangerouslySetInnerHTML={
-                                                        Object {
-                                                                                    "__html": "string",
-                                                                                  }
-                            }
-/>,
-                          <Connect(OpenModalButton)
-                            modalProps={
-                                                        Object {
-                                                                                    "ariaLabel": "Sup",
-                                                                                    "formName": "structureDefinition",
-                                                                                    "sd": Object {
-                                                                                      "description": "string",
-                                                                                      "id": "id2",
-                                                                                      "imageUrl": "string",
-                                                                                      "kind": "someKind",
-                                                                                      "length": 5,
-                                                                                      "name": "name2",
-                                                                                      "width": 2,
-                                                                                    },
-                                                                                  }
-                            }
-                            modalType="EDIT_STRUCTURE_DEFINITION"
->
-                            Edit
-</Connect(OpenModalButton)>,
-                        ],
-                        "tag": "div",
-                      },
-                      "ref": null,
-                      "rendered": Array [
-                        Object {
-                          "instance": null,
-                          "key": undefined,
-                          "nodeType": "function",
-                          "props": Object {
-                            "children": "name2",
-                            "tag": "h4",
-                          },
-                          "ref": null,
-                          "rendered": "name2",
-                          "type": [Function],
-                        },
-                        Object {
-                          "instance": null,
-                          "key": undefined,
-                          "nodeType": "function",
-                          "props": Object {
-                            "children": Array [
-                              2,
-                              " x ",
-                              5,
-                            ],
-                            "tag": "h6",
-                          },
-                          "ref": null,
-                          "rendered": Array [
-                            2,
-                            " x ",
-                            5,
-                          ],
-                          "type": [Function],
-                        },
-                        Object {
-                          "instance": null,
-                          "key": undefined,
-                          "nodeType": "host",
-                          "props": Object {
-                            "className": "card-text",
-                            "dangerouslySetInnerHTML": Object {
-                              "__html": "string",
-                            },
-                          },
-                          "ref": null,
-                          "rendered": null,
-                          "type": "div",
-                        },
-                        Object {
-                          "instance": null,
-                          "key": undefined,
-                          "nodeType": "class",
-                          "props": Object {
-                            "children": "Edit",
-                            "modalProps": Object {
-                              "ariaLabel": "Sup",
-                              "formName": "structureDefinition",
-                              "sd": Object {
-                                "description": "string",
-                                "id": "id2",
-                                "imageUrl": "string",
-                                "kind": "someKind",
-                                "length": 5,
-                                "name": "name2",
-                                "width": 2,
-                              },
-                            },
-                            "modalType": "EDIT_STRUCTURE_DEFINITION",
-                          },
-                          "ref": null,
-                          "rendered": "Edit",
-                          "type": [Function],
-                        },
-                      ],
-                      "type": [Function],
-                    },
-                  ],
-                  "type": [Function],
-                },
-                "type": "li",
+                "rendered": null,
+                "type": [Function],
               },
             ],
             "type": "ul",
@@ -1158,65 +336,19 @@ ShallowWrapper {
               someOtherKind
 </h3>,
             <ul>
-              <li
-                            className="card-li"
-              >
-                            <Card
-                                          tag="div"
-                            >
-                                          <CardImg
-                                                        alt="name3"
-                                                        src="string"
-                                                        tag="img"
-                                                        top={true}
-                                                        width="100%"
-                                          />
-                                          <CardBody
-                                                        tag="div"
-                                          >
-                                                        <CardTitle
-                                                                      tag="h4"
-                                                        >
-                                                                      name3
-                                                        </CardTitle>
-                                                        <CardSubtitle
-                                                                      tag="h6"
-                                                        >
-                                                                      3
-                                                                       x 
-                                                                      4
-                                                        </CardSubtitle>
-                                                        <div
-                                                                      className="card-text"
-                                                                      dangerouslySetInnerHTML={
-                                                                                    Object {
-                                                                                                  "__html": "",
-                                                                                                }
-                                                                      }
-                                                        />
-                                                        <Connect(OpenModalButton)
-                                                                      modalProps={
-                                                                                    Object {
-                                                                                                  "ariaLabel": "Sup",
-                                                                                                  "formName": "structureDefinition",
-                                                                                                  "sd": Object {
-                                                                                                    "description": undefined,
-                                                                                                    "id": "id3",
-                                                                                                    "imageUrl": "string",
-                                                                                                    "kind": "someOtherKind",
-                                                                                                    "length": 4,
-                                                                                                    "name": "name3",
-                                                                                                    "width": 3,
-                                                                                                  },
-                                                                                                }
-                                                                      }
-                                                                      modalType="EDIT_STRUCTURE_DEFINITION"
-                                                        >
-                                                                      Edit
-                                                        </Connect(OpenModalButton)>
-                                          </CardBody>
-                            </Card>
-              </li>
+              <component
+                            structureDefinition={
+                                          Object {
+                                                        "description": undefined,
+                                                        "id": "id3",
+                                                        "imageUrl": "string",
+                                                        "kind": "someOtherKind",
+                                                        "length": 4,
+                                                        "name": "name3",
+                                                        "width": 3,
+                                                      }
+                            }
+              />
 </ul>,
           ],
           "tag": "li",
@@ -1240,65 +372,19 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": Array [
-                <li
-                  className="card-li"
->
-                  <Card
-                                    tag="div"
-                  >
-                                    <CardImg
-                                                      alt="name3"
-                                                      src="string"
-                                                      tag="img"
-                                                      top={true}
-                                                      width="100%"
-                                    />
-                                    <CardBody
-                                                      tag="div"
-                                    >
-                                                      <CardTitle
-                                                                        tag="h4"
-                                                      >
-                                                                        name3
-                                                      </CardTitle>
-                                                      <CardSubtitle
-                                                                        tag="h6"
-                                                      >
-                                                                        3
-                                                                         x 
-                                                                        4
-                                                      </CardSubtitle>
-                                                      <div
-                                                                        className="card-text"
-                                                                        dangerouslySetInnerHTML={
-                                                                                          Object {
-                                                                                                            "__html": "",
-                                                                                                          }
-                                                                        }
-                                                      />
-                                                      <Connect(OpenModalButton)
-                                                                        modalProps={
-                                                                                          Object {
-                                                                                                            "ariaLabel": "Sup",
-                                                                                                            "formName": "structureDefinition",
-                                                                                                            "sd": Object {
-                                                                                                              "description": undefined,
-                                                                                                              "id": "id3",
-                                                                                                              "imageUrl": "string",
-                                                                                                              "kind": "someOtherKind",
-                                                                                                              "length": 4,
-                                                                                                              "name": "name3",
-                                                                                                              "width": 3,
-                                                                                                            },
-                                                                                                          }
-                                                                        }
-                                                                        modalType="EDIT_STRUCTURE_DEFINITION"
-                                                      >
-                                                                        Edit
-                                                      </Connect(OpenModalButton)>
-                                    </CardBody>
-                  </Card>
-</li>,
+                <component
+                  structureDefinition={
+                                    Object {
+                                                      "description": undefined,
+                                                      "id": "id3",
+                                                      "imageUrl": "string",
+                                                      "kind": "someOtherKind",
+                                                      "length": 4,
+                                                      "name": "name3",
+                                                      "width": 3,
+                                                    }
+                  }
+/>,
               ],
             },
             "ref": null,
@@ -1306,272 +392,21 @@ ShallowWrapper {
               Object {
                 "instance": null,
                 "key": "id3",
-                "nodeType": "host",
+                "nodeType": "function",
                 "props": Object {
-                  "children": <Card
-                    tag="div"
->
-                    <CardImg
-                                        alt="name3"
-                                        src="string"
-                                        tag="img"
-                                        top={true}
-                                        width="100%"
-                    />
-                    <CardBody
-                                        tag="div"
-                    >
-                                        <CardTitle
-                                                            tag="h4"
-                                        >
-                                                            name3
-                                        </CardTitle>
-                                        <CardSubtitle
-                                                            tag="h6"
-                                        >
-                                                            3
-                                                             x 
-                                                            4
-                                        </CardSubtitle>
-                                        <div
-                                                            className="card-text"
-                                                            dangerouslySetInnerHTML={
-                                                                                Object {
-                                                                                                    "__html": "",
-                                                                                                  }
-                                                            }
-                                        />
-                                        <Connect(OpenModalButton)
-                                                            modalProps={
-                                                                                Object {
-                                                                                                    "ariaLabel": "Sup",
-                                                                                                    "formName": "structureDefinition",
-                                                                                                    "sd": Object {
-                                                                                                      "description": undefined,
-                                                                                                      "id": "id3",
-                                                                                                      "imageUrl": "string",
-                                                                                                      "kind": "someOtherKind",
-                                                                                                      "length": 4,
-                                                                                                      "name": "name3",
-                                                                                                      "width": 3,
-                                                                                                    },
-                                                                                                  }
-                                                            }
-                                                            modalType="EDIT_STRUCTURE_DEFINITION"
-                                        >
-                                                            Edit
-                                        </Connect(OpenModalButton)>
-                    </CardBody>
-</Card>,
-                  "className": "card-li",
+                  "structureDefinition": Object {
+                    "description": undefined,
+                    "id": "id3",
+                    "imageUrl": "string",
+                    "kind": "someOtherKind",
+                    "length": 4,
+                    "name": "name3",
+                    "width": 3,
+                  },
                 },
                 "ref": null,
-                "rendered": Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "function",
-                  "props": Object {
-                    "children": Array [
-                      <CardImg
-                        alt="name3"
-                        src="string"
-                        tag="img"
-                        top={true}
-                        width="100%"
-/>,
-                      <CardBody
-                        tag="div"
->
-                        <CardTitle
-                                                tag="h4"
-                        >
-                                                name3
-                        </CardTitle>
-                        <CardSubtitle
-                                                tag="h6"
-                        >
-                                                3
-                                                 x 
-                                                4
-                        </CardSubtitle>
-                        <div
-                                                className="card-text"
-                                                dangerouslySetInnerHTML={
-                                                                        Object {
-                                                                                                "__html": "",
-                                                                                              }
-                                                }
-                        />
-                        <Connect(OpenModalButton)
-                                                modalProps={
-                                                                        Object {
-                                                                                                "ariaLabel": "Sup",
-                                                                                                "formName": "structureDefinition",
-                                                                                                "sd": Object {
-                                                                                                  "description": undefined,
-                                                                                                  "id": "id3",
-                                                                                                  "imageUrl": "string",
-                                                                                                  "kind": "someOtherKind",
-                                                                                                  "length": 4,
-                                                                                                  "name": "name3",
-                                                                                                  "width": 3,
-                                                                                                },
-                                                                                              }
-                                                }
-                                                modalType="EDIT_STRUCTURE_DEFINITION"
-                        >
-                                                Edit
-                        </Connect(OpenModalButton)>
-</CardBody>,
-                    ],
-                    "tag": "div",
-                  },
-                  "ref": null,
-                  "rendered": Array [
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "function",
-                      "props": Object {
-                        "alt": "name3",
-                        "src": "string",
-                        "tag": "img",
-                        "top": true,
-                        "width": "100%",
-                      },
-                      "ref": null,
-                      "rendered": null,
-                      "type": [Function],
-                    },
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "function",
-                      "props": Object {
-                        "children": Array [
-                          <CardTitle
-                            tag="h4"
->
-                            name3
-</CardTitle>,
-                          <CardSubtitle
-                            tag="h6"
->
-                            3
-                             x 
-                            4
-</CardSubtitle>,
-                          <div
-                            className="card-text"
-                            dangerouslySetInnerHTML={
-                                                        Object {
-                                                                                    "__html": "",
-                                                                                  }
-                            }
-/>,
-                          <Connect(OpenModalButton)
-                            modalProps={
-                                                        Object {
-                                                                                    "ariaLabel": "Sup",
-                                                                                    "formName": "structureDefinition",
-                                                                                    "sd": Object {
-                                                                                      "description": undefined,
-                                                                                      "id": "id3",
-                                                                                      "imageUrl": "string",
-                                                                                      "kind": "someOtherKind",
-                                                                                      "length": 4,
-                                                                                      "name": "name3",
-                                                                                      "width": 3,
-                                                                                    },
-                                                                                  }
-                            }
-                            modalType="EDIT_STRUCTURE_DEFINITION"
->
-                            Edit
-</Connect(OpenModalButton)>,
-                        ],
-                        "tag": "div",
-                      },
-                      "ref": null,
-                      "rendered": Array [
-                        Object {
-                          "instance": null,
-                          "key": undefined,
-                          "nodeType": "function",
-                          "props": Object {
-                            "children": "name3",
-                            "tag": "h4",
-                          },
-                          "ref": null,
-                          "rendered": "name3",
-                          "type": [Function],
-                        },
-                        Object {
-                          "instance": null,
-                          "key": undefined,
-                          "nodeType": "function",
-                          "props": Object {
-                            "children": Array [
-                              3,
-                              " x ",
-                              4,
-                            ],
-                            "tag": "h6",
-                          },
-                          "ref": null,
-                          "rendered": Array [
-                            3,
-                            " x ",
-                            4,
-                          ],
-                          "type": [Function],
-                        },
-                        Object {
-                          "instance": null,
-                          "key": undefined,
-                          "nodeType": "host",
-                          "props": Object {
-                            "className": "card-text",
-                            "dangerouslySetInnerHTML": Object {
-                              "__html": "",
-                            },
-                          },
-                          "ref": null,
-                          "rendered": null,
-                          "type": "div",
-                        },
-                        Object {
-                          "instance": null,
-                          "key": undefined,
-                          "nodeType": "class",
-                          "props": Object {
-                            "children": "Edit",
-                            "modalProps": Object {
-                              "ariaLabel": "Sup",
-                              "formName": "structureDefinition",
-                              "sd": Object {
-                                "description": undefined,
-                                "id": "id3",
-                                "imageUrl": "string",
-                                "kind": "someOtherKind",
-                                "length": 4,
-                                "name": "name3",
-                                "width": 3,
-                              },
-                            },
-                            "modalType": "EDIT_STRUCTURE_DEFINITION",
-                          },
-                          "ref": null,
-                          "rendered": "Edit",
-                          "type": [Function],
-                        },
-                      ],
-                      "type": [Function],
-                    },
-                  ],
-                  "type": [Function],
-                },
-                "type": "li",
+                "rendered": null,
+                "type": [Function],
               },
             ],
             "type": "ul",
@@ -1615,124 +450,32 @@ ShallowWrapper {
                             someKind
               </h3>
               <ul>
-                            <li
-                                          className="card-li"
-                            >
-                                          <Card
-                                                        tag="div"
-                                          >
-                                                        <CardImg
-                                                                      alt="name1"
-                                                                      src="string"
-                                                                      tag="img"
-                                                                      top={true}
-                                                                      width="100%"
-                                                        />
-                                                        <CardBody
-                                                                      tag="div"
-                                                        >
-                                                                      <CardTitle
-                                                                                    tag="h4"
-                                                                      >
-                                                                                    name1
-                                                                      </CardTitle>
-                                                                      <CardSubtitle
-                                                                                    tag="h6"
-                                                                      >
-                                                                                    1
-                                                                                     x 
-                                                                                    2
-                                                                      </CardSubtitle>
-                                                                      <div
-                                                                                    className="card-text"
-                                                                                    dangerouslySetInnerHTML={
-                                                                                                  Object {
-                                                                                                                "__html": "string",
-                                                                                                              }
-                                                                                    }
-                                                                      />
-                                                                      <Connect(OpenModalButton)
-                                                                                    modalProps={
-                                                                                                  Object {
-                                                                                                                "ariaLabel": "Sup",
-                                                                                                                "formName": "structureDefinition",
-                                                                                                                "sd": Object {
-                                                                                                                  "description": "string",
-                                                                                                                  "id": "id1",
-                                                                                                                  "imageUrl": "string",
-                                                                                                                  "kind": "someKind",
-                                                                                                                  "length": 2,
-                                                                                                                  "name": "name1",
-                                                                                                                  "width": 1,
-                                                                                                                },
-                                                                                                              }
-                                                                                    }
-                                                                                    modalType="EDIT_STRUCTURE_DEFINITION"
-                                                                      >
-                                                                                    Edit
-                                                                      </Connect(OpenModalButton)>
-                                                        </CardBody>
-                                          </Card>
-                            </li>
-                            <li
-                                          className="card-li"
-                            >
-                                          <Card
-                                                        tag="div"
-                                          >
-                                                        <CardImg
-                                                                      alt="name2"
-                                                                      src="string"
-                                                                      tag="img"
-                                                                      top={true}
-                                                                      width="100%"
-                                                        />
-                                                        <CardBody
-                                                                      tag="div"
-                                                        >
-                                                                      <CardTitle
-                                                                                    tag="h4"
-                                                                      >
-                                                                                    name2
-                                                                      </CardTitle>
-                                                                      <CardSubtitle
-                                                                                    tag="h6"
-                                                                      >
-                                                                                    2
-                                                                                     x 
-                                                                                    5
-                                                                      </CardSubtitle>
-                                                                      <div
-                                                                                    className="card-text"
-                                                                                    dangerouslySetInnerHTML={
-                                                                                                  Object {
-                                                                                                                "__html": "string",
-                                                                                                              }
-                                                                                    }
-                                                                      />
-                                                                      <Connect(OpenModalButton)
-                                                                                    modalProps={
-                                                                                                  Object {
-                                                                                                                "ariaLabel": "Sup",
-                                                                                                                "formName": "structureDefinition",
-                                                                                                                "sd": Object {
-                                                                                                                  "description": "string",
-                                                                                                                  "id": "id2",
-                                                                                                                  "imageUrl": "string",
-                                                                                                                  "kind": "someKind",
-                                                                                                                  "length": 5,
-                                                                                                                  "name": "name2",
-                                                                                                                  "width": 2,
-                                                                                                                },
-                                                                                                              }
-                                                                                    }
-                                                                                    modalType="EDIT_STRUCTURE_DEFINITION"
-                                                                      >
-                                                                                    Edit
-                                                                      </Connect(OpenModalButton)>
-                                                        </CardBody>
-                                          </Card>
-                            </li>
+                            <component
+                                          structureDefinition={
+                                                        Object {
+                                                                      "description": "string",
+                                                                      "id": "id1",
+                                                                      "imageUrl": "string",
+                                                                      "kind": "someKind",
+                                                                      "length": 2,
+                                                                      "name": "name1",
+                                                                      "width": 1,
+                                                                    }
+                                          }
+                            />
+                            <component
+                                          structureDefinition={
+                                                        Object {
+                                                                      "description": "string",
+                                                                      "id": "id2",
+                                                                      "imageUrl": "string",
+                                                                      "kind": "someKind",
+                                                                      "length": 5,
+                                                                      "name": "name2",
+                                                                      "width": 2,
+                                                                    }
+                                          }
+                            />
               </ul>
 </ListGroupItem>,
             <ListGroupItem
@@ -1742,69 +485,24 @@ ShallowWrapper {
                             someOtherKind
               </h3>
               <ul>
-                            <li
-                                          className="card-li"
-                            >
-                                          <Card
-                                                        tag="div"
-                                          >
-                                                        <CardImg
-                                                                      alt="name3"
-                                                                      src="string"
-                                                                      tag="img"
-                                                                      top={true}
-                                                                      width="100%"
-                                                        />
-                                                        <CardBody
-                                                                      tag="div"
-                                                        >
-                                                                      <CardTitle
-                                                                                    tag="h4"
-                                                                      >
-                                                                                    name3
-                                                                      </CardTitle>
-                                                                      <CardSubtitle
-                                                                                    tag="h6"
-                                                                      >
-                                                                                    3
-                                                                                     x 
-                                                                                    4
-                                                                      </CardSubtitle>
-                                                                      <div
-                                                                                    className="card-text"
-                                                                                    dangerouslySetInnerHTML={
-                                                                                                  Object {
-                                                                                                                "__html": "",
-                                                                                                              }
-                                                                                    }
-                                                                      />
-                                                                      <Connect(OpenModalButton)
-                                                                                    modalProps={
-                                                                                                  Object {
-                                                                                                                "ariaLabel": "Sup",
-                                                                                                                "formName": "structureDefinition",
-                                                                                                                "sd": Object {
-                                                                                                                  "description": undefined,
-                                                                                                                  "id": "id3",
-                                                                                                                  "imageUrl": "string",
-                                                                                                                  "kind": "someOtherKind",
-                                                                                                                  "length": 4,
-                                                                                                                  "name": "name3",
-                                                                                                                  "width": 3,
-                                                                                                                },
-                                                                                                              }
-                                                                                    }
-                                                                                    modalType="EDIT_STRUCTURE_DEFINITION"
-                                                                      >
-                                                                                    Edit
-                                                                      </Connect(OpenModalButton)>
-                                                        </CardBody>
-                                          </Card>
-                            </li>
+                            <component
+                                          structureDefinition={
+                                                        Object {
+                                                                      "description": undefined,
+                                                                      "id": "id3",
+                                                                      "imageUrl": "string",
+                                                                      "kind": "someOtherKind",
+                                                                      "length": 4,
+                                                                      "name": "name3",
+                                                                      "width": 3,
+                                                                    }
+                                          }
+                            />
               </ul>
 </ListGroupItem>,
           ],
         ],
+        "className": "structure-library",
         "tag": "ul",
       },
       "ref": null,
@@ -1874,124 +572,32 @@ ShallowWrapper {
                 someKind
 </h3>,
               <ul>
-                <li
-                                className="card-li"
-                >
-                                <Card
-                                                tag="div"
-                                >
-                                                <CardImg
-                                                                alt="name1"
-                                                                src="string"
-                                                                tag="img"
-                                                                top={true}
-                                                                width="100%"
-                                                />
-                                                <CardBody
-                                                                tag="div"
-                                                >
-                                                                <CardTitle
-                                                                                tag="h4"
-                                                                >
-                                                                                name1
-                                                                </CardTitle>
-                                                                <CardSubtitle
-                                                                                tag="h6"
-                                                                >
-                                                                                1
-                                                                                 x 
-                                                                                2
-                                                                </CardSubtitle>
-                                                                <div
-                                                                                className="card-text"
-                                                                                dangerouslySetInnerHTML={
-                                                                                                Object {
-                                                                                                                "__html": "string",
-                                                                                                              }
-                                                                                }
-                                                                />
-                                                                <Connect(OpenModalButton)
-                                                                                modalProps={
-                                                                                                Object {
-                                                                                                                "ariaLabel": "Sup",
-                                                                                                                "formName": "structureDefinition",
-                                                                                                                "sd": Object {
-                                                                                                                  "description": "string",
-                                                                                                                  "id": "id1",
-                                                                                                                  "imageUrl": "string",
-                                                                                                                  "kind": "someKind",
-                                                                                                                  "length": 2,
-                                                                                                                  "name": "name1",
-                                                                                                                  "width": 1,
-                                                                                                                },
-                                                                                                              }
-                                                                                }
-                                                                                modalType="EDIT_STRUCTURE_DEFINITION"
-                                                                >
-                                                                                Edit
-                                                                </Connect(OpenModalButton)>
-                                                </CardBody>
-                                </Card>
-                </li>
-                <li
-                                className="card-li"
-                >
-                                <Card
-                                                tag="div"
-                                >
-                                                <CardImg
-                                                                alt="name2"
-                                                                src="string"
-                                                                tag="img"
-                                                                top={true}
-                                                                width="100%"
-                                                />
-                                                <CardBody
-                                                                tag="div"
-                                                >
-                                                                <CardTitle
-                                                                                tag="h4"
-                                                                >
-                                                                                name2
-                                                                </CardTitle>
-                                                                <CardSubtitle
-                                                                                tag="h6"
-                                                                >
-                                                                                2
-                                                                                 x 
-                                                                                5
-                                                                </CardSubtitle>
-                                                                <div
-                                                                                className="card-text"
-                                                                                dangerouslySetInnerHTML={
-                                                                                                Object {
-                                                                                                                "__html": "string",
-                                                                                                              }
-                                                                                }
-                                                                />
-                                                                <Connect(OpenModalButton)
-                                                                                modalProps={
-                                                                                                Object {
-                                                                                                                "ariaLabel": "Sup",
-                                                                                                                "formName": "structureDefinition",
-                                                                                                                "sd": Object {
-                                                                                                                  "description": "string",
-                                                                                                                  "id": "id2",
-                                                                                                                  "imageUrl": "string",
-                                                                                                                  "kind": "someKind",
-                                                                                                                  "length": 5,
-                                                                                                                  "name": "name2",
-                                                                                                                  "width": 2,
-                                                                                                                },
-                                                                                                              }
-                                                                                }
-                                                                                modalType="EDIT_STRUCTURE_DEFINITION"
-                                                                >
-                                                                                Edit
-                                                                </Connect(OpenModalButton)>
-                                                </CardBody>
-                                </Card>
-                </li>
+                <component
+                                structureDefinition={
+                                                Object {
+                                                                "description": "string",
+                                                                "id": "id1",
+                                                                "imageUrl": "string",
+                                                                "kind": "someKind",
+                                                                "length": 2,
+                                                                "name": "name1",
+                                                                "width": 1,
+                                                              }
+                                }
+                />
+                <component
+                                structureDefinition={
+                                                Object {
+                                                                "description": "string",
+                                                                "id": "id2",
+                                                                "imageUrl": "string",
+                                                                "kind": "someKind",
+                                                                "length": 5,
+                                                                "name": "name2",
+                                                                "width": 2,
+                                                              }
+                                }
+                />
 </ul>,
             ],
             "tag": "li",
@@ -2015,124 +621,32 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": Array [
-                  <li
-                    className="card-li"
->
-                    <Card
-                                        tag="div"
-                    >
-                                        <CardImg
-                                                            alt="name1"
-                                                            src="string"
-                                                            tag="img"
-                                                            top={true}
-                                                            width="100%"
-                                        />
-                                        <CardBody
-                                                            tag="div"
-                                        >
-                                                            <CardTitle
-                                                                                tag="h4"
-                                                            >
-                                                                                name1
-                                                            </CardTitle>
-                                                            <CardSubtitle
-                                                                                tag="h6"
-                                                            >
-                                                                                1
-                                                                                 x 
-                                                                                2
-                                                            </CardSubtitle>
-                                                            <div
-                                                                                className="card-text"
-                                                                                dangerouslySetInnerHTML={
-                                                                                                    Object {
-                                                                                                                        "__html": "string",
-                                                                                                                      }
-                                                                                }
-                                                            />
-                                                            <Connect(OpenModalButton)
-                                                                                modalProps={
-                                                                                                    Object {
-                                                                                                                        "ariaLabel": "Sup",
-                                                                                                                        "formName": "structureDefinition",
-                                                                                                                        "sd": Object {
-                                                                                                                          "description": "string",
-                                                                                                                          "id": "id1",
-                                                                                                                          "imageUrl": "string",
-                                                                                                                          "kind": "someKind",
-                                                                                                                          "length": 2,
-                                                                                                                          "name": "name1",
-                                                                                                                          "width": 1,
-                                                                                                                        },
-                                                                                                                      }
-                                                                                }
-                                                                                modalType="EDIT_STRUCTURE_DEFINITION"
-                                                            >
-                                                                                Edit
-                                                            </Connect(OpenModalButton)>
-                                        </CardBody>
-                    </Card>
-</li>,
-                  <li
-                    className="card-li"
->
-                    <Card
-                                        tag="div"
-                    >
-                                        <CardImg
-                                                            alt="name2"
-                                                            src="string"
-                                                            tag="img"
-                                                            top={true}
-                                                            width="100%"
-                                        />
-                                        <CardBody
-                                                            tag="div"
-                                        >
-                                                            <CardTitle
-                                                                                tag="h4"
-                                                            >
-                                                                                name2
-                                                            </CardTitle>
-                                                            <CardSubtitle
-                                                                                tag="h6"
-                                                            >
-                                                                                2
-                                                                                 x 
-                                                                                5
-                                                            </CardSubtitle>
-                                                            <div
-                                                                                className="card-text"
-                                                                                dangerouslySetInnerHTML={
-                                                                                                    Object {
-                                                                                                                        "__html": "string",
-                                                                                                                      }
-                                                                                }
-                                                            />
-                                                            <Connect(OpenModalButton)
-                                                                                modalProps={
-                                                                                                    Object {
-                                                                                                                        "ariaLabel": "Sup",
-                                                                                                                        "formName": "structureDefinition",
-                                                                                                                        "sd": Object {
-                                                                                                                          "description": "string",
-                                                                                                                          "id": "id2",
-                                                                                                                          "imageUrl": "string",
-                                                                                                                          "kind": "someKind",
-                                                                                                                          "length": 5,
-                                                                                                                          "name": "name2",
-                                                                                                                          "width": 2,
-                                                                                                                        },
-                                                                                                                      }
-                                                                                }
-                                                                                modalType="EDIT_STRUCTURE_DEFINITION"
-                                                            >
-                                                                                Edit
-                                                            </Connect(OpenModalButton)>
-                                        </CardBody>
-                    </Card>
-</li>,
+                  <component
+                    structureDefinition={
+                                        Object {
+                                                            "description": "string",
+                                                            "id": "id1",
+                                                            "imageUrl": "string",
+                                                            "kind": "someKind",
+                                                            "length": 2,
+                                                            "name": "name1",
+                                                            "width": 1,
+                                                          }
+                    }
+/>,
+                  <component
+                    structureDefinition={
+                                        Object {
+                                                            "description": "string",
+                                                            "id": "id2",
+                                                            "imageUrl": "string",
+                                                            "kind": "someKind",
+                                                            "length": 5,
+                                                            "name": "name2",
+                                                            "width": 2,
+                                                          }
+                    }
+/>,
                 ],
               },
               "ref": null,
@@ -2140,542 +654,40 @@ ShallowWrapper {
                 Object {
                   "instance": null,
                   "key": "id1",
-                  "nodeType": "host",
+                  "nodeType": "function",
                   "props": Object {
-                    "children": <Card
-                      tag="div"
->
-                      <CardImg
-                                            alt="name1"
-                                            src="string"
-                                            tag="img"
-                                            top={true}
-                                            width="100%"
-                      />
-                      <CardBody
-                                            tag="div"
-                      >
-                                            <CardTitle
-                                                                  tag="h4"
-                                            >
-                                                                  name1
-                                            </CardTitle>
-                                            <CardSubtitle
-                                                                  tag="h6"
-                                            >
-                                                                  1
-                                                                   x 
-                                                                  2
-                                            </CardSubtitle>
-                                            <div
-                                                                  className="card-text"
-                                                                  dangerouslySetInnerHTML={
-                                                                                        Object {
-                                                                                                              "__html": "string",
-                                                                                                            }
-                                                                  }
-                                            />
-                                            <Connect(OpenModalButton)
-                                                                  modalProps={
-                                                                                        Object {
-                                                                                                              "ariaLabel": "Sup",
-                                                                                                              "formName": "structureDefinition",
-                                                                                                              "sd": Object {
-                                                                                                                "description": "string",
-                                                                                                                "id": "id1",
-                                                                                                                "imageUrl": "string",
-                                                                                                                "kind": "someKind",
-                                                                                                                "length": 2,
-                                                                                                                "name": "name1",
-                                                                                                                "width": 1,
-                                                                                                              },
-                                                                                                            }
-                                                                  }
-                                                                  modalType="EDIT_STRUCTURE_DEFINITION"
-                                            >
-                                                                  Edit
-                                            </Connect(OpenModalButton)>
-                      </CardBody>
-</Card>,
-                    "className": "card-li",
+                    "structureDefinition": Object {
+                      "description": "string",
+                      "id": "id1",
+                      "imageUrl": "string",
+                      "kind": "someKind",
+                      "length": 2,
+                      "name": "name1",
+                      "width": 1,
+                    },
                   },
                   "ref": null,
-                  "rendered": Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "function",
-                    "props": Object {
-                      "children": Array [
-                        <CardImg
-                          alt="name1"
-                          src="string"
-                          tag="img"
-                          top={true}
-                          width="100%"
-/>,
-                        <CardBody
-                          tag="div"
->
-                          <CardTitle
-                                                    tag="h4"
-                          >
-                                                    name1
-                          </CardTitle>
-                          <CardSubtitle
-                                                    tag="h6"
-                          >
-                                                    1
-                                                     x 
-                                                    2
-                          </CardSubtitle>
-                          <div
-                                                    className="card-text"
-                                                    dangerouslySetInnerHTML={
-                                                                              Object {
-                                                                                                        "__html": "string",
-                                                                                                      }
-                                                    }
-                          />
-                          <Connect(OpenModalButton)
-                                                    modalProps={
-                                                                              Object {
-                                                                                                        "ariaLabel": "Sup",
-                                                                                                        "formName": "structureDefinition",
-                                                                                                        "sd": Object {
-                                                                                                          "description": "string",
-                                                                                                          "id": "id1",
-                                                                                                          "imageUrl": "string",
-                                                                                                          "kind": "someKind",
-                                                                                                          "length": 2,
-                                                                                                          "name": "name1",
-                                                                                                          "width": 1,
-                                                                                                        },
-                                                                                                      }
-                                                    }
-                                                    modalType="EDIT_STRUCTURE_DEFINITION"
-                          >
-                                                    Edit
-                          </Connect(OpenModalButton)>
-</CardBody>,
-                      ],
-                      "tag": "div",
-                    },
-                    "ref": null,
-                    "rendered": Array [
-                      Object {
-                        "instance": null,
-                        "key": undefined,
-                        "nodeType": "function",
-                        "props": Object {
-                          "alt": "name1",
-                          "src": "string",
-                          "tag": "img",
-                          "top": true,
-                          "width": "100%",
-                        },
-                        "ref": null,
-                        "rendered": null,
-                        "type": [Function],
-                      },
-                      Object {
-                        "instance": null,
-                        "key": undefined,
-                        "nodeType": "function",
-                        "props": Object {
-                          "children": Array [
-                            <CardTitle
-                              tag="h4"
->
-                              name1
-</CardTitle>,
-                            <CardSubtitle
-                              tag="h6"
->
-                              1
-                               x 
-                              2
-</CardSubtitle>,
-                            <div
-                              className="card-text"
-                              dangerouslySetInnerHTML={
-                                                            Object {
-                                                                                          "__html": "string",
-                                                                                        }
-                              }
-/>,
-                            <Connect(OpenModalButton)
-                              modalProps={
-                                                            Object {
-                                                                                          "ariaLabel": "Sup",
-                                                                                          "formName": "structureDefinition",
-                                                                                          "sd": Object {
-                                                                                            "description": "string",
-                                                                                            "id": "id1",
-                                                                                            "imageUrl": "string",
-                                                                                            "kind": "someKind",
-                                                                                            "length": 2,
-                                                                                            "name": "name1",
-                                                                                            "width": 1,
-                                                                                          },
-                                                                                        }
-                              }
-                              modalType="EDIT_STRUCTURE_DEFINITION"
->
-                              Edit
-</Connect(OpenModalButton)>,
-                          ],
-                          "tag": "div",
-                        },
-                        "ref": null,
-                        "rendered": Array [
-                          Object {
-                            "instance": null,
-                            "key": undefined,
-                            "nodeType": "function",
-                            "props": Object {
-                              "children": "name1",
-                              "tag": "h4",
-                            },
-                            "ref": null,
-                            "rendered": "name1",
-                            "type": [Function],
-                          },
-                          Object {
-                            "instance": null,
-                            "key": undefined,
-                            "nodeType": "function",
-                            "props": Object {
-                              "children": Array [
-                                1,
-                                " x ",
-                                2,
-                              ],
-                              "tag": "h6",
-                            },
-                            "ref": null,
-                            "rendered": Array [
-                              1,
-                              " x ",
-                              2,
-                            ],
-                            "type": [Function],
-                          },
-                          Object {
-                            "instance": null,
-                            "key": undefined,
-                            "nodeType": "host",
-                            "props": Object {
-                              "className": "card-text",
-                              "dangerouslySetInnerHTML": Object {
-                                "__html": "string",
-                              },
-                            },
-                            "ref": null,
-                            "rendered": null,
-                            "type": "div",
-                          },
-                          Object {
-                            "instance": null,
-                            "key": undefined,
-                            "nodeType": "class",
-                            "props": Object {
-                              "children": "Edit",
-                              "modalProps": Object {
-                                "ariaLabel": "Sup",
-                                "formName": "structureDefinition",
-                                "sd": Object {
-                                  "description": "string",
-                                  "id": "id1",
-                                  "imageUrl": "string",
-                                  "kind": "someKind",
-                                  "length": 2,
-                                  "name": "name1",
-                                  "width": 1,
-                                },
-                              },
-                              "modalType": "EDIT_STRUCTURE_DEFINITION",
-                            },
-                            "ref": null,
-                            "rendered": "Edit",
-                            "type": [Function],
-                          },
-                        ],
-                        "type": [Function],
-                      },
-                    ],
-                    "type": [Function],
-                  },
-                  "type": "li",
+                  "rendered": null,
+                  "type": [Function],
                 },
                 Object {
                   "instance": null,
                   "key": "id2",
-                  "nodeType": "host",
+                  "nodeType": "function",
                   "props": Object {
-                    "children": <Card
-                      tag="div"
->
-                      <CardImg
-                                            alt="name2"
-                                            src="string"
-                                            tag="img"
-                                            top={true}
-                                            width="100%"
-                      />
-                      <CardBody
-                                            tag="div"
-                      >
-                                            <CardTitle
-                                                                  tag="h4"
-                                            >
-                                                                  name2
-                                            </CardTitle>
-                                            <CardSubtitle
-                                                                  tag="h6"
-                                            >
-                                                                  2
-                                                                   x 
-                                                                  5
-                                            </CardSubtitle>
-                                            <div
-                                                                  className="card-text"
-                                                                  dangerouslySetInnerHTML={
-                                                                                        Object {
-                                                                                                              "__html": "string",
-                                                                                                            }
-                                                                  }
-                                            />
-                                            <Connect(OpenModalButton)
-                                                                  modalProps={
-                                                                                        Object {
-                                                                                                              "ariaLabel": "Sup",
-                                                                                                              "formName": "structureDefinition",
-                                                                                                              "sd": Object {
-                                                                                                                "description": "string",
-                                                                                                                "id": "id2",
-                                                                                                                "imageUrl": "string",
-                                                                                                                "kind": "someKind",
-                                                                                                                "length": 5,
-                                                                                                                "name": "name2",
-                                                                                                                "width": 2,
-                                                                                                              },
-                                                                                                            }
-                                                                  }
-                                                                  modalType="EDIT_STRUCTURE_DEFINITION"
-                                            >
-                                                                  Edit
-                                            </Connect(OpenModalButton)>
-                      </CardBody>
-</Card>,
-                    "className": "card-li",
+                    "structureDefinition": Object {
+                      "description": "string",
+                      "id": "id2",
+                      "imageUrl": "string",
+                      "kind": "someKind",
+                      "length": 5,
+                      "name": "name2",
+                      "width": 2,
+                    },
                   },
                   "ref": null,
-                  "rendered": Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "function",
-                    "props": Object {
-                      "children": Array [
-                        <CardImg
-                          alt="name2"
-                          src="string"
-                          tag="img"
-                          top={true}
-                          width="100%"
-/>,
-                        <CardBody
-                          tag="div"
->
-                          <CardTitle
-                                                    tag="h4"
-                          >
-                                                    name2
-                          </CardTitle>
-                          <CardSubtitle
-                                                    tag="h6"
-                          >
-                                                    2
-                                                     x 
-                                                    5
-                          </CardSubtitle>
-                          <div
-                                                    className="card-text"
-                                                    dangerouslySetInnerHTML={
-                                                                              Object {
-                                                                                                        "__html": "string",
-                                                                                                      }
-                                                    }
-                          />
-                          <Connect(OpenModalButton)
-                                                    modalProps={
-                                                                              Object {
-                                                                                                        "ariaLabel": "Sup",
-                                                                                                        "formName": "structureDefinition",
-                                                                                                        "sd": Object {
-                                                                                                          "description": "string",
-                                                                                                          "id": "id2",
-                                                                                                          "imageUrl": "string",
-                                                                                                          "kind": "someKind",
-                                                                                                          "length": 5,
-                                                                                                          "name": "name2",
-                                                                                                          "width": 2,
-                                                                                                        },
-                                                                                                      }
-                                                    }
-                                                    modalType="EDIT_STRUCTURE_DEFINITION"
-                          >
-                                                    Edit
-                          </Connect(OpenModalButton)>
-</CardBody>,
-                      ],
-                      "tag": "div",
-                    },
-                    "ref": null,
-                    "rendered": Array [
-                      Object {
-                        "instance": null,
-                        "key": undefined,
-                        "nodeType": "function",
-                        "props": Object {
-                          "alt": "name2",
-                          "src": "string",
-                          "tag": "img",
-                          "top": true,
-                          "width": "100%",
-                        },
-                        "ref": null,
-                        "rendered": null,
-                        "type": [Function],
-                      },
-                      Object {
-                        "instance": null,
-                        "key": undefined,
-                        "nodeType": "function",
-                        "props": Object {
-                          "children": Array [
-                            <CardTitle
-                              tag="h4"
->
-                              name2
-</CardTitle>,
-                            <CardSubtitle
-                              tag="h6"
->
-                              2
-                               x 
-                              5
-</CardSubtitle>,
-                            <div
-                              className="card-text"
-                              dangerouslySetInnerHTML={
-                                                            Object {
-                                                                                          "__html": "string",
-                                                                                        }
-                              }
-/>,
-                            <Connect(OpenModalButton)
-                              modalProps={
-                                                            Object {
-                                                                                          "ariaLabel": "Sup",
-                                                                                          "formName": "structureDefinition",
-                                                                                          "sd": Object {
-                                                                                            "description": "string",
-                                                                                            "id": "id2",
-                                                                                            "imageUrl": "string",
-                                                                                            "kind": "someKind",
-                                                                                            "length": 5,
-                                                                                            "name": "name2",
-                                                                                            "width": 2,
-                                                                                          },
-                                                                                        }
-                              }
-                              modalType="EDIT_STRUCTURE_DEFINITION"
->
-                              Edit
-</Connect(OpenModalButton)>,
-                          ],
-                          "tag": "div",
-                        },
-                        "ref": null,
-                        "rendered": Array [
-                          Object {
-                            "instance": null,
-                            "key": undefined,
-                            "nodeType": "function",
-                            "props": Object {
-                              "children": "name2",
-                              "tag": "h4",
-                            },
-                            "ref": null,
-                            "rendered": "name2",
-                            "type": [Function],
-                          },
-                          Object {
-                            "instance": null,
-                            "key": undefined,
-                            "nodeType": "function",
-                            "props": Object {
-                              "children": Array [
-                                2,
-                                " x ",
-                                5,
-                              ],
-                              "tag": "h6",
-                            },
-                            "ref": null,
-                            "rendered": Array [
-                              2,
-                              " x ",
-                              5,
-                            ],
-                            "type": [Function],
-                          },
-                          Object {
-                            "instance": null,
-                            "key": undefined,
-                            "nodeType": "host",
-                            "props": Object {
-                              "className": "card-text",
-                              "dangerouslySetInnerHTML": Object {
-                                "__html": "string",
-                              },
-                            },
-                            "ref": null,
-                            "rendered": null,
-                            "type": "div",
-                          },
-                          Object {
-                            "instance": null,
-                            "key": undefined,
-                            "nodeType": "class",
-                            "props": Object {
-                              "children": "Edit",
-                              "modalProps": Object {
-                                "ariaLabel": "Sup",
-                                "formName": "structureDefinition",
-                                "sd": Object {
-                                  "description": "string",
-                                  "id": "id2",
-                                  "imageUrl": "string",
-                                  "kind": "someKind",
-                                  "length": 5,
-                                  "name": "name2",
-                                  "width": 2,
-                                },
-                              },
-                              "modalType": "EDIT_STRUCTURE_DEFINITION",
-                            },
-                            "ref": null,
-                            "rendered": "Edit",
-                            "type": [Function],
-                          },
-                        ],
-                        "type": [Function],
-                      },
-                    ],
-                    "type": [Function],
-                  },
-                  "type": "li",
+                  "rendered": null,
+                  "type": [Function],
                 },
               ],
               "type": "ul",
@@ -2693,65 +705,19 @@ ShallowWrapper {
                 someOtherKind
 </h3>,
               <ul>
-                <li
-                                className="card-li"
-                >
-                                <Card
-                                                tag="div"
-                                >
-                                                <CardImg
-                                                                alt="name3"
-                                                                src="string"
-                                                                tag="img"
-                                                                top={true}
-                                                                width="100%"
-                                                />
-                                                <CardBody
-                                                                tag="div"
-                                                >
-                                                                <CardTitle
-                                                                                tag="h4"
-                                                                >
-                                                                                name3
-                                                                </CardTitle>
-                                                                <CardSubtitle
-                                                                                tag="h6"
-                                                                >
-                                                                                3
-                                                                                 x 
-                                                                                4
-                                                                </CardSubtitle>
-                                                                <div
-                                                                                className="card-text"
-                                                                                dangerouslySetInnerHTML={
-                                                                                                Object {
-                                                                                                                "__html": "",
-                                                                                                              }
-                                                                                }
-                                                                />
-                                                                <Connect(OpenModalButton)
-                                                                                modalProps={
-                                                                                                Object {
-                                                                                                                "ariaLabel": "Sup",
-                                                                                                                "formName": "structureDefinition",
-                                                                                                                "sd": Object {
-                                                                                                                  "description": undefined,
-                                                                                                                  "id": "id3",
-                                                                                                                  "imageUrl": "string",
-                                                                                                                  "kind": "someOtherKind",
-                                                                                                                  "length": 4,
-                                                                                                                  "name": "name3",
-                                                                                                                  "width": 3,
-                                                                                                                },
-                                                                                                              }
-                                                                                }
-                                                                                modalType="EDIT_STRUCTURE_DEFINITION"
-                                                                >
-                                                                                Edit
-                                                                </Connect(OpenModalButton)>
-                                                </CardBody>
-                                </Card>
-                </li>
+                <component
+                                structureDefinition={
+                                                Object {
+                                                                "description": undefined,
+                                                                "id": "id3",
+                                                                "imageUrl": "string",
+                                                                "kind": "someOtherKind",
+                                                                "length": 4,
+                                                                "name": "name3",
+                                                                "width": 3,
+                                                              }
+                                }
+                />
 </ul>,
             ],
             "tag": "li",
@@ -2775,65 +741,19 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": Array [
-                  <li
-                    className="card-li"
->
-                    <Card
-                                        tag="div"
-                    >
-                                        <CardImg
-                                                            alt="name3"
-                                                            src="string"
-                                                            tag="img"
-                                                            top={true}
-                                                            width="100%"
-                                        />
-                                        <CardBody
-                                                            tag="div"
-                                        >
-                                                            <CardTitle
-                                                                                tag="h4"
-                                                            >
-                                                                                name3
-                                                            </CardTitle>
-                                                            <CardSubtitle
-                                                                                tag="h6"
-                                                            >
-                                                                                3
-                                                                                 x 
-                                                                                4
-                                                            </CardSubtitle>
-                                                            <div
-                                                                                className="card-text"
-                                                                                dangerouslySetInnerHTML={
-                                                                                                    Object {
-                                                                                                                        "__html": "",
-                                                                                                                      }
-                                                                                }
-                                                            />
-                                                            <Connect(OpenModalButton)
-                                                                                modalProps={
-                                                                                                    Object {
-                                                                                                                        "ariaLabel": "Sup",
-                                                                                                                        "formName": "structureDefinition",
-                                                                                                                        "sd": Object {
-                                                                                                                          "description": undefined,
-                                                                                                                          "id": "id3",
-                                                                                                                          "imageUrl": "string",
-                                                                                                                          "kind": "someOtherKind",
-                                                                                                                          "length": 4,
-                                                                                                                          "name": "name3",
-                                                                                                                          "width": 3,
-                                                                                                                        },
-                                                                                                                      }
-                                                                                }
-                                                                                modalType="EDIT_STRUCTURE_DEFINITION"
-                                                            >
-                                                                                Edit
-                                                            </Connect(OpenModalButton)>
-                                        </CardBody>
-                    </Card>
-</li>,
+                  <component
+                    structureDefinition={
+                                        Object {
+                                                            "description": undefined,
+                                                            "id": "id3",
+                                                            "imageUrl": "string",
+                                                            "kind": "someOtherKind",
+                                                            "length": 4,
+                                                            "name": "name3",
+                                                            "width": 3,
+                                                          }
+                    }
+/>,
                 ],
               },
               "ref": null,
@@ -2841,272 +761,21 @@ ShallowWrapper {
                 Object {
                   "instance": null,
                   "key": "id3",
-                  "nodeType": "host",
+                  "nodeType": "function",
                   "props": Object {
-                    "children": <Card
-                      tag="div"
->
-                      <CardImg
-                                            alt="name3"
-                                            src="string"
-                                            tag="img"
-                                            top={true}
-                                            width="100%"
-                      />
-                      <CardBody
-                                            tag="div"
-                      >
-                                            <CardTitle
-                                                                  tag="h4"
-                                            >
-                                                                  name3
-                                            </CardTitle>
-                                            <CardSubtitle
-                                                                  tag="h6"
-                                            >
-                                                                  3
-                                                                   x 
-                                                                  4
-                                            </CardSubtitle>
-                                            <div
-                                                                  className="card-text"
-                                                                  dangerouslySetInnerHTML={
-                                                                                        Object {
-                                                                                                              "__html": "",
-                                                                                                            }
-                                                                  }
-                                            />
-                                            <Connect(OpenModalButton)
-                                                                  modalProps={
-                                                                                        Object {
-                                                                                                              "ariaLabel": "Sup",
-                                                                                                              "formName": "structureDefinition",
-                                                                                                              "sd": Object {
-                                                                                                                "description": undefined,
-                                                                                                                "id": "id3",
-                                                                                                                "imageUrl": "string",
-                                                                                                                "kind": "someOtherKind",
-                                                                                                                "length": 4,
-                                                                                                                "name": "name3",
-                                                                                                                "width": 3,
-                                                                                                              },
-                                                                                                            }
-                                                                  }
-                                                                  modalType="EDIT_STRUCTURE_DEFINITION"
-                                            >
-                                                                  Edit
-                                            </Connect(OpenModalButton)>
-                      </CardBody>
-</Card>,
-                    "className": "card-li",
+                    "structureDefinition": Object {
+                      "description": undefined,
+                      "id": "id3",
+                      "imageUrl": "string",
+                      "kind": "someOtherKind",
+                      "length": 4,
+                      "name": "name3",
+                      "width": 3,
+                    },
                   },
                   "ref": null,
-                  "rendered": Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "function",
-                    "props": Object {
-                      "children": Array [
-                        <CardImg
-                          alt="name3"
-                          src="string"
-                          tag="img"
-                          top={true}
-                          width="100%"
-/>,
-                        <CardBody
-                          tag="div"
->
-                          <CardTitle
-                                                    tag="h4"
-                          >
-                                                    name3
-                          </CardTitle>
-                          <CardSubtitle
-                                                    tag="h6"
-                          >
-                                                    3
-                                                     x 
-                                                    4
-                          </CardSubtitle>
-                          <div
-                                                    className="card-text"
-                                                    dangerouslySetInnerHTML={
-                                                                              Object {
-                                                                                                        "__html": "",
-                                                                                                      }
-                                                    }
-                          />
-                          <Connect(OpenModalButton)
-                                                    modalProps={
-                                                                              Object {
-                                                                                                        "ariaLabel": "Sup",
-                                                                                                        "formName": "structureDefinition",
-                                                                                                        "sd": Object {
-                                                                                                          "description": undefined,
-                                                                                                          "id": "id3",
-                                                                                                          "imageUrl": "string",
-                                                                                                          "kind": "someOtherKind",
-                                                                                                          "length": 4,
-                                                                                                          "name": "name3",
-                                                                                                          "width": 3,
-                                                                                                        },
-                                                                                                      }
-                                                    }
-                                                    modalType="EDIT_STRUCTURE_DEFINITION"
-                          >
-                                                    Edit
-                          </Connect(OpenModalButton)>
-</CardBody>,
-                      ],
-                      "tag": "div",
-                    },
-                    "ref": null,
-                    "rendered": Array [
-                      Object {
-                        "instance": null,
-                        "key": undefined,
-                        "nodeType": "function",
-                        "props": Object {
-                          "alt": "name3",
-                          "src": "string",
-                          "tag": "img",
-                          "top": true,
-                          "width": "100%",
-                        },
-                        "ref": null,
-                        "rendered": null,
-                        "type": [Function],
-                      },
-                      Object {
-                        "instance": null,
-                        "key": undefined,
-                        "nodeType": "function",
-                        "props": Object {
-                          "children": Array [
-                            <CardTitle
-                              tag="h4"
->
-                              name3
-</CardTitle>,
-                            <CardSubtitle
-                              tag="h6"
->
-                              3
-                               x 
-                              4
-</CardSubtitle>,
-                            <div
-                              className="card-text"
-                              dangerouslySetInnerHTML={
-                                                            Object {
-                                                                                          "__html": "",
-                                                                                        }
-                              }
-/>,
-                            <Connect(OpenModalButton)
-                              modalProps={
-                                                            Object {
-                                                                                          "ariaLabel": "Sup",
-                                                                                          "formName": "structureDefinition",
-                                                                                          "sd": Object {
-                                                                                            "description": undefined,
-                                                                                            "id": "id3",
-                                                                                            "imageUrl": "string",
-                                                                                            "kind": "someOtherKind",
-                                                                                            "length": 4,
-                                                                                            "name": "name3",
-                                                                                            "width": 3,
-                                                                                          },
-                                                                                        }
-                              }
-                              modalType="EDIT_STRUCTURE_DEFINITION"
->
-                              Edit
-</Connect(OpenModalButton)>,
-                          ],
-                          "tag": "div",
-                        },
-                        "ref": null,
-                        "rendered": Array [
-                          Object {
-                            "instance": null,
-                            "key": undefined,
-                            "nodeType": "function",
-                            "props": Object {
-                              "children": "name3",
-                              "tag": "h4",
-                            },
-                            "ref": null,
-                            "rendered": "name3",
-                            "type": [Function],
-                          },
-                          Object {
-                            "instance": null,
-                            "key": undefined,
-                            "nodeType": "function",
-                            "props": Object {
-                              "children": Array [
-                                3,
-                                " x ",
-                                4,
-                              ],
-                              "tag": "h6",
-                            },
-                            "ref": null,
-                            "rendered": Array [
-                              3,
-                              " x ",
-                              4,
-                            ],
-                            "type": [Function],
-                          },
-                          Object {
-                            "instance": null,
-                            "key": undefined,
-                            "nodeType": "host",
-                            "props": Object {
-                              "className": "card-text",
-                              "dangerouslySetInnerHTML": Object {
-                                "__html": "",
-                              },
-                            },
-                            "ref": null,
-                            "rendered": null,
-                            "type": "div",
-                          },
-                          Object {
-                            "instance": null,
-                            "key": undefined,
-                            "nodeType": "class",
-                            "props": Object {
-                              "children": "Edit",
-                              "modalProps": Object {
-                                "ariaLabel": "Sup",
-                                "formName": "structureDefinition",
-                                "sd": Object {
-                                  "description": undefined,
-                                  "id": "id3",
-                                  "imageUrl": "string",
-                                  "kind": "someOtherKind",
-                                  "length": 4,
-                                  "name": "name3",
-                                  "width": 3,
-                                },
-                              },
-                              "modalType": "EDIT_STRUCTURE_DEFINITION",
-                            },
-                            "ref": null,
-                            "rendered": "Edit",
-                            "type": [Function],
-                          },
-                        ],
-                        "type": [Function],
-                      },
-                    ],
-                    "type": [Function],
-                  },
-                  "type": "li",
+                  "rendered": null,
+                  "type": [Function],
                 },
               ],
               "type": "ul",

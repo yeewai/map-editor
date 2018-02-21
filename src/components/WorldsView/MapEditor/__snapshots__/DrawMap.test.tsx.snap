@@ -53,11 +53,15 @@ ShallowWrapper {
     "props": Object {
       "children": <svg
         className="map"
-        height="800"
-        preserveAspectRatio="xMidYMid"
+        preserveAspectRatio="xMinYMax"
         viewBox="-65 160 100 100"
-        width="100%"
 >
+        <image
+                className="mapBG"
+                width={NaN}
+                x={NaN}
+                xlinkHref={undefined}
+        />
         <defs
                 className="structureReference"
         >
@@ -68,11 +72,38 @@ ShallowWrapper {
                                       }
                         }
                         id="a"
+                        preserveAspectRatio="xMidYMid"
                         viewBox="0 0 1 2"
                 />
         </defs>
-        <DrawBoard
+        <Connect(DrawBoard)
                 board={undefined}
+        />
+        <Connect(Component)
+                uniqueStructures={
+                        Array [
+                                Object {
+                                  "definition": Object {
+                                    "id": "",
+                                    "imageUrl": "",
+                                    "kind": "",
+                                    "length": 1,
+                                    "name": "",
+                                    "width": 1,
+                                  },
+                                  "definitionId": "",
+                                  "id": "a",
+                                  "image": Object {
+                                    "innerHTML": "Sup",
+                                  },
+                                  "imageHeight": 2,
+                                  "imageWidth": 1,
+                                  "name": "",
+                                  "xposition": 1,
+                                  "yposition": 1,
+                                },
+                              ]
+                }
         />
 </svg>,
     },
@@ -83,6 +114,12 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
+          <image
+            className="mapBG"
+            width={NaN}
+            x={NaN}
+            xlinkHref={undefined}
+/>,
           <defs
             className="structureReference"
 >
@@ -93,21 +130,60 @@ ShallowWrapper {
                                               }
                         }
                         id="a"
+                        preserveAspectRatio="xMidYMid"
                         viewBox="0 0 1 2"
             />
 </defs>,
-          <DrawBoard
+          <Connect(DrawBoard)
             board={undefined}
+/>,
+          <Connect(Component)
+            uniqueStructures={
+                        Array [
+                                    Object {
+                                      "definition": Object {
+                                        "id": "",
+                                        "imageUrl": "",
+                                        "kind": "",
+                                        "length": 1,
+                                        "name": "",
+                                        "width": 1,
+                                      },
+                                      "definitionId": "",
+                                      "id": "a",
+                                      "image": Object {
+                                        "innerHTML": "Sup",
+                                      },
+                                      "imageHeight": 2,
+                                      "imageWidth": 1,
+                                      "name": "",
+                                      "xposition": 1,
+                                      "yposition": 1,
+                                    },
+                                  ]
+            }
 />,
         ],
         "className": "map",
-        "height": "800",
-        "preserveAspectRatio": "xMidYMid",
+        "preserveAspectRatio": "xMinYMax",
         "viewBox": "-65 160 100 100",
-        "width": "100%",
       },
       "ref": null,
       "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "className": "mapBG",
+            "width": NaN,
+            "x": NaN,
+            "xlinkHref": undefined,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "image",
+        },
         Object {
           "instance": null,
           "key": undefined,
@@ -121,6 +197,7 @@ ShallowWrapper {
                                               }
                 }
                 id="a"
+                preserveAspectRatio="xMidYMid"
                 viewBox="0 0 1 2"
 />,
             ],
@@ -137,6 +214,7 @@ ShallowWrapper {
                   "__html": "Sup",
                 },
                 "id": "a",
+                "preserveAspectRatio": "xMidYMid",
                 "viewBox": "0 0 1 2",
               },
               "ref": null,
@@ -157,6 +235,38 @@ ShallowWrapper {
           "rendered": null,
           "type": [Function],
         },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "uniqueStructures": Array [
+              Object {
+                "definition": Object {
+                  "id": "",
+                  "imageUrl": "",
+                  "kind": "",
+                  "length": 1,
+                  "name": "",
+                  "width": 1,
+                },
+                "definitionId": "",
+                "id": "a",
+                "image": Object {
+                  "innerHTML": "Sup",
+                },
+                "imageHeight": 2,
+                "imageWidth": 1,
+                "name": "",
+                "xposition": 1,
+                "yposition": 1,
+              },
+            ],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
       ],
       "type": "svg",
     },
@@ -170,11 +280,15 @@ ShallowWrapper {
       "props": Object {
         "children": <svg
           className="map"
-          height="800"
-          preserveAspectRatio="xMidYMid"
+          preserveAspectRatio="xMinYMax"
           viewBox="-65 160 100 100"
-          width="100%"
 >
+          <image
+                    className="mapBG"
+                    width={NaN}
+                    x={NaN}
+                    xlinkHref={undefined}
+          />
           <defs
                     className="structureReference"
           >
@@ -185,11 +299,38 @@ ShallowWrapper {
                                                 }
                               }
                               id="a"
+                              preserveAspectRatio="xMidYMid"
                               viewBox="0 0 1 2"
                     />
           </defs>
-          <DrawBoard
+          <Connect(DrawBoard)
                     board={undefined}
+          />
+          <Connect(Component)
+                    uniqueStructures={
+                              Array [
+                                        Object {
+                                          "definition": Object {
+                                            "id": "",
+                                            "imageUrl": "",
+                                            "kind": "",
+                                            "length": 1,
+                                            "name": "",
+                                            "width": 1,
+                                          },
+                                          "definitionId": "",
+                                          "id": "a",
+                                          "image": Object {
+                                            "innerHTML": "Sup",
+                                          },
+                                          "imageHeight": 2,
+                                          "imageWidth": 1,
+                                          "name": "",
+                                          "xposition": 1,
+                                          "yposition": 1,
+                                        },
+                                      ]
+                    }
           />
 </svg>,
       },
@@ -200,6 +341,12 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
+            <image
+              className="mapBG"
+              width={NaN}
+              x={NaN}
+              xlinkHref={undefined}
+/>,
             <defs
               className="structureReference"
 >
@@ -210,21 +357,60 @@ ShallowWrapper {
                                                       }
                             }
                             id="a"
+                            preserveAspectRatio="xMidYMid"
                             viewBox="0 0 1 2"
               />
 </defs>,
-            <DrawBoard
+            <Connect(DrawBoard)
               board={undefined}
+/>,
+            <Connect(Component)
+              uniqueStructures={
+                            Array [
+                                          Object {
+                                            "definition": Object {
+                                              "id": "",
+                                              "imageUrl": "",
+                                              "kind": "",
+                                              "length": 1,
+                                              "name": "",
+                                              "width": 1,
+                                            },
+                                            "definitionId": "",
+                                            "id": "a",
+                                            "image": Object {
+                                              "innerHTML": "Sup",
+                                            },
+                                            "imageHeight": 2,
+                                            "imageWidth": 1,
+                                            "name": "",
+                                            "xposition": 1,
+                                            "yposition": 1,
+                                          },
+                                        ]
+              }
 />,
           ],
           "className": "map",
-          "height": "800",
-          "preserveAspectRatio": "xMidYMid",
+          "preserveAspectRatio": "xMinYMax",
           "viewBox": "-65 160 100 100",
-          "width": "100%",
         },
         "ref": null,
         "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "mapBG",
+              "width": NaN,
+              "x": NaN,
+              "xlinkHref": undefined,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "image",
+          },
           Object {
             "instance": null,
             "key": undefined,
@@ -238,6 +424,7 @@ ShallowWrapper {
                                                     }
                   }
                   id="a"
+                  preserveAspectRatio="xMidYMid"
                   viewBox="0 0 1 2"
 />,
               ],
@@ -254,6 +441,7 @@ ShallowWrapper {
                     "__html": "Sup",
                   },
                   "id": "a",
+                  "preserveAspectRatio": "xMidYMid",
                   "viewBox": "0 0 1 2",
                 },
                 "ref": null,
@@ -269,6 +457,38 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "board": undefined,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "uniqueStructures": Array [
+                Object {
+                  "definition": Object {
+                    "id": "",
+                    "imageUrl": "",
+                    "kind": "",
+                    "length": 1,
+                    "name": "",
+                    "width": 1,
+                  },
+                  "definitionId": "",
+                  "id": "a",
+                  "image": Object {
+                    "innerHTML": "Sup",
+                  },
+                  "imageHeight": 2,
+                  "imageWidth": 1,
+                  "name": "",
+                  "xposition": 1,
+                  "yposition": 1,
+                },
+              ],
             },
             "ref": null,
             "rendered": null,

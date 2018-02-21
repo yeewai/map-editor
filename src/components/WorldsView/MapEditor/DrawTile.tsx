@@ -9,47 +9,63 @@ import { OpenModalButton } from '@evercourse/ever-modal';
 
 import { StateTree } from 'services/types';
 import { worldTypes } from 'services/worlds';
+import { structureDefinitionTypes } from 'services/structureDefinitions';
 
 interface OwnProps {
-    structure: worldTypes.Structure,
+    structureDefinition: structureDefinitionTypes.StructureDefinition,
     x: number,
     y: number
 }
 
 export type PropTypes = OwnProps;
 
+const tileWidthHalf = TILE_SIZE/2;
+const tileHeightHalf = (tileWidthHalf * Math.tan( 30 * Math.PI/180)); //Thanks geometry @.@
+
 const getCoords = (x: number, y:number): {x: number, y: number} => {
-    const TILE_WIDTH_HALF = TILE_SIZE/2;
-    const TILE_HEIGHT_HALF = (TILE_WIDTH_HALF * Math.tan( 30 * Math.PI/180)); //Thanks geometry @.@
 
     return {
-        x: (x * TILE_WIDTH_HALF - y * TILE_WIDTH_HALF),
-        y: (x * TILE_HEIGHT_HALF + y * TILE_HEIGHT_HALF)
+        x: (x - y) * tileWidthHalf,
+        y: (x + y) * tileHeightHalf
     };
+}
+
+const getCoordsString =(x: number, y:number): string => {
+    const coords = getCoords(x, y);
+    return `${coords.x},${coords.y}`
 }
 
 export class DrawTile extends React.Component<PropTypes> {
     shouldComponentUpdate(nextProps) {
-        return this.props.structure !== nextProps.structure;
+        return this.props.structureDefinition !== nextProps.structureDefinition
+            || this.props.x !== nextProps.x
+            || this.props.y !== nextProps.y;
     }
 
     render() {
-        const { structure, x, y } = this.props;
-        if (!structure) { return null; }
+        const { structureDefinition, x, y } = this.props;
+        if (!structureDefinition) { return (
+            <polygon
+                points={[getCoordsString(x, y),getCoordsString(x+1, y),getCoordsString(x+1, y+1),getCoordsString(x, y+1)].join(" ")}
+                className="nullTile"  />
+        ) }
 
-        const { definition } = structure;
-        const width = getCoords(x+definition.width, y).x - getCoords(x,y+definition.length).x;
-        const coords = getCoords(x,y)
+        const width = getCoords(x+structureDefinition.width, y).x - getCoords(x,y+structureDefinition.length).x;
+        const coords = getCoords(
+            x,
+            y
+        );
 
-        const ratio =  TILE_SIZE/definition.imageWidth;
+        const ratio = width/structureDefinition.imageWidth;
+        const height = structureDefinition.imageHeight * ratio;
 
         return (
             <use className="tile"
                 width={ width }
-
-                x={ coords.x }
-                y={ coords.y - (definition.imageHeight * ratio)}
-                xlinkHref={`#${definition.id}`}
+                height={height}
+                x={ coords.x - (width/2) }
+                y={ coords.y - (height) + (tileHeightHalf*2)}
+                xlinkHref={`#${structureDefinition.id}`}
             />
         )
     };
