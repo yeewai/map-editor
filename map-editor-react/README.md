@@ -1,6 +1,6 @@
-# Project Title
+# Map Editor Frontend
 
-* One short paragraph of project description goes here
+* Map editor for virtual community's map.
 * link to confluence page
 
 ## Getting Started
@@ -15,9 +15,9 @@ name of software with version number, links to install guide
 ```
 
 ### Installation
+
 ```
-how to install in LMS
-how to create test instances (automated scripts, etc)
+npm install
 ```
 
 ### Starting the server
@@ -33,23 +33,9 @@ npm run start
 
 ``npm run coverage`` does not watch, but generates a coverage report
 
-
 ## Deployment
 
 Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* ```
-Scala Play
-```(http://link.to.scala) - The web framework used
-```
-
-## Contributing
-
-Please read ```
-CONTRIBUTING.md
-```(https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## Versioning
 

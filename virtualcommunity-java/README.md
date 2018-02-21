@@ -1,7 +1,6 @@
-# Project Title
+# Virtual Community Backend
 
-* One short paragraph of project description goes here
-* link to confluence page
+* Backend to power all of the virtual community front end bits.
 
 ## Getting Started
 
@@ -11,14 +10,13 @@ These instructions will get you a copy of the project up and running on your loc
 What things you need to install the software and how to install them
 
 ```
-name of software with version number, links to install guide
+Java Spring
+Maven
 ```
 
 ### Installation
-```
-how to install in LMS
-how to create test instances (automated scripts, etc)
-```
+
+???
 
 ### Starting the server
 ```
@@ -39,18 +37,6 @@ To check coverage
 
 Add additional notes about how to deploy this on a live system
 
-## Built With
-
-* ```
-Scala Play
-```(http://link.to.scala) - The web framework used
-```
-
-## Contributing
-
-Please read ```
-CONTRIBUTING.md
-```(https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## Versioning
 
