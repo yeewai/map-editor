@@ -3,6 +3,7 @@
 # React Redux
 # dependencies
 /node_modules
+/map-editor-react/node_modules
 
 # testing
 /coverage
